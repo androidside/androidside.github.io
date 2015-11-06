@@ -1,4 +1,5 @@
 ##gocanto-web
+[![Stories in Ready](https://badge.waffle.io/gocanto/gocanto-web.svg?label=ready&title=Ready)](http://waffle.io/gocanto/gocanto-web)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
 I am a senior programmer with 10 ten years of experience in PHP.
