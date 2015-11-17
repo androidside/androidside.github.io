@@ -2,7 +2,7 @@
 [![Stories in Ready](https://badge.waffle.io/gocanto/gocanto-web.svg?label=ready&title=Ready)](http://waffle.io/gocanto/gocanto-web)
 [![License](https://poser.pugx.org/laravel/framework/license.svg)](https://packagist.org/packages/laravel/framework)
 
-I am a senior programmer with 10 ten years of experience in PHP.
+I am a web developer with 10 ten years of experience in PHP.
 
 One of which is in Laravel Framework specifically. I have a background in system development and can engage clients on all levels. Whether it is managing a team, meeting clients from around the world, or contributing to open source code libraries, I am a great addition to any project. I am an all round web developer. I have a good knowledge of front-end and back-end techniques.
 
