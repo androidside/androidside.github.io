@@ -1,7 +1,5 @@
 <?php
 
-	// Contact
-	$to = 'YOUR-EMAIL-ADDRESS';
+    // Contact
+    $to = 'YOUR-EMAIL-ADDRESS';
     $subject = 'Subject here...';
-
-?>
