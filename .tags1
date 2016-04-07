@@ -1,0 +1,357 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+html	C:\cygwin64\home\Jordi\webPersonal\index.html	/^<html lang="en" class="no-js">$/;"	function	line:2
+head	C:\cygwin64\home\Jordi\webPersonal\index.html	/^	<head>$/;"	function	line:3
+meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta charset="utf-8">$/;"	function	line:4
+meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="viewport" content="width=device-width, initial-scale=1">$/;"	function	line:5
+meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="description" content="Personal Website of Jordi Vila">$/;"	function	line:6
+meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="author" content="Jordi Vila">$/;"	function	line:7
+title	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<title>G - OCANTO | Web Developer<\/title>$/;"	function	line:8
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:11
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/fonts\/font-awesome\/css\/font-awesome.min.css" rel="stylesheet">$/;"	function	line:12
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/bootstrapValidator.min.css" rel="stylesheet">$/;"	function	line:13
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/ladda-themeless.min.css" rel="stylesheet">$/;"	function	line:14
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/jquery.bxslider.css" rel="stylesheet">$/;"	function	line:15
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/animate.css" rel="stylesheet">$/;"	function	line:16
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/app.css" rel="stylesheet">$/;"	function	line:17
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link rel="shortcut icon" href="assets\/img\/favicon\/favicon.ico" type="image\/x-icon">$/;"	function	line:20
+link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link rel="icon" href="assets\/img\/favicon\/favicon.ico" type="image\/x-icon">$/;"	function	line:21
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<script src="assets\/js\/respond.min.js"><\/script>$/;"	function	line:26
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/pace.min.js"><\/script>$/;"	function	line:29
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/modernizr.min.js"><\/script>$/;"	function	line:30
+body	C:\cygwin64\home\Jordi\webPersonal\index.html	/^	<body data-spy="scroll" data-target="#nav" data-offset="80">$/;"	function	line:32
+nav	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<nav class="navbar navbar-default" role="navigation" id="nav">$/;"	function	line:34
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		  <div class="container">$/;"	function	line:35
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="navbar-header">$/;"	function	line:36
+button	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">$/;"	function	line:37
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<span class="sr-only">Toggle navigation<\/span>$/;"	function	line:38
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<i class="fa fa-reorder"><\/i>$/;"	function	line:39
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			  <a class="navbar-brand" href="#">$/;"	function	line:41
+img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<img src="assets\/img\/logo\/logo.png" alt="Logo">$/;"	function	line:42
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="collapse navbar-collapse navbar-right" id="navbar">$/;"	function	line:46
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			  <ul class="nav navbar-nav">$/;"	function	line:47
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#home">Home <span class="sr-only">home<\/span><\/a><\/li>$/;"	function	line:48
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#about">About<\/a><\/li>$/;"	function	line:49
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#phoenix">Phoenix<\/a><\/li>$/;"	function	line:50
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#resume">Resume<\/a><\/li>$/;"	function	line:51
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#skills">Skills<\/a><\/li>$/;"	function	line:52
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#nasa">Nasa-BETTII<\/a><\/li>$/;"	function	line:53
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#contact">Contact<\/a><\/li>$/;"	function	line:54
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="main" id="home">$/;"	function	line:61
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="page">$/;"	function	line:62
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="wrapper">$/;"	function	line:63
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="container">$/;"	function	line:64
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="heading">Jordi Vila<\/h1>$/;"	function	line:65
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:66
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<h3>$/;"	function	line:67
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<span class="rotate">Engineer, Programmer, Horse rider, Traveller, Robotics-passionate<\/span>$/;"	function	line:68
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="arrow-down">$/;"	function	line:72
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<a class="scroll" href="#about" id="scroll"><i class="fa fa-angle-double-down"><\/i><\/a>$/;"	function	line:73
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="about" class="section section-solid">$/;"	function	line:80
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:81
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:82
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:83
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">About<\/h3>$/;"	function	line:84
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:85
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row mt20">$/;"	function	line:89
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-4 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:90
+img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<img src="assets\/img\/about\/1.jpg" class="img-responsive about-img" \/>$/;"	function	line:91
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:93
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p class="lead">$/;"	function	line:94
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:97
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:100
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:104
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:107
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:110
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="section section-solid-white" id="phoenix">$/;"	function	line:119
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:120
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:121
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:122
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Phoenix Drone<\/h3>$/;"	function	line:123
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:124
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:127
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:128
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:129
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:130
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:131
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-life-ring"><\/i>$/;"	function	line:132
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:134
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Safety<\/h4>$/;"	function	line:135
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>Calibration on each startup to assure maximum stability. Fly-home option when receiver out of range.<\/p>$/;"	function	line:136
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:140
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:141
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:142
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-gift"><\/i>$/;"	function	line:143
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:145
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Software<\/h4>$/;"	function	line:146
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>100 % custom platform, allowing to add new sensors on the way.<\/p>$/;"	function	line:147
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:151
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:152
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:153
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-paint-brush"><\/i>$/;"	function	line:154
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:156
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Frame<\/h4>$/;"	function	line:157
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>3-D printed frame on the way ...<\/p>$/;"	function	line:158
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:163
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:164
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:165
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:166
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-cogs"><\/i>$/;"	function	line:167
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:169
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Attitude Control Algorithm<\/h4>$/;"	function	line:170
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>Stable, quick reaction time, propellers controlled using hardware Pulse Width Modulation (PWM) signals(jitter-free)<\/p>$/;"	function	line:171
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:175
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:176
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:177
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-rocket"><\/i>$/;"	function	line:178
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:180
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Modes of Operation<\/h4>$/;"	function	line:181
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p> SPORT for those defying pilots wanting to do looping or races. RELAXED for inexperienced pilots, assuring stability with low angular accelarations<\/p>$/;"	function	line:182
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:186
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:187
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:188
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-heart"><\/i>$/;"	function	line:189
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:191
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>System Monitoring<\/h4>$/;"	function	line:192
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>Battery status indicator, PID filters command signals,  LED indicators<\/p>$/;"	function	line:193
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="section" id="tweets">$/;"	function	line:203
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:204
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:205
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12 text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:206
+i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<i class="fa fa-twitter twitter-feed-icon"><\/i>$/;"	function	line:207
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<span id="twitterFeed"><\/span>$/;"	function	line:208
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="resume" class="section section-solid">$/;"	function	line:215
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:216
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:217
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:218
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h2 class="section-title">Resume<\/h2>$/;"	function	line:219
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:220
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:223
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:224
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>Countless are the challenges awaiting space-based technologies: improve weather forecasting, ground and air navigation, telecommunications or disaster monitoring systems. Beyond Earth and its LEO environment we have the challenge of reaching Mars, improve our knowledge about the other planets of the Solar System but also study Star formation and search for exoplanets and forms of life. I studied Engineering of Telecommunications (UPC–Barcelona, Spain), a Bachelor plus a Master program based on a curriculum of fundamental sciences that instructed me on a methodology to tackle problems effectively, I focused my studies on Signal Processing and Communication Networks. I completed my education at the Aeronautical Engineering School ISAE-Supaero (France,Toulouse), where I specialized in Embedded Systems in Airplanes, Satellite Communications and Navigation.<\/p>$/;"	function	line:225
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h2 class="resume-pdf">Download resume as <a href="http:\/\/www.google.com" target="_blank">PDF<\/a><\/h2>$/;"	function	line:226
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:229
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:230
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="v-timeline mt50">$/;"	function	line:231
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:232
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-paper-plane-o"><\/i> Work experience<\/h3>$/;"	function	line:233
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:235
+time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>2012 - 2014<\/span><\/time>$/;"	function	line:236
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-1"><i class="fa fa-minus"><\/i><\/div>$/;"	function	line:237
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" >$/;"	function	line:238
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-1">NASA<\/a><\/h4>$/;"	function	line:239
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-1" class="collapse in">$/;"	function	line:240
+strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:241
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:245
+time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>2013 - 2014<\/span><\/time>$/;"	function	line:246
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-11"><i class="fa fa-minus"><\/i><\/div>$/;"	function	line:247
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" >$/;"	function	line:248
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-11">Cellphone Technician<\/a><\/h4>$/;"	function	line:249
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-11" class="collapse in">I worked in the smart devices repairs, fixing a wide range of phones and tablets. Replacing their screens, charging ports, speakers, batteries, updating their operative system, glass repair and signal repair. Also, I worked with huge variety of brands, such as, Samsung, LG, Motorola, ZTE, Apple, etc.<\/p>$/;"	function	line:250
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:254
+time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s" datetime="2013-04-16 21:30"><span>2009 - 2011<\/span><\/time>$/;"	function	line:255
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-2"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:256
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">$/;"	function	line:257
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-2">PHP Developer<\/a><\/h4>$/;"	function	line:258
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-2" class="collapse">$/;"	function	line:259
+strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:260
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:264
+time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s" datetime="2013-04-17"><span>2008 - 2009<\/span><\/time>$/;"	function	line:265
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-3"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:266
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">$/;"	function	line:267
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-3">PHP \/ Visual Basic Developer<\/a><\/h4>$/;"	function	line:268
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-3" class="collapse">$/;"	function	line:269
+strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:270
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:274
+time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s" datetime="2013-04-17"><span>2008 - 2009<\/span><\/time>$/;"	function	line:275
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-4"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:276
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">$/;"	function	line:277
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-4">PHP \/ Visual Basic Developer<\/a><\/h4>$/;"	function	line:278
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-4" class="collapse">$/;"	function	line:279
+strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:280
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="v-timeline mt50">$/;"	function	line:289
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:290
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-graduation-cap"><\/i> Education<\/h3>$/;"	function	line:291
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:293
+time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s" datetime="2013-04-18"><span>2001 - 2006<\/span><\/time>$/;"	function	line:294
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-41"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:295
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.3s">$/;"	function	line:296
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-41">IUT VALENCIA \/ College Degree<\/a><\/h4>$/;"	function	line:297
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-41" class="collapse">I graduated from college as programmer<\/p>$/;"	function	line:298
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:301
+time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.4s" datetime="2013-04-18"><span>2007 - 2010<\/span><\/time>$/;"	function	line:302
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-5"><i class="fa fa-minus"><\/i><\/div>$/;"	function	line:303
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.4s">$/;"	function	line:304
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-5">UNIVERSIDAD ALEJANDRO DE HUMBOLDT \/ University Degree<\/a><\/h4>$/;"	function	line:305
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-5" class="collapse in">I graduated from college as Informatics Engineer.<\/p>$/;"	function	line:306
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="section" id="skills">$/;"	function	line:316
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:317
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:318
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:319
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Skills<\/h3>$/;"	function	line:320
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:321
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row personal-skills">$/;"	function	line:324
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:325
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Web and Mobile, Designer and Developer<\/h4>$/;"	function	line:326
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>PHP<\/h6>$/;"	function	line:327
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:328
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">$/;"	function	line:329
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Laravel Framework<\/h6>$/;"	function	line:333
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:334
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">$/;"	function	line:335
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Angular JS<\/h6>$/;"	function	line:339
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:340
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">$/;"	function	line:341
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>JQuery<\/h6>$/;"	function	line:345
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:346
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">$/;"	function	line:347
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>MySQL<\/h6>$/;"	function	line:351
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:352
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 97%;">$/;"	function	line:353
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Less CSS<\/h6>$/;"	function	line:357
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:358
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">$/;"	function	line:359
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Bootstrap CSS Framework<\/h6>$/;"	function	line:363
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:364
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">$/;"	function	line:365
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:370
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Knowledge<\/h4>$/;"	function	line:371
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="fa-ul skills-ul">$/;"	function	line:372
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>PHP 5.*<\/li>$/;"	function	line:373
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>PHP \/ Laravel Framework<\/li>$/;"	function	line:374
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>PHP \/ Codeigniter Framework<\/li>$/;"	function	line:375
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>HTML 5<\/li>$/;"	function	line:376
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>CSS \/ LESS Framework<\/li>$/;"	function	line:377
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>C \/ C++<\/li>$/;"	function	line:378
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>Java \/ AS400<\/li>$/;"	function	line:379
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>MySQL \/ PostgreSQL \/ SQL Server \/ Oracle<\/li>$/;"	function	line:380
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>Agile \/ Scrum<\/li>$/;"	function	line:381
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row personal-skills">$/;"	function	line:385
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s">$/;"	function	line:386
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Languages<\/h4>$/;"	function	line:387
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="lang-container">$/;"	function	line:388
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<p class="lang-description">Spanish<\/p>$/;"	function	line:397
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<span class="lang-level">Native<\/span>$/;"	function	line:398
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="lang-container">$/;"	function	line:401
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<p class="lang-description">English<\/p>$/;"	function	line:410
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<span class="lang-level">Advanced<\/span>$/;"	function	line:411
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">$/;"	function	line:414
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Hobies<\/h4>$/;"	function	line:415
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="fa-ul skills-ul">$/;"	function	line:416
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-eye"><\/i>Watch TV Shows<\/li>$/;"	function	line:417
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-code"><\/i>Laravel Programing<\/li>$/;"	function	line:418
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-mobile"><\/i>Fix Smart Devices<\/li>$/;"	function	line:419
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-gamepad"><\/i>Gaming<\/li>$/;"	function	line:420
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-music"><\/i>Listen to Reggae & Christian Music<\/li>$/;"	function	line:421
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="portfolio" class="section section-solid">$/;"	function	line:429
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:430
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:431
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:432
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Portfolio<\/h3>$/;"	function	line:433
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:434
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:437
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12 text-center">$/;"	function	line:438
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul id="filter" class="list-inline filter-tags">$/;"	function	line:439
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><a href="#" class="btn btn-sm btn-theme-inverse active" data-group="all">All<\/a><\/li>$/;"	function	line:440
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="web">Web<\/a><\/li>$/;"	function	line:442
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="app">App<\/a><\/li> -->$/;"	function	line:443
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="GITheWall">$/;"	function	line:448
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<ul id="portfolio-container" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:449
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<li class="portfolio-item" data-groups='["all", "branding"]' data-contenttype="ajax" data-href="assets\/ajax\/1.html">$/;"	function	line:450
+figure	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<figure>$/;"	function	line:451
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="portfolio-img">$/;"	function	line:452
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<a href="#" class="overlay">$/;"	function	line:453
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="title">Antvel eCommerce<\/span>$/;"	function	line:454
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="category">Online Store<\/span>$/;"	function	line:455
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<a href="https:\/\/github.com\/gocanto\/gocanto-cms">$/;"	function	line:457
+img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<img src="assets\/img\/portfolio\/1.jpg" alt="" class="img-responsive">$/;"	function	line:458
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<li class="portfolio-item" data-groups='["all", "web"]' data-contenttype="ajax" data-href="assets\/ajax\/2.html">$/;"	function	line:463
+figure	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<figure>$/;"	function	line:464
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="portfolio-img">$/;"	function	line:465
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<a href="#" class="overlay">$/;"	function	line:466
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="title">CMS<\/span>$/;"	function	line:467
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="category">Web site out of the box<\/span>$/;"	function	line:468
+img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<img src="assets\/img\/portfolio\/1.jpg" alt="" class="img-responsive">$/;"	function	line:470
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:476
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:477
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12 text-center">$/;"	function	line:478
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<a href="#" class="btn btn-theme-inverse mt40 wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0.5s" id="portfolio-more">More<\/a>$/;"	function	line:479
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="facts" class="section">$/;"	function	line:486
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:487
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:488
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:489
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">11<\/h1>$/;"	function	line:490
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>years experience<\/p>$/;"	function	line:491
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:493
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">2<\/h1>$/;"	function	line:494
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>github repositories<\/p>$/;"	function	line:495
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:497
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">17<\/h1>$/;"	function	line:498
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>project delivered<\/p>$/;"	function	line:499
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:501
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">1<\/h1>$/;"	function	line:502
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>winning awards<\/p>$/;"	function	line:503
+section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="contact" class="section">$/;"	function	line:510
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:511
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:512
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:513
+h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Contact<\/h3>$/;"	function	line:514
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:515
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:518
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:519
+p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:520
+strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<strong>Let’s work together!<\/strong>$/;"	function	line:521
+br	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<br>$/;"	function	line:522
+ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="list-contacts">$/;"	function	line:525
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><i class="fa fa-mobile-phone"><\/i>+1 (405) 669-63.31<\/li>$/;"	function	line:526
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><i class="fa fa-map-marker"><\/i>Oklahoma City, OK 73116<\/li>$/;"	function	line:527
+li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><i class="fa fa-envelope-o"><\/i> <a href="mailto:gustavoocanto@gmail.com">gustavoocanto@gmail.com<\/a><\/li>$/;"	function	line:528
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" style="display: none">$/;"	function	line:531
+form	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<form class="form-horizontal" action="assets\/php\/contactForm.php" method="post" role="form" id="contactForm">$/;"	function	line:532
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="form-group">$/;"	function	line:533
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-6">$/;"	function	line:534
+input	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<input type="text" name="name" class="form-control" placeholder="Name">$/;"	function	line:535
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-6">$/;"	function	line:537
+input	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<input type="text" name="contactEmail" class="form-control" placeholder="Email">$/;"	function	line:538
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="form-group">$/;"	function	line:541
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-12">$/;"	function	line:542
+textarea	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<textarea name="message" class="form-control" rows="8" placeholder="Message"><\/textarea>$/;"	function	line:543
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="form-group">$/;"	function	line:546
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-12">$/;"	function	line:547
+button	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<button type="submit" class="btn btn-theme ladda-button" data-style="expand-left">$/;"	function	line:548
+span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="ladda-label">Submit<\/span>$/;"	function	line:549
+footer	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<footer>$/;"	function	line:559
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:560
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:561
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6">&copy; 2015 Gustavo Ocanto.&nbsp;&nbsp;&nbsp;All rights reserved.<\/div>$/;"	function	line:562
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 text-right">$/;"	function	line:563
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="social">$/;"	function	line:564
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<a href="https:\/\/www.facebook.com\/ocantog" class="btn btn-theme"><i class="fa fa-facebook"><\/i><\/a>$/;"	function	line:565
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<a href="https:\/\/twitter.com\/gocanto" class="btn btn-theme"><i class="fa fa-twitter"><\/i><\/a>$/;"	function	line:566
+a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<a href="https:\/\/github.com\/gocanto" class="btn btn-theme"><i class="fa fa-github-square"><\/i><\/a>$/;"	function	line:567
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.min.js"><\/script>$/;"	function	line:575
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/bootstrap.min.js"><\/script>$/;"	function	line:577
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.backstretch.min.js"><\/script>$/;"	function	line:578
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/bootstrapValidator.min.js"><\/script>$/;"	function	line:579
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/validator\/emailAddress.js"><\/script>$/;"	function	line:580
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/spin.min.js"><\/script>$/;"	function	line:581
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/ladda.min.js"><\/script>$/;"	function	line:582
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/retina.min.js"><\/script>$/;"	function	line:583
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/masonry.pkgd.min.js"><\/script>$/;"	function	line:584
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/imagesloaded.pkgd.min.js"><\/script>$/;"	function	line:585
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.shuffle.min.js"><\/script>$/;"	function	line:586
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.bxslider.min.js"><\/script>$/;"	function	line:587
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/waypoints.min.js"><\/script>$/;"	function	line:588
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.counterup.min.js"><\/script>$/;"	function	line:589
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jQuery.GI.TheWall.min.js"><\/script>$/;"	function	line:590
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/twitterFetcher.min.js"><\/script>$/;"	function	line:591
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.simple-text-rotator.min.js"><\/script>$/;"	function	line:592
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.throttledresize.js"><\/script>$/;"	function	line:593
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/wow.min.js"><\/script>$/;"	function	line:594
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.knob.min.js"><\/script>$/;"	function	line:595
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.scrollTo.min.js"><\/script>$/;"	function	line:596
+script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/app.js"><\/script>$/;"	function	line:597
