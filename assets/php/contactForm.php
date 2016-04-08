@@ -1,5 +1,4 @@
 <?php
-
 include 'include/settings.php';
 if (isset($_POST['name']) && isset($_POST['contactEmail']) && isset($_POST['message'])) {
     $name = $_POST['name'];
@@ -16,3 +15,4 @@ if (isset($_POST['name']) && isset($_POST['contactEmail']) && isset($_POST['mess
         echo json_encode($response);
     }
 }
+?>
