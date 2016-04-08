@@ -10,7 +10,7 @@ meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta charset="utf-8">$/;
 meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="viewport" content="width=device-width, initial-scale=1">$/;"	function	line:5
 meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="description" content="Personal Website of Jordi Vila">$/;"	function	line:6
 meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="author" content="Jordi Vila">$/;"	function	line:7
-title	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<title>G - OCANTO | Web Developer<\/title>$/;"	function	line:8
+title	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<title>Jordi - Vila | Web <\/title>$/;"	function	line:8
 link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:11
 link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/fonts\/font-awesome\/css\/font-awesome.min.css" rel="stylesheet">$/;"	function	line:12
 link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/bootstrapValidator.min.css" rel="stylesheet">$/;"	function	line:13
@@ -327,7 +327,7 @@ span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="ladda
 footer	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<footer>$/;"	function	line:559
 div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:560
 div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:561
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6">&copy; 2015 Gustavo Ocanto.&nbsp;&nbsp;&nbsp;All rights reserved.<\/div>$/;"	function	line:562
+div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6">&copy; 2016 Jordi Vila.&nbsp;&nbsp;&nbsp;All rights reserved.<\/div>$/;"	function	line:562
 div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 text-right">$/;"	function	line:563
 div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="social">$/;"	function	line:564
 a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<a href="https:\/\/www.facebook.com\/ocantog" class="btn btn-theme"><i class="fa fa-facebook"><\/i><\/a>$/;"	function	line:565

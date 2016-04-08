@@ -11,6 +11,6 @@ I love structure and order and I also stand for quality. I love spending time on
 ***Felt free to download it and use it!***
 
 ## Contact
-* http://g-ocanto.com
-* email: gustavoocanto@gmail.com
-* Twitter: [@gocanto](https://twitter.com/gocanto "gocanto on twitter")
+* http://www.google.fr
+* email: jordivilahdl@gmail.com
+* Twitter: [@coquivhdl](https://twitter.com/coquivhdl "coquivhdl on twitter")
