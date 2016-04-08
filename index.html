@@ -676,14 +676,21 @@
 										<li><i class="fa fa-envelope-o"></i> <a href="mailto:jordivilahdl@gmail.com">jordivilahdl@gmail.com</a></li>
 									</ul>
 								</div>
-								<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" style="display: none">
-									<form class="form-horizontal" action="assets/php/contactForm.php" method="post" role="form" id="contactForm">
+								<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">
+									<form class="form-horizontal" action="//formspree.io/jordivilahdl@gmail.com" method="post" role="form" id="contactForm">
 										<div class="form-group">
+
+											<!-- Used to fool scrapers... -->
+											<input type="text" name="_gotcha" style="display:none" />
+
+											<!-- Used to redirect back to my site -->
+											<input type="hidden" name="_next" value="#" />
+
 											<div class="col-sm-6">
 												<input type="text" name="name" class="form-control" placeholder="Name">
 											</div>
 											<div class="col-sm-6">
-												<input type="text" name="contactEmail" class="form-control" placeholder="Email">
+												<input type="email" name="email" class="form-control" placeholder="Email">
 											</div>
 										</div>
 										<div class="form-group">
@@ -694,7 +701,7 @@
 										<div class="form-group">
 											<div class="col-sm-12">
 												<button type="submit" class="btn btn-theme ladda-button" data-style="expand-left">
-													<span class="ladda-label">Submit</span>
+												<span class="ladda-label">Submit</span>
 												</button>
 											</div>
 										</div>
