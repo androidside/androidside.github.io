@@ -26,6 +26,26 @@ $(function () {
 		"assets/img/background/4.jpg",
 	], {duration: 3800, fade: 1500});
 
+	/* ---------------------------------------------------------
+	 *	Stars
+	 */
+
+	$(".stars-three").html("<i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i>&nbsp;");
+	$(".stars-two-half").html("<i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-half-o\"></i>&nbsp;");
+	$(".stars-two").html("<i class=\"fa fa-star\"></i><i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i>&nbsp;");
+	$(".stars-one-half").html("<i class=\"fa fa-star\"></i><i class=\"fa fa-half-o\"></i><i class=\"fa fa-star-o\"></i>&nbsp;");
+	$(".stars-one").html("<i class=\"fa fa-star\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i>&nbsp;");
+	$(".stars-half").html("<i class=\"fa fa-star-half-o\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i>&nbsp;");
+	$(".stars-none").html("<i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i><i class=\"fa fa-star-o\"></i>&nbsp;");
+
+
+	/* ---------------------------------------------------------
+	 *	Own icons
+	 */
+
+	$(".globe-blue").html("<i class=\"fa-li fa fa-globe\"></i>&nbsp;");
+	$(".soccer-white").html("<i class=\"fa-li fa fa-soccer-ball-o\"></i>&nbsp;");
+
 
 	/* ---------------------------------------------------------
 	 *	WOW

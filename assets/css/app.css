@@ -102,6 +102,53 @@ a:after {
 .mt70 {
   margin-top: 70px;
 }
+* ---------------------------------------------------------
+*	Custom Styles
+*  --------------------------------------------------------- */
+.stars {
+    color: #FFFF38;
+}
+i.fa-check {
+    color: #34be5b !important;
+}
+.highlighted-black {
+    background-color: rgba(0,0,0,.5);
+}
+.highlighted-yellow {
+    background-color: rgba(255, 255, 56, 0.6);
+}
+
+h3.logo {
+    font-family: 'Righteous', cursive !important;
+    font-weight: 700 !important;
+    color: #666666;
+}
+img.logo {
+    margin-top: 14px;
+    max-height: 40px;
+    max-width: auto;
+}
+/* ---------------------------------------------------------
+*	Helper classes
+*  --------------------------------------------------------- */
+.mt20 {
+    margin-top: 20px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mt40 {
+    margin-top: 40px;
+}
+.mt50 {
+    margin-top: 50px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+.mt70 {
+    margin-top: 70px;
+}
 /* ---------------------------------------------------------
  *	Header
  * --------------------------------------------------------- */
@@ -991,7 +1038,7 @@ form.signup button.btn {
 .pace .pace-activity:before {
   content: '';
   background-color: #202020;
-  background-image: url('../img/logo/logo.png');
+  background-image: url('../img/logo/logo2x.png');
   background-repeat: no-repeat;
   background-position: center center;
   display: block;
@@ -1726,4 +1773,53 @@ lesshat-selector {
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+
+/* ---------------------------------------------------------
+*	Custom Styles
+*  --------------------------------------------------------- */
+.globe-blue{
+    color: #0000A0;
+
+}
+
+.soccer-white{
+  color: #000FFF;
+  background: : #34be5b;
+  border-radius: 50%;
+   height: 1em;
+   width: 1em;
+}
+
+.soccer-whiteA {
+    "color": "#FFFFFF";
+    "font-size": "0.9em";
+}
+.icon-b {
+    "color": "#000000";
+}
+
+.stars {
+    color: #FFFF38;
+}
+i.fa-check {
+    color: #34be5b !important;
+}
+.highlighted-black {
+    background-color: rgba(0,0,0,.5);
+}
+.highlighted-yellow {
+    background-color: rgba(255, 255, 56, 0.6);
+}
+
+h3.logo {
+    font-family: 'Righteous', cursive !important;
+    font-weight: 700 !important;
+    color: #666666;
+}
+img.logo {
+    margin-top: 14px;
+    max-height: 40px;
+    max-width: auto;
 }
