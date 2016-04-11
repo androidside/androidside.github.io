@@ -160,7 +160,7 @@ $(function () {
 	 */
 
 	twitterFetcher.fetch({
-	  "id": '719639712776994816',
+	  "id":'719639712776994816',
 	  "domId": '',
 	  "maxTweets": 5,
 	  "enableLinks": true,
