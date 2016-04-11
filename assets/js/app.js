@@ -24,6 +24,8 @@ $(function () {
 		"assets/img/background/2.jpg",
 		"assets/img/background/3.jpg",
 		"assets/img/background/4.jpg",
+		"assets/img/background/5.jpg",
+
 	], {duration: 3800, fade: 1500});
 
 	/* ---------------------------------------------------------
@@ -44,7 +46,7 @@ $(function () {
 	 */
 
 	$(".globe-blue").html("<i class=\"fa-li fa fa-globe\"></i>&nbsp;");
-	$(".soccer-white").html("<i class=\"fa-li fa fa-soccer-ball-o\"></i>&nbsp;");
+	$(".soccer-white").html("<i class=\"fa-li fa fa-soccer-ball-o \"></i>&nbsp;");
 
 
 	/* ---------------------------------------------------------
