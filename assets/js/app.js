@@ -162,7 +162,7 @@ $(function () {
 	 */
 	 // hashtags.
 var config1 = {
-  "id": '345170787868762112',
+  "id": '719374555886809088',
   "domId": 'example1',
   "maxTweets": 1,
   "enableLinks": true,
@@ -178,7 +178,7 @@ twitterFetcher.fetch(config1);
 // request to Twitter specifiying we would like results where possible in
 // English language.
 var config2 = {
-  "id": '347099293930377217',
+  "id": '719374555886809088',
   "domId": 'example2',
   "maxTweets": 5,
   "enableLinks": true,
@@ -193,7 +193,7 @@ twitterFetcher.fetch(config2);
 // A simple example to get latest 5 tweets for #API tag and shows any images
 // attached to tweets.
 var config3 = {
-  "id": '502160051226681344',
+  "id": '719374555886809088',
   "domId": 'example3',
   "maxTweets": 5,
   "enableLinks": true,
@@ -208,7 +208,7 @@ twitterFetcher.fetch(config3);
 // custom format to display the date/time of the post, and does not show
 // retweets.
 var config4 = {
-  "id": '345690956013633536',
+  "id": '719374555886809088',
   "domId": 'example4',
   "maxTweets": 3,
   "enableLinks": true,
@@ -236,7 +236,7 @@ twitterFetcher.fetch(config4);
 // if you need full control over the output.
 
 var config5 = {
-  "id": '345690956013633536',
+  "id": '719374555886809088',
   "domId": '',
   "maxTweets": 3,
   "enableLinks": true,
@@ -264,7 +264,7 @@ function handleTweets(tweets) {
 twitterFetcher.fetch(config5);
 
 	twitterFetcher.fetch({
-	  "id":'719639712776994816',
+	  "id":'719374555886809088',
 	  "domId": '',
 	  "maxTweets": 5,
 	  "enableLinks": true,
