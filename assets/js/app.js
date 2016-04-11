@@ -155,9 +155,113 @@ $(function () {
 	});
 
 
+
+
 	/* ---------------------------------------------------------
 	 *	Twitter
 	 */
+	 // hashtags.
+var config1 = {
+  "id": '345170787868762112',
+  "domId": 'example1',
+  "maxTweets": 1,
+  "enableLinks": true,
+  "showPermalinks": false
+};
+twitterFetcher.fetch(config1);
+
+
+// ##### Simple example 2 #####
+// A simple example to get my latest 5 of my favourite tweets and write to a
+// HTML element with id "talk". Also automatically hyperlinks URLS and user
+// mentions and hashtags but does not display time of post. We also make the
+// request to Twitter specifiying we would like results where possible in
+// English language.
+var config2 = {
+  "id": '347099293930377217',
+  "domId": 'example2',
+  "maxTweets": 5,
+  "enableLinks": true,
+  "showUser": true,
+  "showTime": true,
+  "lang": 'en'
+};
+twitterFetcher.fetch(config2);
+
+
+// ##### Simple example 3 #####
+// A simple example to get latest 5 tweets for #API tag and shows any images
+// attached to tweets.
+var config3 = {
+  "id": '502160051226681344',
+  "domId": 'example3',
+  "maxTweets": 5,
+  "enableLinks": true,
+  "showImages": true
+};
+twitterFetcher.fetch(config3);
+
+
+// ##### Advanced example #####
+// An advance example to get latest 5 posts using hashtag #API and write to a
+// HTML element with id "tweets2" without showing user details and using a
+// custom format to display the date/time of the post, and does not show
+// retweets.
+var config4 = {
+  "id": '345690956013633536',
+  "domId": 'example4',
+  "maxTweets": 3,
+  "enableLinks": true,
+  "showUser": false,
+  "showTime": true,
+  "dateFunction": dateFormatter,
+  "showRetweet": false
+};
+
+// For advanced example which allows you to customize how tweet time is
+// formatted you simply define a function which takes a JavaScript date as a
+// parameter and returns a string!
+// See http://www.w3schools.com/jsref/jsref_obj_date.asp for properties
+// of a Date object.
+function dateFormatter(date) {
+  return date.toTimeString();
+}
+
+twitterFetcher.fetch(config4);
+
+
+// ##### Advanced example 2 #####
+// Similar as previous, except this time we pass a custom function to render the
+// tweets ourself! Useful if you need to know exactly when data has returned or
+// if you need full control over the output.
+
+var config5 = {
+  "id": '345690956013633536',
+  "domId": '',
+  "maxTweets": 3,
+  "enableLinks": true,
+  "showUser": true,
+  "showTime": true,
+  "dateFunction": '',
+  "showRetweet": false,
+  "customCallback": handleTweets,
+  "showInteraction": false
+};
+
+function handleTweets(tweets) {
+    var x = tweets.length;
+    var n = 0;
+    var element = document.getElementById('example5');
+    var html = '<ul>';
+    while(n < x) {
+      html += '<li>' + tweets[n] + '</li>';
+      n++;
+    }
+    html += '</ul>';
+    element.innerHTML = html;
+}
+
+twitterFetcher.fetch(config5);
 
 	twitterFetcher.fetch({
 	  "id":'719639712776994816',
