@@ -79,6 +79,20 @@ a.resume-pdf:hover {
     text-decoration: none;
     outline: 0;
 }
+
+a.visit-my-profile:visited {
+    color: #2b9fe9;
+    text-decoration: none;
+}
+a.visit-my-profile:focus {
+    color: #2b9fe9;
+    text-decoration: none;
+}
+a.visit-my-profile:hover {
+    color: #34be5b;
+    text-decoration: none;
+    outline: 0;
+}
 a:after {
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
