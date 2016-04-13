@@ -93,6 +93,7 @@ a.visit-my-profile:hover {
     text-decoration: none;
     outline: 0;
 }
+
 a:after {
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -100,6 +101,7 @@ a:after {
   -o-transition: color 0.1s ease-in, background 0.1s ease-in;
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
+
 
 ul {
   list-style-type: square;
@@ -1105,6 +1107,13 @@ form.signup button.btn {
   font-size: 50px;
   margin-bottom: 15px;
 }
+a.twitter-feed-name{
+  padding: 0;
+  list-style: none;
+  opacity: 0.7;
+  font-size: 13px;
+}
+
 /* ---------------------------------------------------------
  *	GITheWall
  * --------------------------------------------------------- */
