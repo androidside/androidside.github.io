@@ -79,6 +79,10 @@ a.resume-pdf:hover {
     text-decoration: none;
     outline: 0;
 }
+.twitter-divisions{
+max-width:95%;
+max-height:100%;
+}
 
 a.visit-my-profile:visited {
     color: #2b9fe9;
@@ -106,6 +110,8 @@ a:after {
 ul {
   list-style-type: square;
 }
+
+
 
 /* ---------------------------------------------------------
  *	Helper classes
