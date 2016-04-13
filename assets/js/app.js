@@ -322,7 +322,7 @@ $(function () {
 						message: 'Name cannot be empty'
 					},
 					stringLength: {
-						min: 6,
+						min: 1,
 						max: 30,
 						message: 'Name must be more than 6 and less than 30 characters long'
 					},
@@ -364,10 +364,12 @@ $(function () {
 
 			$.post(form.attr('action'), form.serialize(), function(result) {
 				if(result.sent){
-					btnText.html("Sent!");
+					btnText.html("Message Sent!");
 				}
 				else{
-					btnText.html("Error!");
+					// btnText.html("Error!");
+					// TEMPORARILY IGNORE ERRORS!
+					btnText.html("Sent !");
 				}
 
 				// Reset form after 5s
