@@ -26,6 +26,7 @@ $(function () {
 		"assets/img/background/4.jpg",
 		"assets/img/background/5.jpg",
 		"assets/img/background/6.jpg",
+		"assets/img/background/7.jpg",
 
 	], {duration: 3800, fade: 1500});
 
