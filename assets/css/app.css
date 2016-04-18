@@ -952,13 +952,25 @@ form.signup button.btn {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px solid #000000;
+
 }
 .progress-bar {
-  background-color: #869198;
+/*  background-color: #FFFF38;*/
+  color: #000000;
+  font-weight: bold;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  background: -webkit-linear-gradient(left , #514A9D, #24C6DC); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #514A9D, #24C6DC); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #514A9D, #24C6DC); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #514A9D, #24C6DC); /* Standard syntax */
 }
+
 /*
  *	Media
  *  --------------------------------------------------------- */
@@ -1470,12 +1482,12 @@ a.twitter-feed-name{
   line-height: 2px;
   font-weight: 700;
   margin-top: 10px;
-  color:#CCCC00;
+  color:#FFFFFF;
 }
 .lang-level {
   font-size: 12px;
   opacity: 0.7;
-  color:#CCCC00;
+  color:#FFFFFF;
 
 }
 .skills-ul {
@@ -1821,9 +1833,15 @@ lesshat-selector {
 *  --------------------------------------------------------- */
 .globe-blue{
     color: #0000A0;
-
 }
 
+.suitcase{
+    color: #f4a460;
+}
+
+.graduationcap{
+    color: #000000;
+}
 .soccer-white{
   color: #000FFF;
   background: : #34be5b;

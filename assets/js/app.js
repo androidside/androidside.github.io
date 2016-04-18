@@ -50,6 +50,10 @@ $(function () {
 
 	$(".globe-blue").html("<i class=\"fa-li fa fa-globe\"></i>&nbsp;");
 	$(".soccer-white").html("<i class=\"fa-li fa fa-soccer-ball-o \"></i>&nbsp;");
+	$(".suitcase").html("<i class=\"fa fa-suitcase\"></i>&nbsp;");
+	$(".graduationcap").html("<i class=\"fa fa-graduation-cap\"></i>&nbsp;");
+
+
 
 
 	/* ---------------------------------------------------------
@@ -269,7 +273,7 @@ $(function () {
 
 	$('.counter').counterUp({
 		delay: 100,
-		time: 2000
+		time: 3000
 	});
 
 

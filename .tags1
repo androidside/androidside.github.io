@@ -4,354 +4,421 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-html	C:\cygwin64\home\Jordi\webPersonal\index.html	/^<html lang="en" class="no-js">$/;"	function	line:2
-head	C:\cygwin64\home\Jordi\webPersonal\index.html	/^	<head>$/;"	function	line:3
-meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta charset="utf-8">$/;"	function	line:4
-meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="viewport" content="width=device-width, initial-scale=1">$/;"	function	line:5
-meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="description" content="Personal Website of Jordi Vila">$/;"	function	line:6
-meta	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<meta name="author" content="Jordi Vila">$/;"	function	line:7
-title	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<title>Jordi - Vila | Web <\/title>$/;"	function	line:8
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/bootstrap.min.css" rel="stylesheet">$/;"	function	line:11
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/fonts\/font-awesome\/css\/font-awesome.min.css" rel="stylesheet">$/;"	function	line:12
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/bootstrapValidator.min.css" rel="stylesheet">$/;"	function	line:13
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/ladda-themeless.min.css" rel="stylesheet">$/;"	function	line:14
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/jquery.bxslider.css" rel="stylesheet">$/;"	function	line:15
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/animate.css" rel="stylesheet">$/;"	function	line:16
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link href="assets\/css\/app.css" rel="stylesheet">$/;"	function	line:17
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link rel="shortcut icon" href="assets\/img\/favicon\/favicon.ico" type="image\/x-icon">$/;"	function	line:20
-link	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<link rel="icon" href="assets\/img\/favicon\/favicon.ico" type="image\/x-icon">$/;"	function	line:21
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<script src="assets\/js\/respond.min.js"><\/script>$/;"	function	line:26
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/pace.min.js"><\/script>$/;"	function	line:29
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/modernizr.min.js"><\/script>$/;"	function	line:30
-body	C:\cygwin64\home\Jordi\webPersonal\index.html	/^	<body data-spy="scroll" data-target="#nav" data-offset="80">$/;"	function	line:32
-nav	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<nav class="navbar navbar-default" role="navigation" id="nav">$/;"	function	line:34
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		  <div class="container">$/;"	function	line:35
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="navbar-header">$/;"	function	line:36
-button	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">$/;"	function	line:37
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<span class="sr-only">Toggle navigation<\/span>$/;"	function	line:38
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<i class="fa fa-reorder"><\/i>$/;"	function	line:39
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			  <a class="navbar-brand" href="#">$/;"	function	line:41
-img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<img src="assets\/img\/logo\/logo.png" alt="Logo">$/;"	function	line:42
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="collapse navbar-collapse navbar-right" id="navbar">$/;"	function	line:46
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			  <ul class="nav navbar-nav">$/;"	function	line:47
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#home">Home <span class="sr-only">home<\/span><\/a><\/li>$/;"	function	line:48
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#about">About<\/a><\/li>$/;"	function	line:49
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#phoenix">Phoenix<\/a><\/li>$/;"	function	line:50
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#resume">Resume<\/a><\/li>$/;"	function	line:51
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#skills">Skills<\/a><\/li>$/;"	function	line:52
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#nasa">Nasa-BETTII<\/a><\/li>$/;"	function	line:53
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<li><a href="#contact">Contact<\/a><\/li>$/;"	function	line:54
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="main" id="home">$/;"	function	line:61
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="page">$/;"	function	line:62
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="wrapper">$/;"	function	line:63
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="container">$/;"	function	line:64
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="heading">Jordi Vila<\/h1>$/;"	function	line:65
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:66
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<h3>$/;"	function	line:67
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<span class="rotate">Engineer, Programmer, Horse rider, Traveller, Robotics-passionate<\/span>$/;"	function	line:68
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="arrow-down">$/;"	function	line:72
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<a class="scroll" href="#about" id="scroll"><i class="fa fa-angle-double-down"><\/i><\/a>$/;"	function	line:73
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="about" class="section section-solid">$/;"	function	line:80
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:81
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:82
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:83
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">About<\/h3>$/;"	function	line:84
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:85
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row mt20">$/;"	function	line:89
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-4 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:90
-img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<img src="assets\/img\/about\/1.jpg" class="img-responsive about-img" \/>$/;"	function	line:91
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-8 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:93
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p class="lead">$/;"	function	line:94
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:97
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:100
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:104
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:107
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:110
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="section section-solid-white" id="phoenix">$/;"	function	line:119
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:120
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:121
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:122
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Phoenix Drone<\/h3>$/;"	function	line:123
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:124
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:127
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:128
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:129
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:130
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:131
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-life-ring"><\/i>$/;"	function	line:132
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:134
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Safety<\/h4>$/;"	function	line:135
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>Calibration on each startup to assure maximum stability. Fly-home option when receiver out of range.<\/p>$/;"	function	line:136
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:140
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:141
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:142
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-gift"><\/i>$/;"	function	line:143
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:145
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Software<\/h4>$/;"	function	line:146
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>100 % custom platform, allowing to add new sensors on the way.<\/p>$/;"	function	line:147
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:151
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:152
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:153
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-paint-brush"><\/i>$/;"	function	line:154
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:156
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Frame<\/h4>$/;"	function	line:157
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>3-D printed frame on the way ...<\/p>$/;"	function	line:158
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:163
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:164
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:165
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:166
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-cogs"><\/i>$/;"	function	line:167
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:169
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Attitude Control Algorithm<\/h4>$/;"	function	line:170
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>Stable, quick reaction time, propellers controlled using hardware Pulse Width Modulation (PWM) signals(jitter-free)<\/p>$/;"	function	line:171
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:175
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:176
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:177
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-rocket"><\/i>$/;"	function	line:178
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:180
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>Modes of Operation<\/h4>$/;"	function	line:181
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p> SPORT for those defying pilots wanting to do looping or races. RELAXED for inexperienced pilots, assuring stability with low angular accelarations<\/p>$/;"	function	line:182
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="feature-box-container">$/;"	function	line:186
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="feature-box">$/;"	function	line:187
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="icon">$/;"	function	line:188
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<i class="fa fa-heart"><\/i>$/;"	function	line:189
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="description">$/;"	function	line:191
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4>System Monitoring<\/h4>$/;"	function	line:192
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p>Battery status indicator, PID filters command signals,  LED indicators<\/p>$/;"	function	line:193
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="section" id="tweets">$/;"	function	line:203
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:204
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:205
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12 text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:206
-i	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<i class="fa fa-twitter twitter-feed-icon"><\/i>$/;"	function	line:207
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<span id="twitterFeed"><\/span>$/;"	function	line:208
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="resume" class="section section-solid">$/;"	function	line:215
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:216
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:217
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:218
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h2 class="section-title">Resume<\/h2>$/;"	function	line:219
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:220
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:223
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:224
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>Countless are the challenges awaiting space-based technologies: improve weather forecasting, ground and air navigation, telecommunications or disaster monitoring systems. Beyond Earth and its LEO environment we have the challenge of reaching Mars, improve our knowledge about the other planets of the Solar System but also study Star formation and search for exoplanets and forms of life. I studied Engineering of Telecommunications (UPC–Barcelona, Spain), a Bachelor plus a Master program based on a curriculum of fundamental sciences that instructed me on a methodology to tackle problems effectively, I focused my studies on Signal Processing and Communication Networks. I completed my education at the Aeronautical Engineering School ISAE-Supaero (France,Toulouse), where I specialized in Embedded Systems in Airplanes, Satellite Communications and Navigation.<\/p>$/;"	function	line:225
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h2 class="resume-pdf">Download resume as <a href="http:\/\/www.google.com" target="_blank">PDF<\/a><\/h2>$/;"	function	line:226
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:229
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:230
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="v-timeline mt50">$/;"	function	line:231
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:232
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-paper-plane-o"><\/i> Work experience<\/h3>$/;"	function	line:233
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:235
-time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>2012 - 2014<\/span><\/time>$/;"	function	line:236
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-1"><i class="fa fa-minus"><\/i><\/div>$/;"	function	line:237
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" >$/;"	function	line:238
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-1">NASA<\/a><\/h4>$/;"	function	line:239
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-1" class="collapse in">$/;"	function	line:240
-strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:241
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:245
-time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s" datetime="2013-04-15 13:15"><span>2013 - 2014<\/span><\/time>$/;"	function	line:246
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-11"><i class="fa fa-minus"><\/i><\/div>$/;"	function	line:247
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" >$/;"	function	line:248
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-11">Cellphone Technician<\/a><\/h4>$/;"	function	line:249
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-11" class="collapse in">I worked in the smart devices repairs, fixing a wide range of phones and tablets. Replacing their screens, charging ports, speakers, batteries, updating their operative system, glass repair and signal repair. Also, I worked with huge variety of brands, such as, Samsung, LG, Motorola, ZTE, Apple, etc.<\/p>$/;"	function	line:250
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:254
-time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s" datetime="2013-04-16 21:30"><span>2009 - 2011<\/span><\/time>$/;"	function	line:255
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-2"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:256
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">$/;"	function	line:257
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-2">PHP Developer<\/a><\/h4>$/;"	function	line:258
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-2" class="collapse">$/;"	function	line:259
-strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:260
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:264
-time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s" datetime="2013-04-17"><span>2008 - 2009<\/span><\/time>$/;"	function	line:265
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-3"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:266
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">$/;"	function	line:267
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-3">PHP \/ Visual Basic Developer<\/a><\/h4>$/;"	function	line:268
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-3" class="collapse">$/;"	function	line:269
-strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:270
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:274
-time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.2s" datetime="2013-04-17"><span>2008 - 2009<\/span><\/time>$/;"	function	line:275
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-4"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:276
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.2s">$/;"	function	line:277
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-4">PHP \/ Visual Basic Developer<\/a><\/h4>$/;"	function	line:278
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-4" class="collapse">$/;"	function	line:279
-strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^										<strong>Applications Developed:<\/strong>&nbsp;$/;"	function	line:280
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="v-timeline mt50">$/;"	function	line:289
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:290
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<h3 class="v-heading wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s"><i class="fa fa-graduation-cap"><\/i> Education<\/h3>$/;"	function	line:291
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:293
-time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.3s" datetime="2013-04-18"><span>2001 - 2006<\/span><\/time>$/;"	function	line:294
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-41"><i class="fa fa-plus"><\/i><\/div>$/;"	function	line:295
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.3s">$/;"	function	line:296
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-41">IUT VALENCIA \/ College Degree<\/a><\/h4>$/;"	function	line:297
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-41" class="collapse">I graduated from college as programmer<\/p>$/;"	function	line:298
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li>$/;"	function	line:301
-time	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<time class="v-time wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.4s" datetime="2013-04-18"><span>2007 - 2010<\/span><\/time>$/;"	function	line:302
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-icon" data-toggle="collapse" data-target="#toggle-5"><i class="fa fa-minus"><\/i><\/div>$/;"	function	line:303
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="v-label wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.4s">$/;"	function	line:304
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<h4><a href="#" data-toggle="collapse" data-target="#toggle-5">UNIVERSIDAD ALEJANDRO DE HUMBOLDT \/ University Degree<\/a><\/h4>$/;"	function	line:305
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<p id="toggle-5" class="collapse in">I graduated from college as Informatics Engineer.<\/p>$/;"	function	line:306
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section class="section" id="skills">$/;"	function	line:316
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:317
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:318
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:319
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Skills<\/h3>$/;"	function	line:320
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:321
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row personal-skills">$/;"	function	line:324
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:325
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Web and Mobile, Designer and Developer<\/h4>$/;"	function	line:326
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>PHP<\/h6>$/;"	function	line:327
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:328
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">$/;"	function	line:329
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Laravel Framework<\/h6>$/;"	function	line:333
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:334
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">$/;"	function	line:335
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Angular JS<\/h6>$/;"	function	line:339
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:340
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">$/;"	function	line:341
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>JQuery<\/h6>$/;"	function	line:345
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:346
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">$/;"	function	line:347
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>MySQL<\/h6>$/;"	function	line:351
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:352
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100" style="width: 97%;">$/;"	function	line:353
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Less CSS<\/h6>$/;"	function	line:357
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:358
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">$/;"	function	line:359
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h6>Bootstrap CSS Framework<\/h6>$/;"	function	line:363
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="progress">$/;"	function	line:364
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">$/;"	function	line:365
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:370
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Knowledge<\/h4>$/;"	function	line:371
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="fa-ul skills-ul">$/;"	function	line:372
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>PHP 5.*<\/li>$/;"	function	line:373
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>PHP \/ Laravel Framework<\/li>$/;"	function	line:374
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>PHP \/ Codeigniter Framework<\/li>$/;"	function	line:375
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>HTML 5<\/li>$/;"	function	line:376
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>CSS \/ LESS Framework<\/li>$/;"	function	line:377
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>C \/ C++<\/li>$/;"	function	line:378
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>Java \/ AS400<\/li>$/;"	function	line:379
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>MySQL \/ PostgreSQL \/ SQL Server \/ Oracle<\/li>$/;"	function	line:380
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-check"><\/i>Agile \/ Scrum<\/li>$/;"	function	line:381
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row personal-skills">$/;"	function	line:385
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-8 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0.1s">$/;"	function	line:386
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Languages<\/h4>$/;"	function	line:387
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="lang-container">$/;"	function	line:388
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<p class="lang-description">Spanish<\/p>$/;"	function	line:397
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<span class="lang-level">Native<\/span>$/;"	function	line:398
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="lang-container">$/;"	function	line:401
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<p class="lang-description">English<\/p>$/;"	function	line:410
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<span class="lang-level">Advanced<\/span>$/;"	function	line:411
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-4 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0.1s">$/;"	function	line:414
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h4>Hobies<\/h4>$/;"	function	line:415
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="fa-ul skills-ul">$/;"	function	line:416
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-eye"><\/i>Watch TV Shows<\/li>$/;"	function	line:417
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-code"><\/i>Laravel Programing<\/li>$/;"	function	line:418
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-mobile"><\/i>Fix Smart Devices<\/li>$/;"	function	line:419
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-gamepad"><\/i>Gaming<\/li>$/;"	function	line:420
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						  <li><i class="fa-li fa fa-music"><\/i>Listen to Reggae & Christian Music<\/li>$/;"	function	line:421
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="portfolio" class="section section-solid">$/;"	function	line:429
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:430
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:431
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:432
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Portfolio<\/h3>$/;"	function	line:433
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:434
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:437
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12 text-center">$/;"	function	line:438
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul id="filter" class="list-inline filter-tags">$/;"	function	line:439
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><a href="#" class="btn btn-sm btn-theme-inverse active" data-group="all">All<\/a><\/li>$/;"	function	line:440
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="web">Web<\/a><\/li>$/;"	function	line:442
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><a href="#" class="btn btn-sm btn-theme-inverse" data-group="app">App<\/a><\/li> -->$/;"	function	line:443
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="GITheWall">$/;"	function	line:448
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<ul id="portfolio-container" class="text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:449
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<li class="portfolio-item" data-groups='["all", "branding"]' data-contenttype="ajax" data-href="assets\/ajax\/1.html">$/;"	function	line:450
-figure	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<figure>$/;"	function	line:451
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="portfolio-img">$/;"	function	line:452
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<a href="#" class="overlay">$/;"	function	line:453
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="title">Antvel eCommerce<\/span>$/;"	function	line:454
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="category">Online Store<\/span>$/;"	function	line:455
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<a href="https:\/\/github.com\/gocanto\/gocanto-cms">$/;"	function	line:457
-img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<img src="assets\/img\/portfolio\/1.jpg" alt="" class="img-responsive">$/;"	function	line:458
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<li class="portfolio-item" data-groups='["all", "web"]' data-contenttype="ajax" data-href="assets\/ajax\/2.html">$/;"	function	line:463
-figure	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<figure>$/;"	function	line:464
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="portfolio-img">$/;"	function	line:465
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<a href="#" class="overlay">$/;"	function	line:466
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="title">CMS<\/span>$/;"	function	line:467
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="category">Web site out of the box<\/span>$/;"	function	line:468
-img	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<img src="assets\/img\/portfolio\/1.jpg" alt="" class="img-responsive">$/;"	function	line:470
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:476
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:477
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12 text-center">$/;"	function	line:478
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<a href="#" class="btn btn-theme-inverse mt40 wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0.5s" id="portfolio-more">More<\/a>$/;"	function	line:479
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="facts" class="section">$/;"	function	line:486
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:487
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row text-center wow fadeInDown" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:488
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:489
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">11<\/h1>$/;"	function	line:490
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>years experience<\/p>$/;"	function	line:491
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:493
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">2<\/h1>$/;"	function	line:494
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>github repositories<\/p>$/;"	function	line:495
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:497
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">17<\/h1>$/;"	function	line:498
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>project delivered<\/p>$/;"	function	line:499
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-3">$/;"	function	line:501
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h1 class="counter">1<\/h1>$/;"	function	line:502
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>winning awards<\/p>$/;"	function	line:503
-section	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<section id="contact" class="section">$/;"	function	line:510
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:511
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:512
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-12">$/;"	function	line:513
-h	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<h3 class="section-title">Contact<\/h3>$/;"	function	line:514
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="section-title-border"><\/div>$/;"	function	line:515
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:518
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInLeft" data-wow-duration="0.7s" data-wow-delay="0s">$/;"	function	line:519
-p	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<p>$/;"	function	line:520
-strong	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<strong>Let’s work together!<\/strong>$/;"	function	line:521
-br	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<br>$/;"	function	line:522
-ul	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<ul class="list-contacts">$/;"	function	line:525
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><i class="fa fa-mobile-phone"><\/i>+1 (405) 669-63.31<\/li>$/;"	function	line:526
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><i class="fa fa-map-marker"><\/i>Oklahoma City, OK 73116<\/li>$/;"	function	line:527
-li	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<li><i class="fa fa-envelope-o"><\/i> <a href="mailto:gustavoocanto@gmail.com">gustavoocanto@gmail.com<\/a><\/li>$/;"	function	line:528
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 wow fadeInRight" data-wow-duration="0.7s" data-wow-delay="0s" style="display: none">$/;"	function	line:531
-form	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<form class="form-horizontal" action="assets\/php\/contactForm.php" method="post" role="form" id="contactForm">$/;"	function	line:532
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="form-group">$/;"	function	line:533
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-6">$/;"	function	line:534
-input	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<input type="text" name="name" class="form-control" placeholder="Name">$/;"	function	line:535
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-6">$/;"	function	line:537
-input	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<input type="text" name="contactEmail" class="form-control" placeholder="Email">$/;"	function	line:538
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="form-group">$/;"	function	line:541
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-12">$/;"	function	line:542
-textarea	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<textarea name="message" class="form-control" rows="8" placeholder="Message"><\/textarea>$/;"	function	line:543
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<div class="form-group">$/;"	function	line:546
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^								<div class="col-sm-12">$/;"	function	line:547
-button	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<button type="submit" class="btn btn-theme ladda-button" data-style="expand-left">$/;"	function	line:548
-span	C:\cygwin64\home\Jordi\webPersonal\index.html	/^									<span class="ladda-label">Submit<\/span>$/;"	function	line:549
-footer	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<footer>$/;"	function	line:559
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^			<div class="container">$/;"	function	line:560
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^				<div class="row">$/;"	function	line:561
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6">&copy; 2016 Jordi Vila.&nbsp;&nbsp;&nbsp;All rights reserved.<\/div>$/;"	function	line:562
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^					<div class="col-sm-6 text-right">$/;"	function	line:563
-div	C:\cygwin64\home\Jordi\webPersonal\index.html	/^						<div class="social">$/;"	function	line:564
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<a href="https:\/\/www.facebook.com\/ocantog" class="btn btn-theme"><i class="fa fa-facebook"><\/i><\/a>$/;"	function	line:565
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<a href="https:\/\/twitter.com\/gocanto" class="btn btn-theme"><i class="fa fa-twitter"><\/i><\/a>$/;"	function	line:566
-a	C:\cygwin64\home\Jordi\webPersonal\index.html	/^							<a href="https:\/\/github.com\/gocanto" class="btn btn-theme"><i class="fa fa-github-square"><\/i><\/a>$/;"	function	line:567
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.min.js"><\/script>$/;"	function	line:575
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/bootstrap.min.js"><\/script>$/;"	function	line:577
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.backstretch.min.js"><\/script>$/;"	function	line:578
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/bootstrapValidator.min.js"><\/script>$/;"	function	line:579
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/validator\/emailAddress.js"><\/script>$/;"	function	line:580
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/spin.min.js"><\/script>$/;"	function	line:581
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/ladda.min.js"><\/script>$/;"	function	line:582
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/retina.min.js"><\/script>$/;"	function	line:583
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/masonry.pkgd.min.js"><\/script>$/;"	function	line:584
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/imagesloaded.pkgd.min.js"><\/script>$/;"	function	line:585
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.shuffle.min.js"><\/script>$/;"	function	line:586
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.bxslider.min.js"><\/script>$/;"	function	line:587
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/waypoints.min.js"><\/script>$/;"	function	line:588
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.counterup.min.js"><\/script>$/;"	function	line:589
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jQuery.GI.TheWall.min.js"><\/script>$/;"	function	line:590
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/twitterFetcher.min.js"><\/script>$/;"	function	line:591
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.simple-text-rotator.min.js"><\/script>$/;"	function	line:592
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.throttledresize.js"><\/script>$/;"	function	line:593
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/wow.min.js"><\/script>$/;"	function	line:594
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.knob.min.js"><\/script>$/;"	function	line:595
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/jquery.scrollTo.min.js"><\/script>$/;"	function	line:596
-script	C:\cygwin64\home\Jordi\webPersonal\index.html	/^		<script src="assets\/js\/app.js"><\/script>$/;"	function	line:597
+::selection	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^::selection {$/;"	function	line:6
+::-moz-selection	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^::-moz-selection {$/;"	function	line:10
+html	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^html {$/;"	function	line:14
+body	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^body {$/;"	function	line:19
+h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h1,$/;"	function	line:34
+h2	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h2,$/;"	function	line:35
+h3	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h3,$/;"	function	line:36
+h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h4,$/;"	function	line:37
+h5	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h5,$/;"	function	line:38
+h6	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h6 {$/;"	function	line:39
+h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h1 {$/;"	function	line:44
+h3	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h3 {$/;"	function	line:47
+h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h4 {$/;"	function	line:50
+p	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^p {$/;"	function	line:54
+a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a {$/;"	function	line:58
+a.resume-pdf:visited	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a.resume-pdf:visited {$/;"	function	line:69
+a.resume-pdf:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a.resume-pdf:focus {$/;"	function	line:73
+a.resume-pdf:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a.resume-pdf:hover {$/;"	function	line:77
+.twitter-divisions	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.twitter-divisions{$/;"	function	line:82
+a.visit-my-profile:visited	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a.visit-my-profile:visited {$/;"	function	line:87
+a.visit-my-profile:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a.visit-my-profile:focus {$/;"	function	line:91
+a.visit-my-profile:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a.visit-my-profile:hover {$/;"	function	line:95
+a:after	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a:after {$/;"	function	line:101
+ul	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^ul {$/;"	function	line:110
+.mt20	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt20 {$/;"	function	line:119
+.mt30	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt30 {$/;"	function	line:122
+.mt40	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt40 {$/;"	function	line:125
+.mt50	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt50 {$/;"	function	line:128
+.mt60	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt60 {$/;"	function	line:131
+.mt70	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt70 {$/;"	function	line:134
+.stars	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.stars {$/;"	function	line:140
+i.fa-check	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^i.fa-check {$/;"	function	line:143
+.highlighted-black	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.highlighted-black {$/;"	function	line:146
+.highlighted-yellow	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.highlighted-yellow {$/;"	function	line:149
+h3.logo	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h3.logo {$/;"	function	line:153
+img.logo	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^img.logo {$/;"	function	line:158
+.mt20	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt20 {$/;"	function	line:166
+.mt30	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt30 {$/;"	function	line:169
+.mt40	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt40 {$/;"	function	line:172
+.mt50	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt50 {$/;"	function	line:175
+.mt60	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt60 {$/;"	function	line:178
+.mt70	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.mt70 {$/;"	function	line:181
+.intro-header	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.intro-header {$/;"	function	line:187
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:198
+.intro-header	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .intro-header {$/;"	function	line:199
+.intro-header .col-md-6:first-child	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.intro-header .col-md-6:first-child {$/;"	function	line:204
+.section-page-header	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-page-header {$/;"	function	line:208
+.section-page-header h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-page-header h1 {$/;"	function	line:212
+.section-page-header p	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-page-header p {$/;"	function	line:216
+.section-page-header a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-page-header a {$/;"	function	line:223
+.section-page-header a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-page-header a:hover,$/;"	function	line:231
+.section-page-header a:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-page-header a:focus {$/;"	function	line:232
+.section	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section {$/;"	function	line:245
+.section-title	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-title {$/;"	function	line:250
+.section-title-border	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-title-border {$/;"	function	line:258
+.section-solid	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid {$/;"	function	line:264
+.section-solid h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid h1,$/;"	function	line:268
+.section-solid h2	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid h2,$/;"	function	line:269
+.section-solid h3	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid h3,$/;"	function	line:270
+.section-solid h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid h4,$/;"	function	line:271
+.section-solid h5	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid h5,$/;"	function	line:272
+.section-solid h6	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid h6 {$/;"	function	line:273
+.section-solid .section-title-border	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid .section-title-border {$/;"	function	line:276
+.section-solid-white	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white {$/;"	function	line:279
+.section-solid-white h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white h1,$/;"	function	line:283
+.section-solid-white h2	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white h2,$/;"	function	line:284
+.section-solid-white h3	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white h3,$/;"	function	line:285
+.section-solid-white h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white h4,$/;"	function	line:286
+.section-solid-white h5	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white h5,$/;"	function	line:287
+.section-solid-white h6	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white h6 {$/;"	function	line:288
+.section-solid-white .section-title-border	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid-white .section-title-border {$/;"	function	line:291
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:295
+.section	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .section {$/;"	function	line:296
+.section-title-border	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .section-title-border {$/;"	function	line:299
+footer	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^footer {$/;"	function	line:306
+footer div[class*="col-"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^footer div[class*="col-"] {$/;"	function	line:311
+p.copyright	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^p.copyright {$/;"	function	line:314
+.social	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.social {$/;"	function	line:323
+.social a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.social a {$/;"	function	line:327
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:338
+footer	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  footer {$/;"	function	line:339
+footer div[class*="col-"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  footer div[class*="col-"] {$/;"	function	line:342
+footer .text-right	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  footer .text-right {$/;"	function	line:345
+.social	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .social {$/;"	function	line:348
+#menuToggle	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#menuToggle {$/;"	function	line:355
+#menuToggle:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#menuToggle:hover {$/;"	function	line:371
+.pricing-table	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table {$/;"	function	line:383
+.pricing-table .pricing-table-header	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table .pricing-table-header {$/;"	function	line:388
+.pricing-table .pricing-table-features	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table .pricing-table-features {$/;"	function	line:395
+.pricing-table .pricing-table-features li	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table .pricing-table-features li {$/;"	function	line:399
+.pricing-table .pricing-table-features .price	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table .pricing-table-features .price {$/;"	function	line:403
+.pricing-table .pricing-table-features .price sup	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table .pricing-table-features .price sup {$/;"	function	line:408
+.pricing-table .pricing-table-features .price sub	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table .pricing-table-features .price sub {$/;"	function	line:412
+.pricing-table .pricing-table-features .action	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pricing-table .pricing-table-features .action {$/;"	function	line:416
+.v-timeline	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline {$/;"	function	line:422
+.v-timeline:before	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline:before {$/;"	function	line:428
+.v-timeline > li .v-time	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-time {$/;"	function	line:439
+.v-timeline > li .v-time span	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-time span {$/;"	function	line:445
+.v-timeline > li > .v-heading	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li > .v-heading {$/;"	function	line:452
+.v-timeline > li > .v-heading [class*="fa-"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li > .v-heading [class*="fa-"] {$/;"	function	line:463
+.v-timeline > li .v-label	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-label {$/;"	function	line:467
+.v-timeline > li .v-label p	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-label p {$/;"	function	line:475
+.v-timeline > li .v-label h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-label h4 {$/;"	function	line:481
+.v-timeline > li .v-label:after	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-label:after {$/;"	function	line:486
+.v-timeline > li .v-icon	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-icon {$/;"	function	line:499
+.v-timeline > li .v-icon:before	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-icon:before,$/;"	function	line:518
+.v-timeline > li .v-icon:after	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-icon:after {$/;"	function	line:519
+.v-timeline > li .v-icon:before	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-icon:before {$/;"	function	line:527
+.v-timeline > li .v-icon:after	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.v-timeline > li .v-icon:after {$/;"	function	line:531
+@media screen and (max-width: 65.375em)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media screen and (max-width: 65.375em) {$/;"	function	line:537
+.v-timeline > li .v-time span	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .v-timeline > li .v-time span {$/;"	function	line:538
+@media screen and (max-width: 47.2em)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media screen and (max-width: 47.2em) {$/;"	function	line:542
+.v-timeline:before	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .v-timeline:before {$/;"	function	line:543
+.v-timeline > li .v-time	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .v-timeline > li .v-time {$/;"	function	line:546
+.v-timeline > li .v-time span	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .v-timeline > li .v-time span {$/;"	function	line:551
+.v-timeline > li .v-label	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .v-timeline > li .v-label {$/;"	function	line:554
+.v-timeline > li .v-label:after	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .v-timeline > li .v-label:after {$/;"	function	line:558
+.v-timeline > li .v-icon	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .v-timeline > li .v-icon {$/;"	function	line:565
+@-webkit-keyframes fadeIn	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-webkit-keyframes fadeIn {$/;"	function	line:575
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:576
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:579
+@keyframes fadeIn	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@keyframes fadeIn {$/;"	function	line:583
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:584
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:587
+.fadeIn	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.fadeIn {$/;"	function	line:591
+@-webkit-keyframes fadeInDown	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-webkit-keyframes fadeInDown {$/;"	function	line:595
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:596
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:601
+@keyframes fadeInDown	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@keyframes fadeInDown {$/;"	function	line:607
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:608
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:613
+.fadeInDown	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.fadeInDown {$/;"	function	line:619
+@-webkit-keyframes fadeInLeft	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-webkit-keyframes fadeInLeft {$/;"	function	line:626
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:627
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:632
+@keyframes fadeInLeft	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@keyframes fadeInLeft {$/;"	function	line:638
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:639
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:644
+.fadeInLeft	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.fadeInLeft {$/;"	function	line:650
+@-webkit-keyframes fadeInRight	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-webkit-keyframes fadeInRight {$/;"	function	line:657
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:658
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:663
+@keyframes fadeInRight	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@keyframes fadeInRight {$/;"	function	line:669
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:670
+100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  100% {$/;"	function	line:675
+.fadeInRight	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.fadeInRight {$/;"	function	line:681
+.backstretch	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.backstretch {$/;"	function	line:688
+.backstretch:after	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.backstretch:after {$/;"	function	line:691
+@media (min-width: 1200px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 1200px) {$/;"	function	line:707
+.container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .container {$/;"	function	line:708
+.navbar	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar {$/;"	function	line:715
+.navbar-default	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default {$/;"	function	line:718
+.navbar-default .navbar-nav > li > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > li > a {$/;"	function	line:722
+.navbar-default .navbar-nav > .open > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .open > a,$/;"	function	line:728
+.navbar-default .navbar-nav > .open > a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .open > a:hover,$/;"	function	line:729
+.navbar-default .navbar-nav > .open > a:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .open > a:focus {$/;"	function	line:730
+.navbar-default .navbar-nav > .active > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .active > a,$/;"	function	line:734
+.navbar-default .navbar-nav > .active > a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .active > a:hover,$/;"	function	line:735
+.navbar-default .navbar-nav > .active > a:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .active > a:focus {$/;"	function	line:736
+.dropdown-menu > li > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.dropdown-menu > li > a {$/;"	function	line:740
+.navbar-nav > li > .dropdown-menu	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-nav > li > .dropdown-menu {$/;"	function	line:745
+.navmenu-brand	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navmenu-brand {$/;"	function	line:750
+.navbar-default .navbar-nav > li > a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > li > a:hover,$/;"	function	line:754
+.navbar-default .navbar-nav > li > a:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > li > a:focus {$/;"	function	line:755
+.dropdown-menu > .active > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.dropdown-menu > .active > a,$/;"	function	line:759
+.dropdown-menu > .active > a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.dropdown-menu > .active > a:hover,$/;"	function	line:760
+.dropdown-menu > .active > a:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.dropdown-menu > .active > a:focus {$/;"	function	line:761
+.navbar-toggle	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-toggle {$/;"	function	line:764
+.navbar-default .navbar-toggle	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-toggle {$/;"	function	line:769
+.navbar-default .navbar-toggle:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-toggle:hover,$/;"	function	line:772
+.navbar-default .navbar-toggle:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-toggle:focus {$/;"	function	line:773
+@media (max-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (max-width: 768px) {$/;"	function	line:777
+.navbar-default .navbar-collapse	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .navbar-default .navbar-collapse,$/;"	function	line:778
+.navbar-default .navbar-form	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .navbar-default .navbar-form {$/;"	function	line:779
+.navbar-default .navbar-nav > li > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .navbar-default .navbar-nav > li > a {$/;"	function	line:786
+.navbar-default .navbar-nav .open .dropdown-menu > li > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .navbar-default .navbar-nav .open .dropdown-menu > li > a {$/;"	function	line:789
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,$/;"	function	line:792
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {$/;"	function	line:793
+.navbar .container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar .container{$/;"	function	line:797
+#nav.affix	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#nav.affix {$/;"	function	line:801
+#nav	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#nav{$/;"	function	line:809
+.navbar-default .navbar-nav > .active > a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .active > a,$/;"	function	line:814
+.navbar-default .navbar-nav > .active > a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .active > a:hover,$/;"	function	line:815
+.navbar-default .navbar-nav > .active > a:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.navbar-default .navbar-nav > .active > a:focus{$/;"	function	line:816
+.list-inline	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.list-inline {$/;"	function	line:820
+.list-inline li [class*="fa-"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.list-inline li [class*="fa-"] {$/;"	function	line:823
+.btn	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn {$/;"	function	line:829
+.btn-sm	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn-sm,$/;"	function	line:849
+.btn-group-sm > .btn	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn-group-sm > .btn {$/;"	function	line:850
+.btn-theme	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn-theme {$/;"	function	line:855
+.btn-theme:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn-theme:hover,$/;"	function	line:864
+.btn-theme .active	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn-theme .active {$/;"	function	line:865
+.btn-theme-inverse	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn-theme-inverse {$/;"	function	line:869
+.btn-theme-inverse:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.btn-theme-inverse:hover {$/;"	function	line:878
+.form-control	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.form-control {$/;"	function	line:885
+.form-control:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.form-control:focus {$/;"	function	line:893
+.has-feedback .form-control-feedback	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.has-feedback .form-control-feedback {$/;"	function	line:900
+.has-success .form-control	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.has-success .form-control,$/;"	function	line:905
+.has-error .form-control	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.has-error .form-control,$/;"	function	line:906
+.has-success .form-control:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.has-success .form-control:focus,$/;"	function	line:907
+.has-error .form-control:focus	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.has-error .form-control:focus {$/;"	function	line:908
+form.signup input[type="email"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^form.signup input[type="email"] {$/;"	function	line:913
+form.signup button.btn	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^form.signup button.btn {$/;"	function	line:919
+.form-group .form-control	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.form-group .form-control {$/;"	function	line:922
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:926
+.form-group .form-control	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .form-group .form-control {$/;"	function	line:927
+.panel-body	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.panel-body,$/;"	function	line:934
+.panel-body p	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.panel-body p {$/;"	function	line:935
+.panel-title	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.panel-title {$/;"	function	line:939
+.progress	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.progress {$/;"	function	line:945
+.progress-bar	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.progress-bar {$/;"	function	line:961
+.media > .pull-left	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.media > .pull-left {$/;"	function	line:977
+.bx-wrapper	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper {$/;"	function	line:983
+.bx-wrapper .bx-pager.bx-default-pager a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-pager.bx-default-pager a {$/;"	function	line:986
+.bx-wrapper .bx-controls-direction a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-controls-direction a {$/;"	function	line:994
+.bx-wrapper .bx-pager	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-pager {$/;"	function	line:997
+.bx-wrapper .bx-pager.bx-default-pager .active	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-pager.bx-default-pager .active {$/;"	function	line:1000
+.bx-wrapper .bx-pager.bx-default-pager a:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-pager.bx-default-pager a:hover,$/;"	function	line:1003
+.bx-wrapper .bx-pager.bx-default-pager a.active	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-pager.bx-default-pager a.active {$/;"	function	line:1004
+.bx-wrapper .bx-prev:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-prev:hover,$/;"	function	line:1007
+.bx-wrapper .bx-next:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-next:hover {$/;"	function	line:1008
+.bx-wrapper .bx-prev	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-prev,$/;"	function	line:1012
+.bx-wrapper .bx-next	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-next {$/;"	function	line:1013
+.bx-wrapper .bx-prev:before	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-prev:before {$/;"	function	line:1022
+.bx-wrapper .bx-next:before	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-next:before {$/;"	function	line:1026
+.bx-wrapper .bx-viewport	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.bx-wrapper .bx-viewport {$/;"	function	line:1030
+.section-solid .bx-wrapper .bx-pager.bx-default-pager a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid .bx-wrapper .bx-pager.bx-default-pager a {$/;"	function	line:1036
+.section-solid .bx-wrapper .bx-pager.bx-default-pager .active	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.section-solid .bx-wrapper .bx-pager.bx-default-pager .active {$/;"	function	line:1044
+@media (min-width: 480px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 480px) {$/;"	function	line:1048
+.section-solid .bx-wrapper .bx-pager.bx-default-pager a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .section-solid .bx-wrapper .bx-pager.bx-default-pager a,$/;"	function	line:1049
+.bx-wrapper .bx-pager.bx-default-pager a	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .bx-wrapper .bx-pager.bx-default-pager a {$/;"	function	line:1050
+.pace	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pace {$/;"	function	line:1057
+.pace .pace-progress	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pace .pace-progress {$/;"	function	line:1064
+.pace .pace-active .pace-progress	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pace .pace-active .pace-progress {$/;"	function	line:1078
+.pace .pace-activity:before	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pace .pace-activity:before {$/;"	function	line:1082
+.pace-done .pace	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.pace-done .pace {$/;"	function	line:1094
+#tubular-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#tubular-container {$/;"	function	line:1100
+#tubular-shield	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#tubular-shield {$/;"	function	line:1103
+.fa-li	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.fa-li {$/;"	function	line:1110
+#twitterFeed ul	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#twitterFeed ul {$/;"	function	line:1116
+#twitterFeed .timePosted	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#twitterFeed .timePosted {$/;"	function	line:1120
+.twitter-feed-icon	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.twitter-feed-icon {$/;"	function	line:1124
+a.twitter-feed-name	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^a.twitter-feed-name{$/;"	function	line:1128
+.GI_TW_expander	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander {$/;"	function	line:1136
+.GI_TW_expander.animating	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander.animating {$/;"	function	line:1151
+.GI_TW_expander.opened	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander.opened {$/;"	function	line:1154
+.GI_TW_expander .GI_TW_pointer	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_pointer {$/;"	function	line:1157
+.GI_TW_expander .GI_TW_expander-inner	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_expander-inner {$/;"	function	line:1171
+.GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg {$/;"	function	line:1177
+.GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg img	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_expander-inner .GI_TW_fullimg img {$/;"	function	line:1185
+.GI_TW_expander .GI_TW_Controls	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_Controls {$/;"	function	line:1188
+.GI_TW_expander .GI_TW_close	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_close {$/;"	function	line:1191
+.GI_TW_expander .GI_TW_arrow	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_arrow {$/;"	function	line:1199
+.GI_TW_expander .GI_TW_arrow.GI_TW_hidden	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_arrow.GI_TW_hidden {$/;"	function	line:1204
+.GI_TW_expander .GI_TW_arrow.GI_TW_next	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_arrow.GI_TW_next {$/;"	function	line:1207
+.GI_TW_expander .GI_TW_arrow.GI_TW_prev	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_arrow.GI_TW_prev {$/;"	function	line:1210
+.GI_TW_expander .GI_TW_loading	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_loading {$/;"	function	line:1213
+.GI_TW_expander	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander {$/;"	function	line:1229
+.GITheWall ul	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GITheWall ul {$/;"	function	line:1234
+.GI_TW_expander .GI_TW_pointer	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_pointer {$/;"	function	line:1238
+.GI_TW_expander .GI_TW_close	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.GI_TW_expander .GI_TW_close {$/;"	function	line:1241
+@-moz-keyframes loader	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-moz-keyframes loader {$/;"	function	line:1244
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:1245
+33%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  33% {$/;"	function	line:1248
+66%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  66% {$/;"	function	line:1252
+@-webkit-keyframes loader	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-webkit-keyframes loader {$/;"	function	line:1257
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:1258
+33%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  33% {$/;"	function	line:1261
+66%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  66% {$/;"	function	line:1265
+@-o-keyframes loader	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-o-keyframes loader {$/;"	function	line:1270
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:1271
+33%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  33% {$/;"	function	line:1274
+66%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  66% {$/;"	function	line:1278
+@-ms-keyframes loader	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-ms-keyframes loader {$/;"	function	line:1283
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:1284
+33%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  33% {$/;"	function	line:1287
+66%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  66% {$/;"	function	line:1291
+@keyframes loader	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@keyframes loader {$/;"	function	line:1296
+0%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  0% {$/;"	function	line:1297
+33%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  33% {$/;"	function	line:1300
+66%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  66% {$/;"	function	line:1304
+.feature-box-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.feature-box-container {$/;"	function	line:1312
+.feature-box-container:last-child	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.feature-box-container:last-child {$/;"	function	line:1315
+.feature-box .icon	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.feature-box .icon {$/;"	function	line:1318
+.feature-box .icon i	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.feature-box .icon i {$/;"	function	line:1321
+.feature-box .description	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.feature-box .description {$/;"	function	line:1325
+.feature-box .description h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.feature-box .description h4 {$/;"	function	line:1328
+.feature-box .description p	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.feature-box .description p {$/;"	function	line:1332
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:1342
+.feature-box-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .feature-box-container {$/;"	function	line:1343
+@media (max-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (max-width: 768px) {$/;"	function	line:1347
+.about-img	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .about-img {$/;"	function	line:1348
+.about-item	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.about-item {$/;"	function	line:1352
+.about-item img	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.about-item img {$/;"	function	line:1355
+#portfolio-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#portfolio-container {$/;"	function	line:1362
+.filter-tags	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.filter-tags {$/;"	function	line:1365
+.filter-tags .btn:active	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.filter-tags .btn:active,$/;"	function	line:1368
+.filter-tags .btn.active	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.filter-tags .btn.active {$/;"	function	line:1369
+.overlay	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.overlay {$/;"	function	line:1373
+.overlay:hover	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.overlay:hover {$/;"	function	line:1394
+.overlay span	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.overlay span {$/;"	function	line:1397
+.overlay .title	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.overlay .title {$/;"	function	line:1406
+.overlay .category	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.overlay .category {$/;"	function	line:1414
+.portfolio-item	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.portfolio-item {$/;"	function	line:1420
+.portfolio-img	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.portfolio-img {$/;"	function	line:1424
+@media (min-width: 480px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 480px) {$/;"	function	line:1428
+.portfolio-item	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .portfolio-item {$/;"	function	line:1429
+.overlay .title	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .overlay .title {$/;"	function	line:1433
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:1439
+.portfolio-item	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .portfolio-item {$/;"	function	line:1440
+.overlay .title	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .overlay .title {$/;"	function	line:1444
+@media (min-width: 992px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 992px) {$/;"	function	line:1450
+.portfolio-item	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .portfolio-item {$/;"	function	line:1451
+.overlay .title	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .overlay .title {$/;"	function	line:1455
+@media (min-width: 1200px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 1200px) {$/;"	function	line:1461
+.portfolio-item	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .portfolio-item {$/;"	function	line:1462
+.personal-skills h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.personal-skills h4 {$/;"	function	line:1470
+.lang-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.lang-container {$/;"	function	line:1473
+.lang-description	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.lang-description {$/;"	function	line:1478
+.lang-level	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.lang-level {$/;"	function	line:1487
+.skills-ul	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.skills-ul {$/;"	function	line:1493
+#facts h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#facts h1 {$/;"	function	line:1499
+@media (min-width: 400px) and (max-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 400px) and (max-width: 768px) {$/;"	function	line:1502
+#facts [class*="col-"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  #facts [class*="col-"] {$/;"	function	line:1503
+#contact	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#contact {$/;"	function	line:1513
+.list-contacts	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.list-contacts {$/;"	function	line:1516
+.list-contacts li	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.list-contacts li {$/;"	function	line:1521
+.list-contacts [class*="fa-"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.list-contacts [class*="fa-"] {$/;"	function	line:1525
+#contactForm .form-control[name="name"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#contactForm .form-control[name="name"] {$/;"	function	line:1530
+.ladda-button .ladda-spinner	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.ladda-button .ladda-spinner{$/;"	function	line:1533
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:1539
+.list-contacts	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .list-contacts {$/;"	function	line:1540
+#contactForm .form-control[name="name"]	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  #contactForm .form-control[name="name"] {$/;"	function	line:1545
+.main	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.main {$/;"	function	line:1552
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:1562
+.main	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .main {$/;"	function	line:1563
+.page	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.page {$/;"	function	line:1568
+.wrapper	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.wrapper {$/;"	function	line:1574
+.wrapper .container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.wrapper .container {$/;"	function	line:1580
+@media (min-width: 1200px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 1200px) {$/;"	function	line:1584
+.wrapper .container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .wrapper .container {$/;"	function	line:1585
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:1590
+.page	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .page {$/;"	function	line:1591
+.wrapper	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .wrapper {$/;"	function	line:1594
+.heading	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.heading {$/;"	function	line:1601
+#signupForm .form-control-feedback	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^#signupForm .form-control-feedback {$/;"	function	line:1609
+lesshat-selector	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^lesshat-selector {$/;"	function	line:1612
+@-webkit-keyframes arrowBounce{ 0%{-webkit--webkit-transform:translateY(-20px);-moz--webkit-transform:translateY(-20px);-ms--webkit-transform:translateY(-20px);-webkit-transform:translateY(-20px)}50%{-webkit--webkit-transform:translateY(-10px);-moz--webkit-transform:translateY(-10px);-ms--webkit-transform:translateY(-10px);-webkit-transform:translateY(-10px)}100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-webkit-keyframes arrowBounce{ 0%{-webkit--webkit-transform:translateY(-20px);-moz--webkit-transform:translateY(-20px);-ms--webkit-transform:translateY(-20px);-webkit-transform:translateY(-20px)}50%{-webkit--webkit-transform:translateY(-10px);-moz--webkit-transform:translateY(-10px);-ms--webkit-transform:translateY(-10px);-webkit-transform:translateY(-10px)}100%{-webkit--webkit-transform:translateY(-20px);-moz--webkit-transform:translateY(-20px);-ms--webkit-transform:translateY(-20px);-webkit-transform:translateY(-20px)}}$/;"	function	line:1614
+@-moz-keyframes arrowBounce{ 0%{-webkit--moz-transform:translateY(-20px);-moz--moz-transform:translateY(-20px);-ms--moz-transform:translateY(-20px);-moz-transform:translateY(-20px)}50%{-webkit--moz-transform:translateY(-10px);-moz--moz-transform:translateY(-10px);-ms--moz-transform:translateY(-10px);-moz-transform:translateY(-10px)}100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-moz-keyframes arrowBounce{ 0%{-webkit--moz-transform:translateY(-20px);-moz--moz-transform:translateY(-20px);-ms--moz-transform:translateY(-20px);-moz-transform:translateY(-20px)}50%{-webkit--moz-transform:translateY(-10px);-moz--moz-transform:translateY(-10px);-ms--moz-transform:translateY(-10px);-moz-transform:translateY(-10px)}100%{-webkit--moz-transform:translateY(-20px);-moz--moz-transform:translateY(-20px);-ms--moz-transform:translateY(-20px);-moz-transform:translateY(-20px)}}$/;"	function	line:1615
+@-o-keyframes arrowBounce{ 0%{-webkit--o-transform:translateY(-20px);-moz--o-transform:translateY(-20px);-ms--o-transform:translateY(-20px);-o-transform:translateY(-20px)}50%{-webkit--o-transform:translateY(-10px);-moz--o-transform:translateY(-10px);-ms--o-transform:translateY(-10px);-o-transform:translateY(-10px)}100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@-o-keyframes arrowBounce{ 0%{-webkit--o-transform:translateY(-20px);-moz--o-transform:translateY(-20px);-ms--o-transform:translateY(-20px);-o-transform:translateY(-20px)}50%{-webkit--o-transform:translateY(-10px);-moz--o-transform:translateY(-10px);-ms--o-transform:translateY(-10px);-o-transform:translateY(-10px)}100%{-webkit--o-transform:translateY(-20px);-moz--o-transform:translateY(-20px);-ms--o-transform:translateY(-20px);-o-transform:translateY(-20px)}}$/;"	function	line:1616
+@keyframes arrowBounce{ 0%{-webkit--webkit-transform:translateY(-20px);-webkit--moz-transform:translateY(-20px);-webkit--ms-transform:translateY(-20px);-webkit-transform:translateY(-20px);-moz--webkit-transform:translateY(-20px);-moz--moz-transform:translateY(-20px);-moz--ms-transform:translateY(-20px);-moz-transform:translateY(-20px);-ms--webkit-transform:translateY(-20px);-ms--moz-transform:translateY(-20px);-ms--ms-transform:translateY(-20px);-ms-transform:translateY(-20px);-webkit-transform:translateY(-20px);-moz-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px);}50%{-webkit--webkit-transform:translateY(-10px);-webkit--moz-transform:translateY(-10px);-webkit--ms-transform:translateY(-10px);-webkit-transform:translateY(-10px);-moz--webkit-transform:translateY(-10px);-moz--moz-transform:translateY(-10px);-moz--ms-transform:translateY(-10px);-moz-transform:translateY(-10px);-ms--webkit-transform:translateY(-10px);-ms--moz-transform:translateY(-10px);-ms--ms-transform:translateY(-10px);-ms-transform:translateY(-10px);-webkit-transform:translateY(-10px);-moz-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px);}100%	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@keyframes arrowBounce{ 0%{-webkit--webkit-transform:translateY(-20px);-webkit--moz-transform:translateY(-20px);-webkit--ms-transform:translateY(-20px);-webkit-transform:translateY(-20px);-moz--webkit-transform:translateY(-20px);-moz--moz-transform:translateY(-20px);-moz--ms-transform:translateY(-20px);-moz-transform:translateY(-20px);-ms--webkit-transform:translateY(-20px);-ms--moz-transform:translateY(-20px);-ms--ms-transform:translateY(-20px);-ms-transform:translateY(-20px);-webkit-transform:translateY(-20px);-moz-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px);}50%{-webkit--webkit-transform:translateY(-10px);-webkit--moz-transform:translateY(-10px);-webkit--ms-transform:translateY(-10px);-webkit-transform:translateY(-10px);-moz--webkit-transform:translateY(-10px);-moz--moz-transform:translateY(-10px);-moz--ms-transform:translateY(-10px);-moz-transform:translateY(-10px);-ms--webkit-transform:translateY(-10px);-ms--moz-transform:translateY(-10px);-ms--ms-transform:translateY(-10px);-ms-transform:translateY(-10px);-webkit-transform:translateY(-10px);-moz-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px);}100%{-webkit--webkit-transform:translateY(-20px);-webkit--moz-transform:translateY(-20px);-webkit--ms-transform:translateY(-20px);-webkit-transform:translateY(-20px);-moz--webkit-transform:translateY(-20px);-moz--moz-transform:translateY(-20px);-moz--ms-transform:translateY(-20px);-moz-transform:translateY(-20px);-ms--webkit-transform:translateY(-20px);-ms--moz-transform:translateY(-20px);-ms--ms-transform:translateY(-20px);-ms-transform:translateY(-20px);-webkit-transform:translateY(-20px);-moz-transform:translateY(-20px);-ms-transform:translateY(-20px);transform:translateY(-20px);};$/;"	function	line:1617
+.arrow-down	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.arrow-down {$/;"	function	line:1619
+.scroll	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.scroll {$/;"	function	line:1626
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:1639
+.heading	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .heading {$/;"	function	line:1640
+#signupForm .form-control-feedback	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  #signupForm .form-control-feedback {$/;"	function	line:1644
+#signupForm .form-group	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  #signupForm .form-group {$/;"	function	line:1647
+.arrow-down	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .arrow-down {$/;"	function	line:1650
+@media (min-width: 992px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 992px) {$/;"	function	line:1655
+.heading	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .heading {$/;"	function	line:1656
+@media (min-width: 1200px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 1200px) {$/;"	function	line:1662
+.heading	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .heading {$/;"	function	line:1663
+.carousel-control.left	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control.left,$/;"	function	line:1671
+.carousel-control.right	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control.right {$/;"	function	line:1672
+.carousel-control .icon-prev	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .icon-prev,$/;"	function	line:1675
+.carousel-control .icon-next	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .icon-next,$/;"	function	line:1676
+.carousel-control .fa-angle-left	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .fa-angle-left,$/;"	function	line:1677
+.carousel-control .fa-angle-right	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .fa-angle-right {$/;"	function	line:1678
+@media screen and (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media screen and (min-width: 768px) {$/;"	function	line:1684
+.carousel-control .fa-angle-left	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .fa-angle-left,$/;"	function	line:1685
+.carousel-control .fa-angle-right	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .fa-angle-right,$/;"	function	line:1686
+.carousel-control .icon-prev	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .icon-prev,$/;"	function	line:1687
+.carousel-control .icon-next	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .icon-next {$/;"	function	line:1688
+.carousel-control .fa-angle-left	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .fa-angle-left,$/;"	function	line:1694
+.carousel-control .icon-prev	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .icon-prev {$/;"	function	line:1695
+.carousel-control .fa-angle-right	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .fa-angle-right,$/;"	function	line:1698
+.carousel-control .icon-next	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-control .icon-next {$/;"	function	line:1699
+.carousel-control .icon-prev	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .icon-prev,$/;"	function	line:1703
+.carousel-control .fa-angle-left	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .fa-angle-left {$/;"	function	line:1704
+.carousel-control .icon-next	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .icon-next,$/;"	function	line:1708
+.carousel-control .fa-angle-right	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .fa-angle-right {$/;"	function	line:1709
+.carousel-control .icon-prev	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .icon-prev,$/;"	function	line:1713
+.carousel-control .icon-next	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-control .icon-next {$/;"	function	line:1714
+.carousel-caption	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-caption {$/;"	function	line:1720
+.carousel-inner	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-inner {$/;"	function	line:1731
+.carousel-inner h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-inner h1 {$/;"	function	line:1737
+.carousel-inner .container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-inner .container {$/;"	function	line:1741
+.carousel-indicators li	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-indicators li,$/;"	function	line:1749
+.carousel-indicators .active	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-indicators .active {$/;"	function	line:1750
+.item-inner	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.item-inner {$/;"	function	line:1761
+.item-inner-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.item-inner-container {$/;"	function	line:1767
+.carousel-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-container {$/;"	function	line:1771
+.carousel-col-6	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.carousel-col-6 {$/;"	function	line:1774
+@media (min-width: 768px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 768px) {$/;"	function	line:1778
+.carousel-container	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-container {$/;"	function	line:1779
+.carousel-col-6	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-col-6 {$/;"	function	line:1782
+.carousel-inner h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-inner h1 {$/;"	function	line:1787
+@media (min-width: 992px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 992px) {$/;"	function	line:1792
+.carousel-inner h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-inner h1 {$/;"	function	line:1793
+@media (min-width: 1200px)	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^@media (min-width: 1200px) {$/;"	function	line:1798
+.carousel-inner h1	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^  .carousel-inner h1 {$/;"	function	line:1799
+.portfolio-single h4	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.portfolio-single h4 {$/;"	function	line:1806
+.portfolio-single p	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.portfolio-single p {$/;"	function	line:1811
+.portfolio-single .portfolio-single-list	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.portfolio-single .portfolio-single-list {$/;"	function	line:1815
+.portfolio-single .portfolio-single-list li	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.portfolio-single .portfolio-single-list li {$/;"	function	line:1819
+.portfolio-single .portfolio-single-list li h5	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.portfolio-single .portfolio-single-list li h5 {$/;"	function	line:1823
+.globe-blue	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.globe-blue{$/;"	function	line:1834
+.suitcase	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.suitcase{$/;"	function	line:1838
+.graduationcap	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.graduationcap{$/;"	function	line:1842
+.soccer-white	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.soccer-white{$/;"	function	line:1845
+.soccer-whiteA	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.soccer-whiteA {$/;"	function	line:1853
+.icon-b	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.icon-b {$/;"	function	line:1857
+.stars	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.stars {$/;"	function	line:1861
+i.fa-check	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^i.fa-check {$/;"	function	line:1864
+.highlighted-black	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.highlighted-black {$/;"	function	line:1867
+.highlighted-yellow	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^.highlighted-yellow {$/;"	function	line:1870
+h3.logo	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^h3.logo {$/;"	function	line:1874
+img.logo	C:\cygwin64\home\Jordi\androidside.github.io\assets\css\app.css	/^img.logo {$/;"	function	line:1879
