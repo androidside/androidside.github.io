@@ -965,10 +965,10 @@ border: 0px solid #000000;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background: -webkit-linear-gradient(left , #514A9D, #24C6DC); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #514A9D, #24C6DC); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #514A9D, #24C6DC); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right,  #514A9D, #24C6DC); /* Standard syntax */
+  background: -webkit-linear-gradient(left , #4A5C9D, #2B9FE9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #4A5C9D, #2B9FE9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #4A5C9D, #2B9FE9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #4A5C9D, #2B9FE9); /* Standard syntax */
 }
 
 /*
@@ -1067,14 +1067,15 @@ border: 0px solid #000000;
   z-index: 5000;
   top: 0;
   left: 0;
-  height: 8px;
-  background-color: #fff;
+  height: 16px;
+  background-color: #2B9FE9;
   -webkit-transition: -webkit-transform 0.3s, width 1s;
   -moz-transition: width 1s;
   -o-transform: width 1s;
   transition: transform .3s, width 1s;
   pointer-events: none;
 }
+
 .pace .pace-active .pace-progress {
   -webkit-transform: translateY(0);
   transform: translateY(0);
