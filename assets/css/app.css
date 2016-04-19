@@ -84,6 +84,13 @@ max-width:95%;
 max-height:100%;
 }
 
+.phoenix-logo{
+margin:0px 5px;
+width: 40px;
+align:top ;
+border-radius: 5px;
+}
+
 a.visit-my-profile:visited {
     color: #2b9fe9;
     text-decoration: none;
@@ -261,6 +268,13 @@ img.logo {
   background: rgba(255, 255, 255, 0.13);
   margin: 0 auto 35px;
 }
+
+.section-title-border-small-margin {
+  width: 70px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.13);
+  margin: 0 auto 5px;
+}
 .section-solid {
   background: #ededed;
   color: #646464;
@@ -274,6 +288,10 @@ img.logo {
   color: #646464;
 }
 .section-solid .section-title-border {
+  background: rgba(0, 0, 0, 0.13);
+}
+
+.section-solid .section-title-border-small-margin {
   background: rgba(0, 0, 0, 0.13);
 }
 .section-solid-white {
@@ -291,12 +309,19 @@ img.logo {
 .section-solid-white .section-title-border {
   background: rgba(0, 0, 0, 0.13);
 }
+
+.section-solid-white .section-title-border-small-margin {
+  background: rgba(0, 0, 0, 0.13);
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .section {
     padding: 70px 0;
   }
   .section-title-border {
+    margin: 0 auto 45px;
+  }
+  .section-title-border-small-margin {
     margin: 0 auto 45px;
   }
 }
