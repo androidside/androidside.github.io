@@ -1912,3 +1912,9 @@ img.logo {
     max-height: 40px;
     max-width: auto;
 }
+
+img.logoTop {
+    margin-top: 0px;
+    max-height: 40px;
+    max-width: auto;
+}
