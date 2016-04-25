@@ -983,18 +983,86 @@ form.signup button.btn {
 border: 0px solid #000000;
 
 }
-.progress-bar {
+
+/*Gradients between 55B2ED and 2B9FE9 */
+.progress-bar-85 {
 /*  background-color: #FFFF38;*/
   color: #000000;
   font-weight: bold;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  background: -webkit-linear-gradient(left , #4A5C9D, #2B9FE9); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(right, #4A5C9D, #2B9FE9); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, #4A5C9D, #2B9FE9); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to right,  #4A5C9D, #2B9FE9); /* Standard syntax */
+  background: -webkit-linear-gradient(left , #55B2ED, #31A1E9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #55B2ED, #31A1E9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #55B2ED, #31A1E9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #55B2ED, #31A1E9); /* Standard syntax */
 }
+
+
+.progress-bar-75 {
+/*  background-color: #FFFF38;*/
+  color: #000000;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-linear-gradient(left , #55B2ED, #35A3E9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #55B2ED, #35A3E9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #55B2ED, #35A3E9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #55B2ED, #35A3E9); /* Standard syntax */
+}
+
+.progress-bar-95 {
+/*  background-color: #FFFF38;*/
+  color: #000000;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-linear-gradient(left , #55B2ED, #2B9FE9); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #55B2ED, #2B9FE9); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #55B2ED, #2B9FE9); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #55B2ED, #2B9FE9); /* Standard syntax */
+}
+.progress-bar-70 {
+/*  background-color: #FFFF38;*/
+  color: #000000;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-linear-gradient(left , #55B2ED, #36A4EA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #55B2ED, #36A4EA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #55B2ED, #36A4EA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #55B2ED, #36A4EA); /* Standard syntax */
+}
+
+.progress-bar-60 {
+/*  background-color: #FFFF38;*/
+  color: #000000;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-linear-gradient(left , #55B2ED, #3BA6EA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #55B2ED, #3BA6EA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #55B2ED, #3BA6EA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #55B2ED, #3BA6EA); /* Standard syntax */
+}
+.progress-bar-65 {
+/*  background-color: #FFFF38;*/
+  color: #000000;
+  font-weight: bold;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  background: -webkit-linear-gradient(left , #55B2ED, #38A5EA); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, #55B2ED, #38A5EA); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, #55B2ED, #38A5EA); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right,  #55B2ED, #38A5EA); /* Standard syntax */
+}
+
+
 
 /*
  *	Media
