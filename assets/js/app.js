@@ -20,19 +20,19 @@ $(function () {
 	 */
 
 	$.backstretch([
-		"assets/img/background/1.jpg",
-		"assets/img/background/2.jpg",
-		"assets/img/background/3.jpg",
-		"assets/img/background/4.jpg",
-		"assets/img/background/5.jpg",
-		"assets/img/background/6.jpg",
-		"assets/img/background/7.jpg",
-		"assets/img/background/8.jpg",
-		"assets/img/background/9.jpg",
-		"assets/img/background/10.jpg",
-		"assets/img/background/11.jpg",
-		"assets/img/background/12.jpg",
-		"assets/img/background/13.jpg",
+		"assets/img/background/medium/1.jpg",
+		"assets/img/background/medium/2.jpg",
+		"assets/img/background/medium/3.jpg",
+		"assets/img/background/medium/4.jpg",
+		"assets/img/background/medium/5.jpg",
+		"assets/img/background/medium/6.jpg",
+		"assets/img/background/medium/7.jpg",
+		"assets/img/background/medium/8.jpg",
+		"assets/img/background/medium/9.jpg",
+		"assets/img/background/medium/10.jpg",
+		"assets/img/background/medium/11.jpg",
+		"assets/img/background/medium/12.jpg",
+		"assets/img/background/medium/13.jpg",
 
 	], {duration: 3800, fade: 1500});
 
