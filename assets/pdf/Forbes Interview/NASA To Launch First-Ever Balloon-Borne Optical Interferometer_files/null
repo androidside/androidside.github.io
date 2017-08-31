@@ -1,0 +1,1008 @@
+﻿
+
+
+
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:sa="http://opengraph.socialamp.com/2010/saml" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
+
+<head>
+	<script type="text/javascript">
+		var displayedChannel = '';
+		var displayedSection = '';
+	</script>
+		<title>404</title>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, maximum-scale=2.0" />
+		<meta name="description" itemprop="description" content="" />
+		<meta name="apple-itunes-app" content="app-id=588647136" />
+		<meta property="fb:app_id" content="123694841080850" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="@forbes" />
+		<!-- -->
+        <script type="text/javascript">
+			var forbes = ( function( forbes_namespace ) {
+
+
+				forbes_namespace.page_meta = {
+		channel : "home",
+		section : "errorpage",
+		preview : false,
+		type : "404",
+		dfp_site : "fdc.forbes",
+		dfp_zone : "search",
+		brandvoice : false,
+		inactive : false,
+
+
+				};
+                return forbes_namespace;
+            }( forbes || {} ) );
+        </script>
+	<script type='text/javascript'>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+
+		(function (){
+		    window.advBidxc = window.advBidxc || {};
+		    window.advBidxc.renderAd = function (){};
+		    window.advBidxc.startTime = new Date().getTime();
+		    function loadScript(tagSrc) {
+		        if (tagSrc.substr(0, 4) !== 'http') {
+		            var isSSL = 'https:' == document.location.protocol;
+		            tagSrc = (isSSL ? 'https:' : 'http:') + tagSrc;
+		        }
+		        var scriptTag = document.createElement('script'),
+		            placeTag = document.getElementsByTagName("script")[0];
+		        scriptTag.type = 'text/javascript';
+		        scriptTag.async = true;
+		        scriptTag.src = tagSrc;
+		        placeTag.parentNode.insertBefore(scriptTag, placeTag);
+		    }
+		    function loadGPT(){
+		        if(!window.advBidxc.isAdServerLoaded){
+		            loadScript('//www.googletagservices.com/tag/js/gpt.js');
+		            window.advBidxc.isAdServerLoaded = true;
+		        }
+		    }
+		    window.advBidxc.loadGPT = loadGPT;
+		    setTimeout(window.advBidxc.loadGPT,20);// Timeout in case of loading error
+		    var mnSrc = document.location.protocol + '//contextual.media.net/bidexchange.js?cid=8CUX956JU' + ('https:' === document.location.protocol ? '&https=1' : '');
+			loadScript(mnSrc);
+
+if (typeof(libraryInterval) === 'undefined' && document.cookie.match('forbes_ab=') !== null) {
+
+	var library_elapsed = 0,
+		interval_time = 100,
+		max_time = 20000,
+		blocked_classes = ["BoxAd","footer-leaderboard-ad","top_adv","premiumAdOverlay","ads-module","adslot_blurred","galleryAdvertPanel","widgetYahooAds","log_ads","l-ad-728","fns_td_wrap","foot-ads","adrow1box1","msg-ad","ads_top_both","adTitle","adSKY","advtext","flash_advert","adsenseblock_top","adsmalltext","advertisement_block_468_60","ad-bug-300w","ads_300x239","ad300Block","centeradv","ad250","sponsored-display-ad","adChoicesLogo","sponsorBlock"],
+		rand = Math.random(),
+		rand_classes = [],
+        blocked_ad;
+
+	libraryInterval = setInterval(function() {
+		library_elapsed += interval_time;
+
+		forbes = forbes || {};
+		forbes.removeWelcomeCookies = function() {
+			console.log('Removing Welcome Ad Cookies');
+			document.cookie = "welcomeAd=;path=/;domain=.forbes.com;expires=Thu, 01 Jan 1970 00:00:01 GMT";
+			document.cookie = "dailyWelcomeCookie=;path=/;domain=.forbes.com;expires=Thu, 01 Jan 1970 00:00:01 GMT";
+			document.cookie = "re_ab=1;path=/;domain=.forbes.com;"
+		}
+
+		// Adblockers will often leave pubads as a valid function, but stop addEventListener from being defined.
+		// Have to check both to stop erroring out. We're already not serving ads for them, may as well stop cluttering up the error logger too
+		if (googletag.pubads && googletag.pubads().addEventListener) {
+			clearInterval(libraryInterval);
+
+		} else if (library_elapsed >= max_time) {
+			forbes.removeWelcomeCookies();
+			clearInterval(libraryInterval);
+
+		}
+
+	}, interval_time);
+
+	for (var i = 0; i < 5 || (Math.random() < .7 && i < 10); i++) {
+		rand_classes.push(blocked_classes[Math.floor(Math.random() * blocked_classes.length)]);
+	}
+
+	blocked_ad = document.createElement('div');
+	blocked_ad.setAttribute('class', rand_classes.join(' '));
+	document.addEventListener('DOMContentLoaded', function() {
+		document.body.appendChild(blocked_ad);
+		if (window.getComputedStyle(blocked_ad).display === 'none') {
+			forbes.removeWelcomeCookies();
+			forbes.adblock_state = true;
+		}
+	});
+}
+
+		})();
+
+window.forbes=window.forbes||{},window.forbes.client_id_service=function(){return{pad:function(e,i,t,n){for(e=""+e;e.length<i;)e=n?e+t:t+e;return e},hash31:function(e){for(var i=2147483647,t=e.length;t--;)i=(i<<5)-i+e.charCodeAt(t)&2147483647;return i},generateClientId:function(){var e,i=this.hash31(window.location.pathname),t=2147483647&(new Date).getTime(),n="",o=[];for(e=0;5>e;e++)o[e]=268435456*Math.random()&2147483647;for(o[0]=o[0]^268435455&i,o[1]=o[1]^268435455&t,o[2]=o[2]^(t>>28<<3|i>>28),e=0;e<o.length;e++)n+=this.pad(o[e].toString(16),7,"0");return n},getClientId:function(){if(!this.client_id){this.client_id=document.cookie.match(/client_id=([^;]+)(;|$)/),this.client_id=this.client_id?this.client_id[1]:this.generateClientId();var e=new Date;e.setTime(e.getTime()+657504e5),document.cookie="client_id="+this.client_id+"; expires="+e.toUTCString()+"; path=/; domain=.forbes.com"}return this.client_id}}}(),window.forbes.client_id_service.getClientId();
+window.googletag=window.googletag||{},window.googletag.cmd=googletag.cmd||[],googletag.cmd.push(function(){googletag.pubads().setTargeting("fvid",window.forbes.client_id_service.getClientId())});	</script>
+		<!--REPLACE link rel="stylesheet"  type="text/css"  href="//i.forbesimg.com/scripts/combined/css/global.74da5294b0f76490a51b0e2b259d73364da38778.css" /-->
+		<link rel="stylesheet"  type="text/css"  href="//i.forbesimg.com/scripts/combined/css/global.af2b82d96712d0c221b12ed5be28605449c1e82a.css" />
+		<!--REPLACE script type="text/javascript" src="//i.forbesimg.com/scripts/combined/js/head.5fbb17146cf49c2b5690b71707fecb3ebbaec90.js"></script-->
+		<script type="text/javascript" src="//i.forbesimg.com/scripts/combined/js/head.98d4f7f5cfd082523110fe9df45207c4b647b1d0.js"></script>
+
+	<script type='text/javascript'>
+	if(typeof amznads != 'undefined' && typeof amznads.getTokens == 'function') {
+        amznads.tasks.push( function() {
+            try {
+                amznads.setTargetingForGPTAsync('amznslots');
+            } catch(e) { /*ignore*/}
+        });
+	}
+
+
+
+ 		function read_cookie_prop(name) {
+  			//var result = document.cookie.match(new RegExp('ox_gcookie=([^;]+)'));
+  			var result = document.cookie.match(new RegExp('ox_(?:.{0,1})cookie\=([^;]+)'));
+  			result && (result = JSON.parse(result[1]));
+  			return result ? result[name] : null;
+ 		}
+
+
+ 		function delete_cookie(name) {
+  			 document.cookie = [name, '=; expires=Thu, 01-Jan-1970 00:00:01 GMT; path=/; domain=.', window.location.host.toString()].join('');
+ 		}
+
+		var top_price, logo_price,rec_price, text_price, bottom_price, hpbottom_price , tradingctr_price ,hpbanner_price,
+			loge_price,topx_price,railrec_price = '';
+ 		 top_price = read_cookie_prop("topPrice");
+ 		 logo_price = read_cookie_prop("logoPrice");
+ 		 rec_price = read_cookie_prop("recPrice");
+ 		 text_price = read_cookie_prop("textPrice");
+ 		 bottom_price = read_cookie_prop("bottomPrice");
+
+ 		// moreon_price = read_cookie_prop("moreonPrice");
+ 		 hpbottom_price = read_cookie_prop("hpbottomPrice");
+ 		 tradingctr_price = read_cookie_prop("tradingctrPrice");
+ 		 hpbanner_price = read_cookie_prop("hpbannerPrice");
+ 		 loge_price = read_cookie_prop("logePrice");
+ 		 topx_price = read_cookie_prop("topxPrice");
+ 		 railrec_price = read_cookie_prop("railrecPrice");
+
+
+
+		googletag.cmd.push(function() {
+			window.displayedChannel = '';
+			window.displayedSection = '';
+
+
+ 					<!-- ntv-home is now served by sharethrough and this position will not be prefetched nor is it lazy loaded -->
+	 					if(typeof top_price!== 'undefined' && top_price!= null ){
+		 					top_lazy = googletag.defineSlot('/7175/fdc.forbes/search', [[728, 90], [970, 66], [970, 250], [980, 200], [1, 1]], 'top')
+		 					.addService(googletag.pubads())
+		 					.setTargeting('pos', 'top')
+		 					.setTargeting('postopox', top_price);
+	 					}else{
+		 					top_lazy = googletag.defineSlot('/7175/fdc.forbes/search', [[728, 90], [970, 66], [970, 250], [980, 200], [1, 1]], 'top')
+		 					.addService(googletag.pubads())
+		 					.setTargeting('pos', 'top');
+		 				}
+
+
+
+ 					<!-- ntv-home is now served by sharethrough and this position will not be prefetched nor is it lazy loaded -->
+	 					if(typeof rec_price!== 'undefined' && top_price!= null ){
+		 					rec_lazy = googletag.defineSlot('/7175/fdc.forbes/search', [[300, 250],[300, 600],[336, 850],[336,280],[1, 1]], 'rec')
+		 					.addService(googletag.pubads())
+		 					.setTargeting('pos', 'rec')
+		 					.setTargeting('posrecox', rec_price);
+	 					}else{
+		 					rec_lazy = googletag.defineSlot('/7175/fdc.forbes/search', [[300, 250],[300, 600],[336, 850],[336,280],[1, 1]], 'rec')
+		 					.addService(googletag.pubads())
+		 					.setTargeting('pos', 'rec');
+		 				}
+
+
+
+
+			<!-- if no specialslot and swimlane, populate displayChannel & displaySection -->
+				googletag.pubads().setTargeting('displayChannel','');
+				googletag.pubads().setTargeting('displaySection','');
+
+			<!-- Populate all the values from the map -->
+
+					googletag.pubads().setTargeting('id', '\/sites/dsfs/');
+
+
+			<!-- if map has swimlane, then put in @chasec macro & pass no value to swimlane-->
+
+			<!-- if map has specialslot, put in @chasec macro -->
+
+(function() {
+	var getCookie = function(name) {
+	    var re = new RegExp(name + "=([^;]+)"),
+	    	value = re.exec(document.cookie);
+	    return (value != null) ? unescape(value[1]) : null;
+	  },
+		cookie_params = {},
+		now = +(new Date());
+
+	try {
+		cookie_params = JSON.parse(getCookie('global_ad_params'));
+	} catch (e) {};
+
+	for (var key in cookie_params) {
+		if (!cookie_params[key] || now > (cookie_params[key].expiration || -1)) {
+			delete cookie_params[key]; //Remove expired data or incomplete data
+		} else {
+			googletag.pubads().setTargeting(key, '' + cookie_params[key].value); //Include only value in the params object
+		}
+	}
+
+	//Set the cleaned cookie for another 30 days and return clean object.
+	document.cookie = "global_ad_params=" + JSON.stringify(cookie_params) + ";path=/;domain=.forbes.com;expires=" + new Date(now + 2592000000);
+})();
+
+googletag.pubads().setTargeting('login', !!(forbes && forbes.gtm && forbes.gtm.user_id) ? "true" : "");
+
+			googletag.pubads().collapseEmptyDivs();
+
+				googletag.pubads().enableSingleRequest();
+			<!-- HERE false -->
+				if(displayedChannel && displayedSection && displayedChannel === "home" && displayedSection === "Main"){
+          googletag.pubads().setTargeting('channel', ["business","tech","leadership","entrepreneurs","investing"]);
+					googletag.pubads().disableInitialLoad();
+				}
+
+			googletag.enableServices();
+
+			/* Medianet code */
+
+			if(window.advBidxc && window.advBidxc.isLoaded) {
+				if (window.advBidxc.setTargetingForAdUnitsGPTAsync) {
+					window.advBidxc.setTargetingForAdUnitsGPTAsync();
+				}
+         	}
+
+		});
+
+	</script>
+
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.pubads().setTargeting('displayChannel', 'home');
+      googletag.pubads().setTargeting('displaySection', 'errorpage');
+      googletag.pubads().setTargeting('id', '404');
+    });
+  </script>
+
+	<script type="text/javascript" src="//www.google.com/adsense/search/ads.js"></script>
+</head>
+
+<body class="not_found_404">
+
+
+	<!-- Start: Header -->
+
+
+<header class="global enable_sticky_header ">
+
+		<div class="container minimum "  >
+
+		<nav>
+			<span class="edittools-goggles-hitmask">
+				<span class="edittools-goggles-hitarea">
+					<span class="edittools-goggles-toggle attach-click" title="Toggle Edit Tools"></span>
+				</span>
+			</span>
+			<span class="edittools-goggles-rule"></span>
+
+
+<div class="account_wrapper gradient_grey">
+		<a class="button account" href="//blogs.forbes.com/account/login/" data-ga-event="Header,LinkFollowed,account" data-ga-event-trigger="click">
+			<span class="border left"></span>
+			<span class="icon arrow"></span>
+			<img src="//i.forbesimg.com/assets/img/anon_avatar.png" alt="">
+		</a>
+
+	<div class="rollover rollover_box" style="display:none;">
+		<span class="icon arrow"></span>
+
+
+
+			<div class="one_column">
+
+				<div class="external_auth_options">
+					<h3>Log in with your social account:</h3>
+					<div id="gigya_accountdropdown_extralarge_div"></div>
+					<div class="clear"></div>
+				</div>
+
+				<hr class="dotted">
+
+				<h3>Or, you can
+					<a class="ajaxify unireg_login" href="//blogs.forbes.com/account/login/" label="login">log in</a>
+					or
+					<a class="ajaxify unireg_register" href="//blogs.forbes.com/account/register/" label="signup">sign up</a>
+					using Forbes.
+				</h3>
+			</div>
+
+
+	</div><!--end div.rollover_account-->
+</div><!-- end div.account_wrapper-->
+
+<ul class="main gradient_grey">
+<li class="home">
+	<a href="http://www.forbes.com" class="button logo" data-nav-ajax-url="/header/channels" data-ga-event="Header,LinkFollowed,home" data-ga-event-trigger="click">
+		<span class="border right"></span>
+		<span class="icon arrow"></span>
+		<img class="svg" style="display:none;" alt="Forbes" src="//i.forbesimg.com/assets/img/forbes_logo/forbes_logo_white.svg">
+		<img class="png" alt="Forbes" src="//i.forbesimg.com/assets/img/forbes_logo/forbes_logo_white.png">
+	</a>
+
+	<div class="rollover rollover_box"><!-- ie --></div>
+</li>
+
+<li class="menu menu4 gradient_grey" data-ga-track="Top Nav Editors Picks">
+	<a href="//www.forbes.com/editors-picks/" class="button" data-ga-track="Top Nav Editors Picks">
+		<span class="border left"></span>
+		<span class="border right"></span>
+				<span class="label main" data-ga-track="Top Nav Editors Picks">Editors' Picks</span>
+	</a>
+</li>
+
+<li class="menu menu_real_time gradient_grey" data-ga-track="Top Nav Podcasts">
+	<a href="//www.forbes.com/podcasts/" class="button" data-ga-track="Top Nav Podcasts">
+		<span class="border left"></span>
+		<span class="border right"></span>
+				<span class="label main" data-ga-track="Top Nav Podcasts">Podcasts</span>
+	</a>
+</li>
+
+<li class="menu menu1 gradient_grey" data-ga-track="Top Nav Most Popular">
+	<a href="//www.forbes.com/most-popular/" class="button" data-ga-track="Top Nav Most Popular">
+		<span class="border left"></span>
+		<span class="border right"></span>
+				<span class="label main" data-ga-track="Top Nav Most Popular"><span class="collapsable" data-ga-track="Top Nav Most Popular">Most </span>Popular</span>
+	</a>
+</li>
+
+<li class="menu menu2 gradient_grey" data-ga-track="Top Nav Lists">
+	<a href="//www.forbes.com/lists/" class="button" data-ga-track="Top Nav Lists">
+		<span class="border left"></span>
+		<span class="border right"></span>
+				<span class="label main" data-ga-track="Top Nav Lists">Lists</span>
+	</a>
+</li>
+
+<li class="menu menu3 gradient_grey" data-ga-track="null">
+	<a href="//www.forbes.com/video/" class="button" data-ga-track="null">
+		<span class="border left"></span>
+		<span class="border right"></span>
+				<span class="label main">Video</span>
+	</a>
+</li>
+
+<li class="search gradient_grey global_search_control typeahead_anchor">
+	<span class="border left"></span>
+	<span class="border right"></span>
+	<form class="form_global_search" action="/search/">
+		<div class="search_bar">
+			<div class="input_holder">
+				<input name="q" class="search_input" type="text" value="" placeholder="Search" data-placeholder-short="Search" data-placeholder-long="Search companies, people and lists" autocomplete="off">
+				<input class="form_submit" type="submit" value="submit">
+				<span class="loading_msg"></span>
+				<span class="loading_spinner"><img src="//i.forbesimg.com/assets/img/loading_spinners/16px_grey.gif" height="16" width="16" alt=""></span>
+			</div>
+		</div>
+	</form>
+
+	<div class="typeahead_results_holder">
+		<div class="box_topper"></div>
+		<div class="results"><ul></ul></div>
+	</div><!-- end div.typeahead_results_holder -->
+
+</li><!-- end li.search-->
+		</ul>
+		</nav>
+	</div><!-- end div.container (opened by js doc write) -->
+</header>
+
+	<div class="top_link_strip" >
+
+		<div id="header_userinfo" class="">
+
+				<!-- login header --><div class="gigya_chicklet_mask">			<div class="ribbon-item ribbon-item-gigya">				<div class="login_options">					<span>Connect</span>				</div>				<div id="gigyalogindiv" class="gigya_chicklet_holder"></div>			</div>			<span class="divider">|</span>		</div>		<div class="last ribbon-item">			<a class="unireg_register ajaxify regbutton regbutton-signup" href="//blogs.forbes.com/account/register/" title="Sign up for a Forbes account" data-ga-event="Account,Signup,headersignuptext" data-ga-event-trigger="click">Sign up</a>		</div>		<span class="divider">|</span>		<div class="ribbon-item">			<a class="unireg_login ajaxify regbutton regbutton-login" href="//blogs.forbes.com/account/login/" title="Log in to your Forbes account" data-ga-event="Account,Login,headerlogintext" data-ga-event-trigger="click">Log in</a>		</div><!-- end login header -->
+
+		</div><!--end div#header_userinfo -->
+
+		<div class="left_promo ">
+			<!-- promoted subscription link -->
+
+
+			<a href="https://bit.ly/1LiXkCR" target="_blank" data-et-item_id="headersubnavtopleftlink" data-et-item-type="link" data-et-context="headersubnav" data-et-location="headersubnavtopleftlink" class="edittools-item">
+				2 FREE Issues Of Forbes
+			</a>
+
+		</div>
+
+
+		<div class="clear"></div>
+	</div>
+
+    <!-- End: header -->
+
+	<!-- Top Ad Position -->
+	<div id="top" class="leaderboard above_header">
+		<script type='text/javascript'>
+	(function() {
+		var that = this,
+			ad_params,
+			expiration,
+			render_timeout,
+
+			getCookie = function(name) {
+			    var re = new RegExp(name + "=([^;]+)"),
+			    	value = re.exec(document.cookie);
+			    return (value != null) ? unescape(value[1]) : null;
+			  };
+
+		try {
+			ad_params = JSON.parse(getCookie('global_ad_params')) || {};
+			//Only do this if they had adblock on and have turned it off. On the first ad, check to see if it returns
+			if (that.adblock_state || !(ad_params && ad_params.ab && !!ad_params.ab.expiration)) {
+				return;
+			}
+			expiration = new Date(ad_params.ab.expiration).toUTCString();
+			that.adblock_state = 'checking';
+			googletag.cmd.push(function() {
+				googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+					if (that.adblock_state === 'off') {
+						return;
+					}
+					that.adblock_state = 'off';
+					clearTimeout(render_timeout);
+					if ((!getCookie('welcomeAd') || !getCookie('dailyWelcomeCookie')) && !forbes.adblock_state) {
+						document.cookie = "welcomeAd=true;path=/;domain=.forbes.com;expires=" + expiration;
+						document.cookie = "dailyWelcomeCookie=true;path=/;domain=.forbes.com;expires=" + expiration;
+					}
+				});
+			});
+			render_timeout = setTimeout(function() {
+				that.adblock_state = 'on';
+				forbes.removeWelcomeCookies();
+
+			}, 10000);
+		} catch(e) {
+			console.error(e);
+		}
+	})();
+			googletag.cmd.push(function() { googletag.display('top')});
+		</script>
+	</div>
+  <!--End: Top Ad Position-->
+
+
+
+	<div id="contentwrapper" class="clearfix">
+
+		<div id="mainContent" class="fleft">
+			<div class="text">
+				<hgroup class="clearfix">
+					<h1>4-0-</h1>
+
+				</hgroup>
+				<h6>We can’t find the page you requested but please try:</h6>
+				<ul>
+					<li><a href="//www.forbes.com">Forbes Homepage</a></li>
+					<li><a href="//www.forbes.com/most-popular/">Most Popular Posts</a></li>
+					<li><a href="//www.forbes.com/real-time/">Real-Time News </a></li>
+					<li><a href="//www.forbes.com/fdc/sitemap.html">Our Sitemap</a></li>
+				</ul>
+
+			</div>
+			<script type="text/javascript">
+				var GOOG_FIXURL_LANG = 'en';
+				var GOOG_FIXURL_SITE = '//www.forbes.com'
+			</script>
+			<script type="text/javascript"
+				src="//linkhelp.clients.google.com/tbproxy/lh/wm/fixurl.js">
+			</script>
+			<div class="text">
+			<p>If you clicked on a headline or other link on Forbes.com you can <a href="mailto:customerservice@forbes.com">send us an email</a> with the URL you were trying to reach.</p>
+			</div>
+		</div>
+
+		<aside>
+
+	<div id="rec" class="block ad lastsect">
+		<script type='text/javascript'>
+	(function() {
+		var that = this,
+			ad_params,
+			expiration,
+			render_timeout,
+
+			getCookie = function(name) {
+			    var re = new RegExp(name + "=([^;]+)"),
+			    	value = re.exec(document.cookie);
+			    return (value != null) ? unescape(value[1]) : null;
+			  };
+
+		try {
+			ad_params = JSON.parse(getCookie('global_ad_params')) || {};
+			//Only do this if they had adblock on and have turned it off. On the first ad, check to see if it returns
+			if (that.adblock_state || !(ad_params && ad_params.ab && !!ad_params.ab.expiration)) {
+				return;
+			}
+			expiration = new Date(ad_params.ab.expiration).toUTCString();
+			that.adblock_state = 'checking';
+			googletag.cmd.push(function() {
+				googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+					if (that.adblock_state === 'off') {
+						return;
+					}
+					that.adblock_state = 'off';
+					clearTimeout(render_timeout);
+					if ((!getCookie('welcomeAd') || !getCookie('dailyWelcomeCookie')) && !forbes.adblock_state) {
+						document.cookie = "welcomeAd=true;path=/;domain=.forbes.com;expires=" + expiration;
+						document.cookie = "dailyWelcomeCookie=true;path=/;domain=.forbes.com;expires=" + expiration;
+					}
+				});
+			});
+			render_timeout = setTimeout(function() {
+				that.adblock_state = 'on';
+				forbes.removeWelcomeCookies();
+
+			}, 10000);
+		} catch(e) {
+			console.error(e);
+		}
+	})();
+			googletag.cmd.push(function() { googletag.display('rec')});
+		</script>
+	</div>
+
+		</aside>
+
+	</div>
+
+	<!-- Start: footer -->
+
+<footer class="universal-footer">
+	<div class="footer-center">
+
+			<h4>Inside Forbes</h4>
+
+	<!-- Getting '/shared/promo/largeimage_fourfeature.ftl' -->
+
+
+
+
+
+		<!-- /shared/promo/ -->
+		<!-- largeimage_fourfeature -->
+		<!-- /shared/promo/largeimage_fourfeature.ftl -->
+					<section data-et-context="footer" data-et-location-id="footerpromo" data-et-panel-id="panel2" class="editorial-promotions edittools-promoblock clearfix largeimage_fourfeature">
+
+
+					<div class="large_feature fleft col-sm-6 clearfix">
+
+						<article data-et-content-id="content_573f21f864aaf97a2531b62d" class="promostory promostory-1 ">
+
+
+								<a class="editable editable-img  " href="//www.forbes.com/sites/danalexander/2016/05/25/meet-the-richest-person-in-every-state-2016-billionaires/"  data-ga-event="Promo,InsideForbes,1" data-ga-event-trigger="click">
+									<img src="//i.forbesimg.com/images/channels/footerpromo_panel2_0_footer-1464790445.jpg" alt="Meet The Richest Person In Every State 2016" />
+
+
+								</a>
+
+
+							<h4 class="editable editable-hed"><a href="//www.forbes.com/sites/danalexander/2016/05/25/meet-the-richest-person-in-every-state-2016-billionaires/"  data-ga-event="Promo,InsideForbes,1" data-ga-event-trigger="click">
+							    Meet The Richest Person In Every State 2016</a>
+							</h4>
+
+
+							<div class="editable editable-dek description">For the second consecutive year, FORBES scoured the country to track down the richest person in every state.</div>
+							<!--a href="http://www.forbes.com/sites/danalexander/2016/05/25/meet-the-richest-person-in-every-state-2016-billionaires/">See the full list &#187;</a-->
+						</article>
+					</div>
+
+			<div class="four_features fleft col-sm-6 clearfix">
+				<ul class="clearfix col-sm-6">
+							<li class="fleft clearfix">
+								<article data-et-content-id="content_57430aa764aaf97a2531c305" class="promostory promostory-2">
+
+
+										<a class="editable editable-img  " href="//www.forbes.com/sites/maggiemcgrath/2016/05/23/the-6-most-important-wealth-building-lessons-from-multi-millionaires/"   data-ga-event="Promo,InsideForbes,1" data-ga-event-trigger="click">
+											<img alt="Important Wealth-Building Lessons From Millionaires" src="//i.forbesimg.com/images/channels/footerpromo_panel2_1_footer-1464790370.jpg" />
+
+
+										</a>
+
+
+
+		 	 		 					<h4 class="editable editable-hed"><a href="//www.forbes.com/sites/maggiemcgrath/2016/05/23/the-6-most-important-wealth-building-lessons-from-multi-millionaires/"  data-ga-event="Promo,InsideForbes, 2" data-ga-event-trigger="click">Important Wealth-Building Lessons From Millionaires</a></h4>
+								</article>
+		 					</li>
+							<li class="fleft clearfix">
+								<article data-et-content-id="content_5720101be4b0876fd0e5500d" class="promostory promostory-3">
+
+
+										<a class="editable editable-img  " href="//www.forbes.com/sites/erincarlyle/2016/05/31/americas-best-cities-for-mid-career-professionals-in-2016/"   data-ga-event="Promo,InsideForbes,2" data-ga-event-trigger="click">
+											<img alt="America's Best Cities For Mid-Career Professionals" src="//i.forbesimg.com/images/channels/footerpromo_panel2_2_footer-1464790533.jpg" />
+
+
+										</a>
+
+
+
+		 	 		 					<h4 class="editable editable-hed"><a href="//www.forbes.com/sites/erincarlyle/2016/05/31/americas-best-cities-for-mid-career-professionals-in-2016/"  data-ga-event="Promo,InsideForbes, 3" data-ga-event-trigger="click">America's Best Cities For Mid-Career Professionals</a></h4>
+								</article>
+		 					</li>
+				</ul>
+
+				<ul class="clearfix col-sm-6">
+							<li class="fleft clearfix">
+
+								<article data-et-content-id="content_5743d7e064aaf97a2531c8c1" class="promostory promostory-4">
+
+
+										<a class="editable editable-img  " href="//www.forbes.com/sites/chasewithorn/2016/05/25/how-the-wealthiest-person-in-every-state-got-rich-richest-industry-finance-billionaires/"   data-ga-event="Promo,InsideForbes, 3" data-ga-event-trigger="click">
+		 									<img alt="How The Wealthiest Person In Every State Got Rich" src="//i.forbesimg.com/images/channels/footerpromo_panel2_3_footer-1464790761.jpg" />
+
+
+										</a>
+
+
+		 								<h4 class="editable editable-hed"><a href="//www.forbes.com/sites/chasewithorn/2016/05/25/how-the-wealthiest-person-in-every-state-got-rich-richest-industry-finance-billionaires/"  data-ga-event="Promo,InsideForbes, 4" data-ga-event-trigger="click">How The Wealthiest Person In Every State Got Rich</a></h4>
+								</article>
+		  					</li>
+							<li class="fleft clearfix">
+
+								<article data-et-content-id="4f96c82976e48a9983bccef9" class="promostory promostory-5">
+
+
+										<a class="editable editable-img  " href="//www.forbes.com/real-time-billionaires/"   data-ga-event="Promo,InsideForbes, 4" data-ga-event-trigger="click">
+		 									<img alt="Real-Time Billionaires" src="//i.forbesimg.com/images/channels/footerpromo_panel3_4_footer-1340910456.jpg" />
+
+
+										</a>
+
+
+		 								<h4 class="editable editable-hed"><a href="//www.forbes.com/real-time-billionaires/"  data-ga-event="Promo,InsideForbes, 5" data-ga-event-trigger="click">Real-Time Billionaires</a></h4>
+								</article>
+		  					</li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- END EDITORIAL PROMOTIONS -->
+
+		<section class="lower-footer-links clearfix">
+
+			<div class="channels">
+				<ul data-et-context="footer" data-et-location="footernav" class="edittools-list">
+					<li class="home">
+						<a href="//www.forbes.com/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Forbes</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="14" data-et-location="footernav" data-et-item-type="topic">
+						<a href="//www.forbes.com/business/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Business</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="7" data-et-location="footernav" data-et-item-type="link">
+						<a href="//www.forbes.com/investing/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Investing</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="8" data-et-location="footernav" data-et-item-type="link">
+						<a href="//www.forbes.com/technology/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Technology</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="13" data-et-location="footernav" data-et-item-type="topic">
+						<a href="//www.forbes.com/entrepreneurs/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Entrepreneurs</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="9" data-et-location="footernav" data-et-item-type="link">
+						<a href="//www.forbes.com/opinion/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Op/Ed</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="10" data-et-location="footernav" data-et-item-type="link">
+						<a href="//www.forbes.com/leadership/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Leadership</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="11" data-et-location="footernav" data-et-item-type="link">
+						<a href="//www.forbes.com/lifestyle/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Lifestyle</a>
+					</li>
+					<li class="editable edittools-item" data-et-item_id="12" data-et-location="footernav" data-et-item-type="link">
+						<a href="//www.forbes.com/lists/" data-ga-event="Footer,LinkFollowed,channel" data-ga-event-trigger="click">Lists</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="conferences footer-list fleft">
+	<h5><a href="//www.forbes.com/conferences/">Conferences</a></h5>
+	<ul data-et-context="footer" data-et-location="footerconferences" class="edittools-list">
+			<li class="editable edittools-item" data-et-item_id="20" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-cio-summit/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes CIO Summit</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="21" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-under-30-summit-israel/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes Under 30 Summit: Jerusalem/ Tel Aviv</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="22" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-womens-summit/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes Women’s Summit</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="23" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-400-summit-on-philanthropy/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes 400 Summit on Philanthropy</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="24" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//forbesasianexttycoons.com/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes Asia Forum: The Next Tycoons: A Generation Emerges</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="25" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-agtech-summit/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes Reinventing America AgTech Summit</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="26" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-under-30-summit-boston/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes Under 30 Summit</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="29" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-CMO-summit/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes CMO Summit</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="28" data-et-location="footerconferences" data-et-item-type="link">
+				<a href="//www.forbesconferences.com/event/2016-forbes-healthcare-summit/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2016 Forbes Healthcare Summit</a>
+			</li>
+	</ul>
+	<h5><a href="//www.newsletters.forbes.com/" target="_blank">Newsletters</a></h5>
+	<ul data-et-context="footer" data-et-location="footernewsletters" class="edittools-list">
+			<li class="editable edittools-item" data-et-item_id="1" data-et-location="footernewsletters" data-et-item-type="link">
+				<a href="//www.forbes.com/newsletters/forbes-investor/"  data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Investor</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="2" data-et-location="footernewsletters" data-et-item-type="link">
+				<a href="https://www.specialsituationsurvey.com/newsletters/sss/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Special Situation Survey</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="3" data-et-location="footernewsletters" data-et-item-type="link">
+				<a href="//www.forbes.com/newsletters/forbes-dividend-investor/"  data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Dividend Investor</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="5" data-et-location="footernewsletters" data-et-item-type="link">
+				<a href="//www.forbes.com/newsletters/forbes-premium-income-report/"  data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Premium Income Report</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="6" data-et-location="footernewsletters" data-et-item-type="link">
+				<a href="https://onforb.es/1dK9tEh" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Investing Newsletters</a>
+			</li>
+	</ul>
+			</div>
+
+			<div class="company-info footer-list fleft">
+	<h5>Products</h5>
+	<ul data-et-context="footer" data-et-location="footerproducts" class="edittools-list">
+			<li class="editable edittools-item" data-et-item_id="10" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="//www.forbes.com/sites/forbesmarketplace"  data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Marketplace</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="3" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="https://goo.gl/q7K9sU" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes eBooks</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="4" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="mailto:dlopenzina@forbes.com?Subject=Please send me pricing and information about streaming Forbes content on my website." target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Newsfeeds</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="5" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="//forbesreprints.magreprints.com/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Reprints & Permissions</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="6" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="http://www.forbesmagazine.com/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Magazine</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="7" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="//www.forbes.com/products/2016-college-guide/"  data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">The Smarter College Guide</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="12" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="https://www.amazon.com/Forbes-Book-Quotations-Thoughts-Business/dp/0316310042/ref=sr_1_1?s=books&ie=UTF8&qid=1465237624&sr=1-1&keywords=forbes+quotations" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Book Of Quotations</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="13" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="https://www.amazon.com/Forbes-Thought-Day-Five-Year-Business/dp/0316310069/ref=pd_sim_sbs_14_2?ie=UTF8&dpID=51AmLP7GqFL&dpSrc=sims&preST=_AC_UL320_SR214320_&refRID=14538WEVPHSZT8STK0DR" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Thought Of The Day</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="8" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="https://www.forbesfone.com/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbesfone Travel SIM</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="9" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="//custom.forbes.com/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Custom</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="11" data-et-location="footerproducts" data-et-item-type="link">
+				<a href="http://www.forbesmagazine.com/custom-covers/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Custom Covers</a>
+			</li>
+	</ul>
+<h5>Company Info</h5>
+<ul>
+	<li><a href="http://www.forbesmedia.com/" target="_blank" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Advertise</a></li>
+	<li><a href="//www.forbes.com/sites/forbespr/" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click" class="exit_trigger_set ga_tracked">Forbes Press Room</a></li>
+	<li><a href="//www.forbes.com/sites/careers-at-forbes/" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Forbes Careers</a></li>
+	<li><a href="//www.forbes.com/fdc/contact.html" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Contact Us</a></li>
+	<li><a href="//www.forbes.com/fdc/sitemap.html" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Sitemap</a></li>
+</ul>			</div>
+			<div class="councils_newsletter footer-list fleft">
+	<h5><a href="https://forbescouncils.com/?utm_source=Forbes.com%20Navigation&utm_medium=Link%20on%20Forbes.com&utm_term=ForbesCouncils&utm_content=direct%20link&utm_campaign=Forbes.com%20Nav%20Links" target="_blank">Forbes Councils</a></h5>
+	<ul data-et-context="footer" data-et-location="footercouncils" class="edittools-list">
+			<li class="editable edittools-item" data-et-item_id="" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://forbestechcouncil.com/?utm_source=Forbes.comNavigation&utm_medium=LinkonForbes.com&utm_term=ForbesTech&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Technology Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://forbesagencycouncil.com/?utm_source=Forbes.comNavigation&utm_medium=LinkonForbes.com&utm_term=ForbesAgency&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Agency Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://forbescoachescouncil.com/?utm_source=Forbes.comNavigation&utm_medium=LinkonForbes.com&utm_term=ForbesCoaches&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Coaches Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://forbesnonprofitcouncil.com/?utm_source=Forbes.comNavigation&utm_medium=LinkonForbes.com&utm_term=ForbesAgency&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Nonprofit Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://forbeslegalcouncil.com/?utm_source=Forbes.comNavigation&utm_medium=LinkonForbes.com&utm_term=ForbesLegal&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Legal Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="1" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://forbescommcouncil.com/?utm_source=Forbes.comNavigation&utm_medium=LinkonForbes.com&utm_term=ForbesComm&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Communications Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="2" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://www.forbeshrcouncil.com/?utm_source=Forbes.com&utm_medium=LinkonForbes.com&utm_term=ForbesHR&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Human Resources Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="3" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://www.forbesfinancecouncil.com/?utm_source=Forbes.com&utm_medium=LinkonForbes.com&utm_term=ForbesFinance&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Finance Council</a>
+			</li>
+			<li class="editable edittools-item" data-et-item_id="4" data-et-location="footercouncils" data-et-item-type="link">
+				<a href="https://www.forbesexecfinancecouncil.com/?utm_source=Forbes.com&utm_medium=LinkonForbes.com&utm_term=ForbesExecFinance&utm_content=directlink&utm_campaign=Forbes.comNavLinks" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Forbes Executive Finance Council</a>
+			</li>
+	</ul>
+<h5>Education</h5>
+<ul>
+	<li><a href="https://www.ashford.edu/degrees/online/business.htm/" target="_blank" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Forbes School of Business & Technology at Ashford University</a></li>
+</ul>			</div>
+			<div class="publications fleft">
+	<div id="footermagazineImg">
+		<ul data-et-context="footer" data-et-location="footermagazineImg" class="edittools-list">
+				<li class="editable edittools-item" data-et-item_id="" data-et-location="footermagazineImg" data-et-item-type="link">
+					<a href="//www.forbes.com/forbes"  data-ga-event="Footer,LinkFollowed,magazine" data-ga-event-trigger="click"><img src="//images.forbes.com/media/current_covers/forbes_120x160.jpg"></a>
+				</li>
+				<li class="editable edittools-item" data-et-item_id="" data-et-location="footermagazineImg" data-et-item-type="image">
+					<a href="//www.forbes.com/forbesasia/"  data-ga-event="Footer,LinkFollowed,magazine" data-ga-event-trigger="click"><img src="//images.forbes.com/media/current_covers/forbesasia_120x160.jpg"></a>
+				</li>
+				<li class="editable edittools-item" data-et-item_id="" data-et-location="footermagazineImg" data-et-item-type="image">
+					<a href="//www.forbes.com/forbeslife/"  data-ga-event="Footer,LinkFollowed,magazine" data-ga-event-trigger="click"><img src="//images.forbes.com/media/current_covers/forbeslife_120x160.jpg"></a>
+				</li>
+		</ul>
+	</div>
+
+	<ul class="subscriptions">
+		<ul data-et-context="footer" data-et-location="footermagazine" class="edittools-list">
+				<li class="editable edittools-item" data-et-item_id="6" data-et-location="footermagazine" data-et-item-type="link">
+    				<a href="https://subs.forbesmagazine.com/servlet/OrdersGateway?cds_mag_code=FRB&cds_page_id=150007" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">2 Free Issues</a>
+				</li>
+				<li class="editable edittools-item" data-et-item_id="4" data-et-location="footermagazine" data-et-item-type="link">
+    				<a href="http://www.forbesmagazine.com/" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Subscriber Services</a>
+				</li>
+				<li class="editable edittools-item" data-et-item_id="5" data-et-location="footermagazine" data-et-item-type="link">
+    				<a href="https://subs.forbesmagazine.com/loc/FRB/IZEG101" target="_blank" data-ga-event="Footer,LinkFollowed,conferences" data-ga-event-trigger="click">Gift Subscription</a>
+				</li>
+		</ul>
+	</ul>
+
+				<div class="affiliate-sites">
+					<span>
+						<ul data-et-context="footer" data-et-location="footersites" class="edittools-list">
+									<li class="editable edittools-item" data-et-item_id="8" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.com.br"  data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Brazil</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="10" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.cz" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Czech</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="24" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.fr/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes France</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="25" data-et-location="footersites" data-et-item-type="link">
+										<a href="https://forbes.hu/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Hungary</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="27" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbesindia.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes India</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="12" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.co.il" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Israel</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="13" data-et-location="footersites" data-et-item-type="link">
+										<a href="//forbesjapan.com" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Japan</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="14" data-et-location="footersites" data-et-item-type="link">
+										<a href="//forbes.kz" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Kazakhstan</a>
+									</li>
+						</ul>
+					</span>
+					<span>
+						<ul data-et-context="footer" data-et-location="footersites" class="edittools-list">
+									<li class="editable edittools-item" data-et-item_id="15" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.com.mx"  data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Mexico</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="16" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbesmiddleeast.com" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Middle East</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="17" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.pl" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Poland</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="18" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.ro" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Romania</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="19" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbes.ru" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Russia</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="20" data-et-location="footersites" data-et-item-type="link">
+										<a href="//forbes.es" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Spain</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="21" data-et-location="footersites" data-et-item-type="link">
+										<a href="//www.forbesthailand.com" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Thailand</a>
+									</li>
+									<li class="editable edittools-item" data-et-item_id="26" data-et-location="footersites" data-et-item-type="link">
+										<a href="//forbesvietnam.com/" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click">Forbes Vietnam</a>
+									</li>
+						</ul>
+					</span>
+ 	<span>
+		<div id="footersitesImg">
+			<ul data-et-context="footer" data-et-location="footersitesImg" class="edittools-list">
+					<li class="editable edittools-item" data-et-item_id="footersitesImg" data-et-location="footersitesImg" data-et-item-type="image">
+						<a href="https://www.amazon.com/Forbes-Book-Quotations-Thoughts-Business/dp/0316310042/ref=sr_1_1?s=books&ie=UTF8&qid=1465238690&sr=1-1&keywords=forbes+book+of+quotations" target="_blank" data-ga-event="Footer,LinkFollowed,site" data-ga-event-trigger="click" class="exit_trigger_set ga_tracked"><img src="//www.forbesmagazine.com/circ_creative/FRB/images/book-of-quotations-100x133.jpg"></a>
+					</li>
+			</ul>
+		</div>
+	</span>
+			</div>
+		</section>
+
+
+		<section class="legalese clearfix">
+			<small>&copy; &nbsp;2016 Forbes Media LLC.&nbsp;All Rights Reserved.</small>
+			<ul>
+				<li><a href="/terms" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Terms and Conditions</a></li>
+				<li><a href="//www.forbes.com/fdc/privacy.html" data-ga-event="Footer,LinkFollowed,companyinfo" data-ga-event-trigger="click">Privacy Statement</a></li>
+				<li><a href="http://corporate.morningstar.com/us/asp/subject.aspx?xmlfile=5501.xml" target="_blank" data-ga-event="Footer,LinkFollowed,partner" data-ga-event-trigger="click">Market Data by Morningstar</a></li>
+				<li><a onclick="(function(){forbes.event_tracking.track_ga_event(['Footer','LinkFollowed','partner']);var s=document.createElement('script');s.src='//preferences.truste.com/js/buildJsFilev2.jsp?domain=forbes.com&amp;type=epref';s.onreadystatechange=function(){if(script.readyState=='loaded'||script.readyState=='complete'){view(trusteId);}};s.onload=function(){view(trusteId);};document.getElementsByTagName('head')[0].appendChild(s);})()" style="cursor:pointer;" target="_blank">AdChoices</a></li>
+			</ul>
+		</section>
+	</div>
+</footer>
+	<!-- End: footer -->
+
+        <script type="text/javascript">
+            //<![CDATA[
+                var ppi_AjaxURI = '/wp-admin/admin-ajax.php'
+                	,imagesBaseCdn = '//i.forbesimg.com'
+					,followBarLocation = '';
+            //]]>
+        </script>
+    <!--Start: Gigya Configs-->
+        <script type="text/javascript">
+            var gigya_conf = {
+                siteName: 'forbes.com',
+                APIkey: '3_8Fcn29ZQ5lcRRr8BsC6Y2q8eRKPl567JTM6IWXsqW4eqW57_fNx29GDl9YdzZLvH',
+                connectWithoutLoginBehavior: 'alwaysLogin',
+                enabledProviders: 'facebook,twitter,linkedin,googleplus,yahoo,messenger,wordpress,aol,blogger,openid,foursquare,typepad'
+            };
+
+            (function() {
+				var po = document.createElement('script');
+				po.type = 'text/javascript';
+				//po.async = true;
+				po.src = document.location.protocol === ('https:' ?  'https://cdns' : 'http://cdn') + '.gigya.com/js/gigya.js?apiKey=3_8Fcn29ZQ5lcRRr8BsC6Y2q8eRKPl567JTM6IWXsqW4eqW57_fNx29GDl9YdzZLvH';
+
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(po, s);
+			})();
+        </script>
+    <!--End: Giya Configs -->
+	<script type="text/javascript">
+		var google_tag_channel = "";
+		var google_tag_section = "";
+		var google_tag_swimlane = "";
+		var google_tag_specialslot = "";
+		var google_tag_article_special_slot = "";
+		var google_tag_display_channel = "home";
+		var google_tag_display_section = "errorpage";
+		var google_tag_zone = "search";
+		var google_tag_article_id = "/sites/dsfs/";
+	</script>
+		<!--script type="text/javascript" src="//i.forbesimg.com/scripts/combined/js/global.fbc10b14384aaaf8d432268d9ab03e251b92e1dc.js"></script-->
+		<script type="text/javascript" src="//i.forbesimg.com/scripts/combined/js/global.551973b1b70fcb80e1375f22b708969870424160.js"></script>
+		<!--span class="lazy_load_js" data-files="//i.forbesimg.com/scripts/combined/js/globallazy.47edc0a56fba6a1e4c35e10313bd00c9f5b5c612.js"></span-->
+		<span class="lazy_load_js" data-files="//i.forbesimg.com/scripts/combined/js/globallazy.9821a9b4f8ef476cdb9328321aed5334bd59e46c.js"></span>
+    <script type="text/javascript">
+        forbes.bootstrap.init();
+    </script>
+
+
+
+</body>
+</html>
