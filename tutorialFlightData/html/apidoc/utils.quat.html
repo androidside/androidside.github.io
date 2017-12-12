@@ -1,0 +1,344 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>utils.quat module &#8212; Python Flight Data Processing 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="utils.thermometers module" href="utils.thermometers.html" />
+    <link rel="prev" title="utils.jordiTests module" href="utils.jordiTests.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.thermometers.html" title="utils.thermometers module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="utils.jordiTests.html" title="utils.jordiTests module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Sources</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utils.html" accesskey="U">utils package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-utils.quat">
+<span id="utils-quat-module"></span><h1>utils.quat module<a class="headerlink" href="#module-utils.quat" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt>Quaternion provides a class for manipulating quaternion objects.  This class provides:</dt>
+<dd><ul class="first last simple">
+<li><dl class="first docutils">
+<dt>a convenient constructor to convert to/from Euler Angles (RA,Dec,Roll) </dt>
+<dd>to/from quaternions</dd>
+</dl>
+</li>
+<li>class methods to multiply and divide quaternions</li>
+</ul>
+</dd>
+</dl>
+<dl class="function">
+<dt id="utils.quat.DCM2FordAngles">
+<code class="descclassname">utils.quat.</code><code class="descname">DCM2FordAngles</code><span class="sig-paren">(</span><em>matrix</em>, <em>rollArnab=0</em>, <em>prVersions=False</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.DCM2FordAngles" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="utils.quat.Quat">
+<em class="property">class </em><code class="descclassname">utils.quat.</code><code class="descname">Quat</code><span class="sig-paren">(</span><em>attitude</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.Quat" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">object</span></code></p>
+<p>Quaternion class</p>
+<p>Example usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">Quaternion</span> <span class="k">import</span> <span class="n">Quat</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quat</span> <span class="o">=</span> <span class="n">Quat</span><span class="p">((</span><span class="mi">12</span><span class="p">,</span><span class="mi">45</span><span class="p">,</span><span class="mi">45</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quat</span><span class="o">.</span><span class="n">ra</span><span class="p">,</span> <span class="n">quat</span><span class="o">.</span><span class="n">dec</span><span class="p">,</span> <span class="n">quat</span><span class="o">.</span><span class="n">roll</span>
+<span class="go">(12, 45, 45)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">quat</span><span class="o">.</span><span class="n">q</span>
+<span class="go">array([ 0.38857298, -0.3146602 ,  0.23486498,  0.8335697 ])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q2</span> <span class="o">=</span> <span class="n">Quat</span><span class="p">([</span> <span class="mf">0.38857298</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.3146602</span> <span class="p">,</span>  <span class="mf">0.23486498</span><span class="p">,</span>  <span class="mf">0.8335697</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q2</span><span class="o">.</span><span class="n">ra</span>
+<span class="go">11.999999315925008</span>
+</pre></div>
+</div>
+<p>Multiplication and division operators are overloaded for the class to 
+perform appropriate quaternion multiplication and division.</p>
+<p>Example usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q1</span> <span class="o">=</span> <span class="n">Quat</span><span class="p">((</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q2</span> <span class="o">=</span> <span class="n">Quat</span><span class="p">((</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">q1</span> <span class="o">/</span> <span class="n">q2</span>
+</pre></div>
+</div>
+<p>Performs the operation as q1 * inverse q2</p>
+<p>Example usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q1</span> <span class="o">=</span> <span class="n">Quat</span><span class="p">((</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q2</span> <span class="o">=</span> <span class="n">Quat</span><span class="p">((</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">,</span><span class="mi">50</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">q1</span> <span class="o">*</span> <span class="n">q2</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>attitude</strong> – initialization attitude for quat <code class="docutils literal"><span class="pre">attitude</span></code> may be:</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>another Quat</li>
+<li>a 4 element array (expects x,y,z,w quat form)</li>
+<li>a 3 element array (expects ra,dec,roll in degrees)</li>
+<li>a 3x3 transform/rotation matrix</li>
+</ul>
+<dl class="attribute">
+<dt id="utils.quat.Quat.dec">
+<code class="descname">dec</code><a class="headerlink" href="#utils.quat.Quat.dec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve Dec term from equatorial system in degrees</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="utils.quat.Quat.equatorial">
+<code class="descname">equatorial</code><a class="headerlink" href="#utils.quat.Quat.equatorial" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve [RA, Dec, Roll]
+:rtype: numpy array</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.quat.Quat.inv">
+<code class="descname">inv</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.Quat.inv" title="Permalink to this definition">¶</a></dt>
+<dd><p>Invert the quaternion</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">inverted quaternion</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#utils.quat.Quat" title="utils.quat.Quat">Quat</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.quat.Quat.normalize">
+<code class="descname">normalize</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.Quat.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize the quaternion</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">normalized quaternion</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#utils.quat.Quat" title="utils.quat.Quat">Quat</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="utils.quat.Quat.q">
+<code class="descname">q</code><a class="headerlink" href="#utils.quat.Quat.q" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve 4-vector of quaternion elements in [x, y, z, w] form</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">numpy array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="utils.quat.Quat.ra">
+<code class="descname">ra</code><a class="headerlink" href="#utils.quat.Quat.ra" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve RA term from equatorial system in degrees</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="utils.quat.Quat.roll">
+<code class="descname">roll</code><a class="headerlink" href="#utils.quat.Quat.roll" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve Roll term from equatorial system in degrees</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="utils.quat.Quat.transform">
+<code class="descname">transform</code><a class="headerlink" href="#utils.quat.Quat.transform" title="Permalink to this definition">¶</a></dt>
+<dd><p>Retrieve the value of the 3x3 rotation/transform matrix
+:returns: 3x3 rotation/transform matrix
+:rtype: numpy array</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.quat.cost">
+<code class="descclassname">utils.quat.</code><code class="descname">cost</code><span class="sig-paren">(</span><em>x</em>, <em>q</em>, <em>order</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.cost" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.quat.getAngles">
+<code class="descclassname">utils.quat.</code><code class="descname">getAngles</code><span class="sig-paren">(</span><em>q</em>, <em>order='YPR'</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.getAngles" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the three angles (Yaw,-Pitch,Roll) that describe the quaternion <code class="docutils literal"><span class="pre">q</span></code> applied in the defined multiplication order</p>
+<p>Example usage:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">q</span> <span class="o">=</span> <span class="n">Quat</span><span class="p">((</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">40</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">angles</span><span class="o">=</span><span class="n">getAngles</span><span class="p">(</span><span class="n">q</span><span class="p">,</span><span class="n">order</span><span class="o">=</span><span class="s1">&#39;YPR&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span> <span class="n">angles</span>
+<span class="go">[ 34.72446346   8.05229897  47.93141757]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Y</span><span class="o">=</span><span class="n">Quat</span><span class="p">((</span><span class="n">angles</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">P</span><span class="o">=</span><span class="n">Quat</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="n">angles</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span><span class="mi">0</span><span class="p">))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">R</span><span class="o">=</span><span class="n">Quat</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="n">angles</span><span class="p">[</span><span class="mi">2</span><span class="p">]))</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Y</span><span class="o">*</span><span class="n">P</span><span class="o">*</span><span class="n">R</span>
+<span class="go">[ 20.0000036   30.00002361  40.00001084]</span>
+</pre></div>
+</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>q</strong> – a utils.quat.Quat object</li>
+<li><strong>order</strong> – desired multiplication order (ie. ‘RPY’ is R*P*Y)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">3-dimensional np.array, [Yaw,-Pitch,Roll] angles in degrees</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.quat.normalize">
+<code class="descclassname">utils.quat.</code><code class="descname">normalize</code><span class="sig-paren">(</span><em>array</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.normalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Normalize a 4 element array/list/numpy.array for use as a quaternion</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>quat_array</strong> – 4 element list/array</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">normalized array</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">numpy array</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.quat.vec2skew">
+<code class="descclassname">utils.quat.</code><code class="descname">vec2skew</code><span class="sig-paren">(</span><em>v</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.quat.vec2skew" title="Permalink to this definition">¶</a></dt>
+<dd><p>Return the skew-symmetric matrix <img class="math" src="../_images/math/30226b3818151c41ac041983515f7df9d4c0f002.png" alt="\lfloor{\bm{v}_\times}\rfloor"/> related to the vector <code class="docutils literal"><span class="pre">v</span></code></p>
+<div class="math">
+<p><img src="../_images/math/648d7200272b50dd0eb2e020d335cbd87c30e0d7.png" alt="&amp;\lfloor{\bm{v}_\times}\rfloor=\begin{bmatrix}  0     &amp;   v_3   &amp;  -v_2   \\
+                                                 -v_3   &amp;   0     &amp;   v_1   \\
+                                                  v_2   &amp;  -v_1   &amp;   0  \\\end{bmatrix}
+\ ,\ \bm{v}\times\bm{u}=\lfloor{\bm{v}_\times}\rfloor\bm{u}"/></p>
+</div><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>v</strong> – a 3-dimensional vector</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">a skew-symmetric matrix</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">3x3 np.matrix</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/bettii_logo.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="utils.jordiTests.html"
+                        title="previous chapter">utils.jordiTests module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="utils.thermometers.html"
+                        title="next chapter">utils.thermometers module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/apidoc/utils.quat.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.thermometers.html" title="utils.thermometers module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="utils.jordiTests.html" title="utils.jordiTests module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Sources</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utils.html" >utils package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Marc Casalprim.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

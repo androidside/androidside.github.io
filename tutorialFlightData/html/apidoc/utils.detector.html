@@ -1,0 +1,183 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>utils.detector module &#8212; Python Flight Data Processing 0.1 documentation</title>
+    <link rel="stylesheet" href="../_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="utils.estimator module" href="utils.estimator.html" />
+    <link rel="prev" title="utils.dataset module" href="utils.dataset.html" /> 
+  </head>
+  <body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.estimator.html" title="utils.estimator module"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="utils.dataset.html" title="utils.dataset module"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Sources</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utils.html" accesskey="U">utils package</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-utils.detector">
+<span id="utils-detector-module"></span><h1>utils.detector module<a class="headerlink" href="#module-utils.detector" title="Permalink to this headline">¶</a></h1>
+<p>Created on Jun 5, 2017</p>
+<p>Useful functions to handle the FIR detectors information.</p>
+<p>&#64;author: Marc Casalprim</p>
+<dl class="function">
+<dt id="utils.detector.createDataAxes">
+<code class="descclassname">utils.detector.</code><code class="descname">createDataAxes</code><span class="sig-paren">(</span><em>title='', dets=[0, 1, 2, 3]</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.createDataAxes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.createImagesAxes">
+<code class="descclassname">utils.detector.</code><code class="descname">createImagesAxes</code><span class="sig-paren">(</span><em>title=''</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.createImagesAxes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.data2matrices">
+<code class="descclassname">utils.detector.</code><code class="descname">data2matrices</code><span class="sig-paren">(</span><em>data</em>, <em>index=None</em>, <em>center=True</em>, <em>dead=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.data2matrices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the fields in data to 4 3D matrices 
+representing the detector images evolution in time</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.dataframe2matrices">
+<code class="descclassname">utils.detector.</code><code class="descname">dataframe2matrices</code><span class="sig-paren">(</span><em>dataframe</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.dataframe2matrices" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts the fields in dataframe to 4 3D matrices 
+representing the detector images evolution in time</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.generateDictMap">
+<code class="descclassname">utils.detector.</code><code class="descname">generateDictMap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.generateDictMap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Associates every field to a detector pixel and generates a dictionary <code class="docutils literal"><span class="pre">dictMap</span></code> of the mapping, keyed by the field name.
+Each entry of the dictionary has 3-tuple describing the (row,column,detectorId)</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.getDeadPixels">
+<code class="descclassname">utils.detector.</code><code class="descname">getDeadPixels</code><span class="sig-paren">(</span><em>filename='dead_pixels.txt'</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.getDeadPixels" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.getFFTs">
+<code class="descclassname">utils.detector.</code><code class="descname">getFFTs</code><span class="sig-paren">(</span><em>matrix</em>, <em>sindex=0</em>, <em>eindex=None</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.getFFTs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the first half of the FFT of the matrices inside the dictionary <code class="docutils literal"><span class="pre">matrix</span></code>.
+It assumes the time is in the 3rd dimension.
+:rtype: dict</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.getIndexRangeLastStroke">
+<code class="descclassname">utils.detector.</code><code class="descname">getIndexRangeLastStroke</code><span class="sig-paren">(</span><em>CDLposTarget</em>, <em>CDLmceFN</em>, <em>masterMceFn</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.getIndexRangeLastStroke" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.plotData">
+<code class="descclassname">utils.detector.</code><code class="descname">plotData</code><span class="sig-paren">(</span><em>data</em>, <em>axes</em>, <em>downsample=4</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.plotData" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="utils.detector.plotImages">
+<code class="descclassname">utils.detector.</code><code class="descname">plotImages</code><span class="sig-paren">(</span><em>data</em>, <em>axes</em>, <em>sum=None</em>, <em>cmap='viridis'</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.detector.plotImages" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../index.html">
+              <img class="logo" src="../_static/bettii_logo.png" alt="Logo"/>
+            </a></p>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="utils.dataset.html"
+                        title="previous chapter">utils.dataset module</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="utils.estimator.html"
+                        title="next chapter">utils.estimator module</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/apidoc/utils.detector.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="Go" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="utils.estimator.html" title="utils.estimator module"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="utils.dataset.html" title="utils.dataset module"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="modules.html" >Sources</a> &#187;</li>
+          <li class="nav-item nav-item-2"><a href="utils.html" >utils package</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Marc Casalprim.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
+    </div>
+  </body>
+</html>

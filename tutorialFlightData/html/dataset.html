@@ -1,0 +1,530 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>DataSet &mdash; Python Flight Data Processing 1 documentation</title>
+    
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Python Flight Data Processing 1 documentation" href="index.html" /> 
+  </head>
+  <body role="document">
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python Flight Data Processing 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="module-utils.dataset">
+<span id="dataset"></span><h1>DataSet<a class="headerlink" href="#module-utils.dataset" title="Permalink to this headline">¶</a></h1>
+<p>Created on 28 abr. 2017</p>
+<p>Conatins useful functions to read and plot the fields archived by Aurora. The DataSet class reads and creates a <code class="docutils literal"><span class="pre">pandas.Dataframe</span></code> object containing the desired fields.</p>
+<p>&#64;author: Marc Casalprim</p>
+<dl class="class">
+<dt id="utils.dataset.DataSet">
+<em class="property">class </em><code class="descclassname">utils.dataset.</code><code class="descname">DataSet</code><span class="sig-paren">(</span><em>folder=None</em>, <em>freq=400.0</em>, <em>min=None</em>, <em>max=None</em>, <em>folder_export=None</em>, <em>nValues=None</em>, <em>start=None</em>, <em>verbose=False</em>, <em>rpeaks=False</em>, <em>estimator=False</em>, <em>starcam=False</em>, <em>fieldsList=[]</em>, <em>foldersList=[]</em>, <em>droplist=[]</em>, <em>timeIndex=False</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.DataSet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Class containing useful methods to read and generate a pandas dataframe containing the desired fields.
+Derived from Maxime&#8217;s original codes. The dataframe is stored as the attribute df.</p>
+<dl class="method">
+<dt id="utils.dataset.DataSet.readField">
+<code class="descname">readField</code><span class="sig-paren">(</span><em>field</em>, <em>folder=None</em>, <em>rpeaks=True</em>, <em>verbose=False</em>, <em>nValues=None</em>, <em>start=None</em>, <em>timeIndex=False</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.DataSet.readField" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a single field and updates the dataframe df accordingly.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>field</strong> &#8211; utils.field.Field object to read</li>
+<li><strong>folder</strong> &#8211; folder where the fileds are located (if None, uses self.folder)</li>
+<li><strong>rpeaks</strong> &#8211; remove peaks? (where all the values are zero)</li>
+<li><strong>verbose</strong> &#8211; print progress?</li>
+<li><strong>nValues</strong> &#8211; number of values to read</li>
+<li><strong>start</strong> &#8211; where to start reading the files</li>
+<li><strong>timeIndex</strong> &#8211; index by time? (derived from the folder name)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.dataset.DataSet.readListFields">
+<code class="descname">readListFields</code><span class="sig-paren">(</span><em>fieldsList</em>, <em>folder=None</em>, <em>rpeaks=True</em>, <em>verbose=False</em>, <em>nValues=None</em>, <em>start=None</em>, <em>timeIndex=False</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.DataSet.readListFields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a list of fields and stores the new fields in the df attribute</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>fieldsList</strong> &#8211; list of utils.field.Field objects</li>
+<li><strong>folder</strong> &#8211; folder where the fields are located</li>
+<li><strong>rpeaks</strong> &#8211; remove peaks? (where all the values are zero)</li>
+<li><strong>verbose</strong> &#8211; print progress?</li>
+<li><strong>nValues</strong> &#8211; number of values to read</li>
+<li><strong>start</strong> &#8211; where to start reading the files</li>
+<li><strong>timeIndex</strong> &#8211; index by time? (derived from the folder name)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="utils.dataset.DataSet.readMultipleFolders">
+<code class="descname">readMultipleFolders</code><span class="sig-paren">(</span><em>fieldsList</em>, <em>foldersList</em>, <em>rpeaks=False</em>, <em>verbose=False</em>, <em>timeIndex=True</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.DataSet.readMultipleFolders" title="Permalink to this definition">¶</a></dt>
+<dd><p>Stores in self.df a new pd.DatFrame object containing
+the fieldsList data from all the folders in foldersList.
+The indexing of the DataFrame is a DatetimeIndex by default
+(timeIndex=True), using the date and time of the folder name.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>fieldsList</strong> &#8211; list of utils.field.Field objects</li>
+<li><strong>foldersList</strong> &#8211; list of folders where the fields are located</li>
+<li><strong>rpeaks</strong> &#8211; remove peaks? (where all the values are zero)</li>
+<li><strong>verbose</strong> &#8211; print progress?</li>
+<li><strong>timeIndex</strong> &#8211; index by time? (derived from the folder name)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.extractDuplicates">
+<code class="descclassname">utils.dataset.</code><code class="descname">extractDuplicates</code><span class="sig-paren">(</span><em>df</em>, <em>th=0.001</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.extractDuplicates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes rows where there are duplicates of the quaternions at the first column of the dataframe df</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> &#8211; a pd.DataFrame object</li>
+<li><strong>th</strong> &#8211; tolerance of the difference in degrees between the RA coordinates of the duplicate quaternions (default 1e-3)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the df with the duplicates removed</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pd.DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.extractGyrosAndStarcam">
+<code class="descclassname">utils.dataset.</code><code class="descname">extractGyrosAndStarcam</code><span class="sig-paren">(</span><em>dataframe, labels_gyros=['gyroX', 'gyroY', 'gyroZ'], label_triggers='triggers', labels_scerrors=['ra_err', 'dec_err', 'roll_err']</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.extractGyrosAndStarcam" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns three dataframes with the Groscopes, Starcamera and Estimator data respectively.
+Synchronizes the Starcamera with the triggers. Useful for the Estimator classes.</p>
+<p>the dataframe must contain, at least: the following columns: [&#8216;qI2G&#8217;, &#8216;qI2S&#8217;,&#8217;dec_sc&#8217;, &#8216;ra_sc&#8217;, &#8216;roll_sc&#8217;,&#8217;qi&#8217;, &#8216;qj&#8217;, &#8216;qk&#8217;, &#8216;qr&#8217;,&#8217;gyroX&#8217;, &#8216;gyroY&#8217;, &#8216;gyroZ&#8217;,&#8217;biasX&#8217;,&#8217;biasY&#8217;,&#8217;biasZ&#8217;,&#8217;P00&#8217;,&#8217;P01&#8217;,&#8217;P02&#8217;,&#8217;P10&#8217;,&#8217;P11&#8217;,&#8217;P12&#8217;,&#8217;P20&#8217;,&#8217;P21&#8217;,&#8217;P22&#8217;]</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dataframe</strong> &#8211; pandas dataframe containing all the infromation to extract</li>
+<li><strong>labels_gyros</strong> &#8211; columns of the dataframe that contain the gyroscopes information</li>
+<li><strong>label_triggers</strong> &#8211; column of the dataframe that contains the triggers information</li>
+<li><strong>labels_scerrors</strong> &#8211; columns of the dataframe that contain the star camera uncertainties information</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">gyros,sc,est: pandas dataframes with the gyroscopes, star camera and estimator data respectively.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.extractPs">
+<code class="descclassname">utils.dataset.</code><code class="descname">extractPs</code><span class="sig-paren">(</span><em>dataframe</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.extractPs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a 3x3 covariance matrix from the columns [&#8216;P00&#8217;,&#8217;P01&#8217;,&#8217;P02&#8217;,&#8217;P10&#8217;,&#8217;P11&#8217;,&#8217;P12&#8217;,&#8217;P20&#8217;,&#8217;P21&#8217;,&#8217;P22&#8217;] of the <code class="docutils literal"><span class="pre">dataframe</span></code>
+:param dataframe: a pandas.Dataframe with at least 9 columns
+:rtype: 3x3 <code class="docutils literal"><span class="pre">np.matrix</span></code></p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.filterArray">
+<code class="descclassname">utils.dataset.</code><code class="descname">filterArray</code><span class="sig-paren">(</span><em>x</em>, <em>N=200</em>, <em>R=0.9</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.filterArray" title="Permalink to this definition">¶</a></dt>
+<dd><p>Smoothes peaks of the np.array x.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>x</strong> &#8211; np.array to filter</li>
+<li><strong>N</strong> &#8211; width of the peaks to remove</li>
+<li><strong>R</strong> &#8211; overlapping ratio of the gliding window [0,1]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">a filtered np.array with the same dimensions as x</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.filterDataframe">
+<code class="descclassname">utils.dataset.</code><code class="descname">filterDataframe</code><span class="sig-paren">(</span><em>df</em>, <em>N=3</em>, <em>R=0.9</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.filterDataframe" title="Permalink to this definition">¶</a></dt>
+<dd><p>Removes peaks from the dataframe df. It uses filterArray(df[column].values, N, R)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> &#8211; a pd.DataFrame object</li>
+<li><strong>N</strong> &#8211; width of the peaks to remove</li>
+<li><strong>R</strong> &#8211; overlapping ratio of the gliding window [0,1]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the df filtered, of the same size</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pd.DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.filterQuats">
+<code class="descclassname">utils.dataset.</code><code class="descname">filterQuats</code><span class="sig-paren">(</span><em>df</em>, <em>onlyQuats=True</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.filterQuats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Filters peaks of the dataframe df with quaternions. It uses filterArray(df[column].values, N=3, R=0.9)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> &#8211; a pd.DataFrame object</li>
+<li><strong>onlyQuats</strong> &#8211; filter only the columns with quaternions? (if False it has the same effect as filterDataframe(df))</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">the df filtered, of the same size</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pd.DataFrame</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.genQuaternions">
+<code class="descclassname">utils.dataset.</code><code class="descname">genQuaternions</code><span class="sig-paren">(</span><em>dataframe, quats={'qI2S': ['ra_sc', 'dec_sc', 'roll_sc'], 'qest': ['qi', 'qj', 'qk', 'qr'], 'qI2G': ['qi_sc', 'qj_sc', 'qk_sc', 'qr_sc']}, norm=False, filter=False</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.genQuaternions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a dictionary of lists of <code class="docutils literal"><span class="pre">:meth:~`utils.quat.Quat`</span></code> objects using the columns of the dataframe defined by the quats dictionary values.
+The returned dictionary will have the same keys as quats</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dataframe</strong> &#8211; pandas.DataFrame object, with</li>
+<li><strong>quats</strong> &#8211; dictionary defining the columns to read that will be passed to the <a class="reference internal" href="apidoc/utils.quat.html#utils.quat.Quat" title="utils.quat.Quat"><code class="xref py py-meth docutils literal"><span class="pre">utils.quat.Quat()</span></code></a> contructor</li>
+<li><strong>norm</strong> &#8211; normalize quaternion?</li>
+<li><strong>filter</strong> &#8211; filter the quaternions?</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">dictionary of utils.Quat lists, keyed by quats keys.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.load_fields">
+<code class="descclassname">utils.dataset.</code><code class="descname">load_fields</code><span class="sig-paren">(</span><em>fieldsList</em>, <em>folder=None</em>, <em>nValues=None</em>, <em>start=None</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.load_fields" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads the fields in fieldsList that are in the folder</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>fieldsList</strong> &#8211; list of utisl.field.Field to read</li>
+<li><strong>folder</strong> &#8211; folder where the fields will be read</li>
+<li><strong>nValues</strong> &#8211; number of values we want to read (if None, all of them)</li>
+<li><strong>start</strong> &#8211; value from where we start counting nValues (if None, starting from the end of file)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">dictionary of <code class="docutils literal"><span class="pre">np.array</span></code> keyed by the field&#8217;s label</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.load_single_field">
+<code class="descclassname">utils.dataset.</code><code class="descname">load_single_field</code><span class="sig-paren">(</span><em>filename</em>, <em>datatype</em>, <em>nValues=None</em>, <em>start=None</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.load_single_field" title="Permalink to this definition">¶</a></dt>
+<dd><p>Reads a binary file. It uses the <code class="docutils literal"><span class="pre">np.fromfile</span></code> function.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>filename</strong> &#8211; complete filename of the field to read</li>
+<li><strong>datatype</strong> &#8211; data type of the binary file (eg. int32 -&gt; &#8216;i4&#8217;)</li>
+<li><strong>nValues</strong> &#8211; number of values we want to read (if None, all of them)</li>
+<li><strong>start</strong> &#8211; value from where we start counting nValues (if None, starting from the end of file)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">values of the field</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">np.array</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.plotColumns">
+<code class="descclassname">utils.dataset.</code><code class="descname">plotColumns</code><span class="sig-paren">(</span><em>df</em>, <em>units=''</em>, <em>xlabel='Index'</em>, <em>ylabels=None</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.plotColumns" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the N columns of the pd.Dataframe df in a Nx1 subplots layout</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> &#8211; pd.Dataframe object</li>
+<li><strong>units</strong> &#8211; string to add at the end of the ylabels</li>
+<li><strong>xlabel</strong> &#8211; label of the x axis</li>
+<li><strong>ylabels</strong> &#8211; labels of the y axis (if None, ylabels=df.columns)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">figure</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.plotCovs">
+<code class="descclassname">utils.dataset.</code><code class="descname">plotCovs</code><span class="sig-paren">(</span><em>df, time_label='Palestine Time', ylabels=None, labels=None, styles=['b', 'r', 'g', 'k'], legend=False, xlim=None, function=&lt;function &lt;lambda&gt; at 0x0000000009623B38&gt;, rotate=False</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.plotCovs" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the first three diagonal elements of the matrices in the dataframe df in a 3x1 subplots layout (P11,P22,P33)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> &#8211; a pd.Dataframe containing exclusively columns of np.matrix objects greater than 3x3</li>
+<li><strong>time_label</strong> &#8211; label of the x axis</li>
+<li><strong>ylabels</strong> &#8211; y axis labels of the three subplots, in order top-bottom</li>
+<li><strong>labels</strong> &#8211; legend labels of every column (if None, use df.columns as labels)</li>
+<li><strong>styles</strong> &#8211; plot styles or kwargs of every column</li>
+<li><strong>legend</strong> &#8211; show legend?</li>
+<li><strong>xlim</strong> &#8211; limits of the x axis [xmin,xmax]</li>
+<li><strong>function</strong> &#8211; function to be passed at every diagonal element</li>
+<li><strong>rotate</strong> &#8211; rotate the covariance matrix -46 degrees? (represent in SC reference frame)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Ptype:</th><td class="field-body"><p class="first"><code class="docutils literal"><span class="pre">pd.Dataframe</span></code></p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">figure</p>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">matplotlib.figure</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.plotInnovations">
+<code class="descclassname">utils.dataset.</code><code class="descname">plotInnovations</code><span class="sig-paren">(</span><em>ests, sc, time_label='Palestine Time', units='arcsec', conv=&lt;function &lt;lambda&gt; at 0x0000000009623A58&gt;, labels=None, styles=['b', 'r', 'g', 'k'], legend=False, xlim=None, sync=False, rotation=True</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.plotInnovations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the errors between the estimated attitudes in the list of dataframes ests and the star camera solutions in the dataframe sc</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>ests</strong> &#8211; list of pd.Dataframe containing a qest column</li>
+<li><strong>sc</strong> &#8211; pd.Dataframe containing the star camera information (qI2G column)</li>
+<li><strong>time_label</strong> &#8211; label of the x axis</li>
+<li><strong>units</strong> &#8211; string describing the units of the values</li>
+<li><strong>conv</strong> &#8211; function to be passed at every error</li>
+<li><strong>labels</strong> &#8211; legend labels of every pd.Dataframe in ests (if None, the labels are the position in the ests list)</li>
+<li><strong>styles</strong> &#8211; plot styles or kwargs of every pd.Dataframe in ests</li>
+<li><strong>legend</strong> &#8211; show legend?</li>
+<li><strong>xlim</strong> &#8211; limits of the x axis [xmin,xmax]</li>
+<li><strong>sync</strong> &#8211; plot synchronized with time?</li>
+<li><strong>rotation</strong> &#8211; compute the errors in the SC reference frame?</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">figure</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">matplotlib.figure</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.plotQuaternions">
+<code class="descclassname">utils.dataset.</code><code class="descname">plotQuaternions</code><span class="sig-paren">(</span><em>df, time_label='Palestine Time', labels=None, styles=['b', 'r', 'g', 'k'], legend=False, xlim=None</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.plotQuaternions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot the quaternions of the pd.Dataframe df in a 3x1 subplots layout (RA,DEC,ROLL)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>df</strong> &#8211; a pd.Dataframe containing exclusively utils.quat.Quat objects</li>
+<li><strong>time_label</strong> &#8211; label of the x axis</li>
+<li><strong>labels</strong> &#8211; legend labels of every column (if None, use df.columns as labels)</li>
+<li><strong>styles</strong> &#8211; plot styles or kwargs of every column</li>
+<li><strong>legend</strong> &#8211; show legend?</li>
+<li><strong>xlim</strong> &#8211; limits of the x axis [xmin,xmax]</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">figure</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">matplotlib.figure</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dataset.toTimeIndex">
+<code class="descclassname">utils.dataset.</code><code class="descname">toTimeIndex</code><span class="sig-paren">(</span><em>dataframe</em>, <em>folder</em>, <em>freq=400.0</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dataset.toTimeIndex" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the same dataframe but with the indices in DateTime format.
+The input dataframe must have mceFrameNumber indices.
+The time in the folder is considered as the starting time for the first mce frame number.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dataframe</strong> &#8211; pd.Dataframe object</li>
+<li><strong>folder</strong> &#8211; folder name</li>
+<li><strong>freq</strong> &#8211; frequency of the index (default 400 Hz)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">dataframe with DateTime indices</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pd.Dataframe</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/dataset.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">Python Flight Data Processing 1 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &copy; Copyright 2017, Marc Casalprim.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.3.5.
+    </div>
+  </body>
+</html>
