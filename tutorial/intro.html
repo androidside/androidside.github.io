@@ -6,8 +6,8 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>An Introductory Example &#8212; Python Flight Data Processing 0.1 documentation</title>
-    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="staticTutorial/nature.css" type="text/css" />
+    <link rel="stylesheet" href="staticTutorial/pygments.css" type="text/css" />
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    './',
@@ -18,13 +18,13 @@
         SOURCELINK_SUFFIX: '.txt'
       };
     </script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="staticTutorial/jquery.js"></script>
+    <script type="text/javascript" src="staticTutorial/underscore.js"></script>
+    <script type="text/javascript" src="staticTutorial/doctools.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="src" href="apidoc/modules.html" />
-    <link rel="prev" title="Introduction" href="index.html" /> 
+    <link rel="prev" title="Introduction" href="index.html" />
   </head>
   <body>
     <div class="related" role="navigation" aria-label="related navigation">
@@ -42,15 +42,15 @@
         <li class="right" >
           <a href="index.html" title="Introduction"
              accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li>
       </ul>
-    </div>  
+    </div>
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
           <div class="body" role="main">
-            
+
   <div class="section" id="an-introductory-example">
 <h1>An Introductory Example<a class="headerlink" href="#an-introductory-example" title="Permalink to this headline">¶</a></h1>
 <p>A good start to understand better how all of this works is with a simple example. The following code is available at <a class="reference internal" href="apidoc/scripts.gyros.html#module-scripts.gyros" title="scripts.gyros"><code class="xref py py-mod docutils literal"><span class="pre">scripts.gyros</span></code></a> and plots directly the gyroscopes data:</p>
@@ -90,8 +90,8 @@
 </pre></div>
 </div>
 <p>After running the previous script we will obtain two new figures:</p>
-<a class="reference internal image-reference" href="imagesTuto/gyros1.png"><img alt="imagesTuto/gyros1.png" src="imagesTuto/gyros1.png" style="width: 45%;" /></a>
-<a class="reference internal image-reference" href="imagesTuto/gyros2.png"><img alt="imagesTuto/gyros2.png" src="imagesTuto/gyros2.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="imagesTutorial/gyros1.png"><img alt="imagesTutorial/gyros1.png" src="imagesTutorial/gyros1.png" style="width: 45%;" /></a>
+<a class="reference internal image-reference" href="imagesTutorial/gyros2.png"><img alt="imagesTutorial/gyros2.png" src="imagesTutorial/gyros2.png" style="width: 45%;" /></a>
 <p>Now we will analyze in more detail the different parts of the script.</p>
 <p>Imports:</p>
 <div class="highlight-default"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">utils.config</span> <span class="k">import</span> <span class="n">flightDisksFolders</span><span class="p">,</span><span class="n">plt</span>
@@ -207,10 +207,10 @@ Once we have constructed our dataset, it is possible that we still have some res
 <col width="54%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="first reference internal image-reference" href="imagesTuto/raw.png"><img alt="imagesTuto/raw.png" src="imagesTuto/raw.png" style="height: 400px;" /></a>
+<tr class="row-odd"><td><a class="first reference internal image-reference" href="imagesTutorial/raw.png"><img alt="imagesTutorial/raw.png" src="imagesTutorial/raw.png" style="height: 400px;" /></a>
 <p class="last"><em>Raw values of the field</em></p>
 </td>
-<td><a class="first reference internal image-reference" href="imagesTuto/raw_100.png"><img alt="imagesTuto/raw_100.png" src="imagesTuto/raw_100.png" style="height: 400px;" /></a>
+<td><a class="first reference internal image-reference" href="imagesTutorial/raw_100.png"><img alt="imagesTutorial/raw_100.png" src="imagesTutorial/raw_100.png" style="height: 400px;" /></a>
 <p class="last"><em>One of every 100 raw values of the field</em></p>
 </td>
 </tr>
@@ -228,10 +228,10 @@ Once we have constructed our dataset, it is possible that we still have some res
 <col width="54%" />
 </colgroup>
 <tbody valign="top">
-<tr class="row-odd"><td><a class="first reference internal image-reference" href="imagesTuto/dataframe.png"><img alt="imagesTuto/dataframe.png" src="imagesTuto/dataframe.png" style="height: 400px;" /></a>
+<tr class="row-odd"><td><a class="first reference internal image-reference" href="imagesTutorial/dataframe.png"><img alt="imagesTutorial/dataframe.png" src="imagesTutorial/dataframe.png" style="height: 400px;" /></a>
 <p class="last"><code class="docutils literal"><span class="pre">ds.df.triggers.plot()</span></code></p>
 </td>
-<td><a class="first reference internal image-reference" href="imagesTuto/dataframe_filt.png"><img alt="imagesTuto/dataframe_filt.png" src="imagesTuto/dataframe_filt.png" style="height: 400px;" /></a>
+<td><a class="first reference internal image-reference" href="imagesTutorial/dataframe_filt.png"><img alt="imagesTutorial/dataframe_filt.png" src="imagesTutorial/dataframe_filt.png" style="height: 400px;" /></a>
 <p class="last"><code class="docutils literal"><span class="pre">filterDataframe(ds.df).triggers.plot()</span></code></p>
 </td>
 </tr>
@@ -255,7 +255,7 @@ Once we have constructed our dataset, it is possible that we still have some res
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
             <p class="logo"><a href="index.html">
-              <img class="logo" src="_static/bettii_logo.png" alt="Logo"/>
+              <img class="logo" src="staticTutorial/bettii_logo.png" alt="Logo"/>
             </a></p>
   <h3><a href="index.html">Table Of Contents</a></h3>
   <ul>
@@ -277,7 +277,7 @@ Once we have constructed our dataset, it is possible that we still have some res
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="_sources/intro.rst.txt"
+      <li><a href="sourcesTutorial/intro.rst.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -310,11 +310,11 @@ Once we have constructed our dataset, it is possible that we still have some res
         <li class="right" >
           <a href="index.html" title="Introduction"
              >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li> 
+        <li class="nav-item nav-item-0"><a href="index.html">Python Flight Data Processing 0.1 documentation</a> &#187;</li>
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-        &#169; Copyright 2017, Marc Casalprim.
+        &#169; Copyright 2017, BETTII Team.
       Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.6.3.
     </div>
   </body>
