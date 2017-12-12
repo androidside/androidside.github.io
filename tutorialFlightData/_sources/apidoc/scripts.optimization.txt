@@ -1,0 +1,86 @@
+scripts.optimization package
+============================
+
+Submodules
+----------
+
+scripts.optimization.biases module
+----------------------------------
+
+.. automodule:: scripts.optimization.biases
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.biases_plot module
+---------------------------------------
+
+.. automodule:: scripts.optimization.biases_plot
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.c_bias module
+----------------------------------
+
+.. automodule:: scripts.optimization.c_bias
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.c_bias_plot module
+---------------------------------------
+
+.. automodule:: scripts.optimization.c_bias_plot
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.cmatrix module
+-----------------------------------
+
+.. automodule:: scripts.optimization.cmatrix
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.cmatrix_plot module
+----------------------------------------
+
+.. automodule:: scripts.optimization.cmatrix_plot
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.k_m_bias module
+------------------------------------
+
+.. automodule:: scripts.optimization.k_m_bias
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.k_m_bias_plot module
+-----------------------------------------
+
+.. automodule:: scripts.optimization.k_m_bias_plot
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.optimization.optimq module
+----------------------------------
+
+.. automodule:: scripts.optimization.optimq
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: scripts.optimization
+    :members:
+    :undoc-members:
+    :show-inheritance:

@@ -1,0 +1,22 @@
+estimators package
+==================
+
+Submodules
+----------
+
+estimators.estimators module
+----------------------------
+
+.. automodule:: estimators.estimators
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: estimators
+    :members:
+    :undoc-members:
+    :show-inheritance:

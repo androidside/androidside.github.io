@@ -1,0 +1,214 @@
+scripts.old package
+===================
+
+Submodules
+----------
+
+scripts.old.RaDecDebugOptim module
+----------------------------------
+
+.. automodule:: scripts.old.RaDecDebugOptim
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.RaDecDebugTPA module
+--------------------------------
+
+.. automodule:: scripts.old.RaDecDebugTPA
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.SCDebug module
+--------------------------
+
+.. automodule:: scripts.old.SCDebug
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.SC_Est module
+-------------------------
+
+.. automodule:: scripts.old.SC_Est
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.SC_Est_errors module
+--------------------------------
+
+.. automodule:: scripts.old.SC_Est_errors
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.Starcam2GyrosShow module
+------------------------------------
+
+.. automodule:: scripts.old.Starcam2GyrosShow
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.ThermometersByNumber module
+---------------------------------------
+
+.. automodule:: scripts.old.ThermometersByNumber
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.ThermometersDale module
+-----------------------------------
+
+.. automodule:: scripts.old.ThermometersDale
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.ThermometersPiper module
+------------------------------------
+
+.. automodule:: scripts.old.ThermometersPiper
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.ThermometersPiper2 module
+-------------------------------------
+
+.. automodule:: scripts.old.ThermometersPiper2
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.ThermometersPiper3 module
+-------------------------------------
+
+.. automodule:: scripts.old.ThermometersPiper3
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.covs module
+-----------------------
+
+.. automodule:: scripts.old.covs
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.kalman module
+-------------------------
+
+.. automodule:: scripts.old.kalman
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.kalman15 module
+---------------------------
+
+.. automodule:: scripts.old.kalman15
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.kalman2 module
+--------------------------
+
+.. automodule:: scripts.old.kalman2
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.plotArchivesMerged module
+-------------------------------------
+
+.. automodule:: scripts.old.plotArchivesMerged
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.plotGondolaArchivesMerged module
+--------------------------------------------
+
+.. automodule:: scripts.old.plotGondolaArchivesMerged
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.plotPastArchive module
+----------------------------------
+
+.. automodule:: scripts.old.plotPastArchive
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.plotThermoFN module
+-------------------------------
+
+.. automodule:: scripts.old.plotThermoFN
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.plotThermometersArchivesMerged module
+-------------------------------------------------
+
+.. automodule:: scripts.old.plotThermometersArchivesMerged
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.propagation module
+------------------------------
+
+.. automodule:: scripts.old.propagation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.qPropagation module
+-------------------------------
+
+.. automodule:: scripts.old.qPropagation
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.quatDebug module
+----------------------------
+
+.. automodule:: scripts.old.quatDebug
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.starcamkalman module
+--------------------------------
+
+.. automodule:: scripts.old.starcamkalman
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+scripts.old.starcamkalman2 module
+---------------------------------
+
+.. automodule:: scripts.old.starcamkalman2
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: scripts.old
+    :members:
+    :undoc-members:
+    :show-inheritance:

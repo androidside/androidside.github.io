@@ -1,0 +1,7 @@
+optimqSC module
+===============
+
+.. automodule:: optimqSC
+    :members:
+    :undoc-members:
+    :show-inheritance:

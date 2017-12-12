@@ -1,0 +1,30 @@
+tests package
+=============
+
+Submodules
+----------
+
+tests.extractSCTest module
+--------------------------
+
+.. automodule:: tests.extractSCTest
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+tests.getIndexTest module
+-------------------------
+
+.. automodule:: tests.getIndexTest
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: tests
+    :members:
+    :undoc-members:
+    :show-inheritance:
