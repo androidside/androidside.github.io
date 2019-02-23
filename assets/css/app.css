@@ -1986,3 +1986,21 @@ img.logoTop {
     max-height: 40px;
     max-width: auto;
 }
+
+#about {
+    padding-top: 100px;
+}
+#phoenix {
+    padding-top: 100px;
+}
+#press {
+    padding-top: 100px;
+}
+
+#resume {
+    padding-top: 100px;
+}
+
+#skills {
+    padding-top: 100px;
+}
