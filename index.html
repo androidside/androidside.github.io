@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>a quiet corner of the internet</title>
+<meta name="description" content="A quiet corner of the internet.">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:,">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --fg: #e7e7ec;
+    --accent: 108, 124, 224;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-font-smoothing: antialiased;
+  }
+  canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+  }
+  main {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+  }
+  #fact {
+    font-size: clamp(1.4rem, 4.2vw, 2.8rem);
+    font-weight: 300;
+    letter-spacing: -0.015em;
+    line-height: 1.25;
+    max-width: 22ch;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    text-shadow: 0 0 40px rgba(var(--accent), 0.25);
+  }
+  #fact.visible { opacity: 1; }
+  #hint {
+    position: fixed;
+    bottom: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: rgba(231, 231, 236, 0.35);
+    z-index: 1;
+    user-select: none;
+    pointer-events: none;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #fact { transition: none; }
+  }
+</style>
+</head>
+<body>
+<canvas id="c" aria-hidden="true"></canvas>
+<main>
+  <p id="fact" aria-live="polite"></p>
+</main>
+<p id="hint">tap for another</p>
+<script>
+(function () {
+  const facts = [
+    "There are more trees on Earth than stars in the Milky Way.",
+    "A day on Venus is longer than its year.",
+    "Octopuses have three hearts and blue blood.",
+    "The Eiffel Tower can be 15 cm taller in summer.",
+    "Bananas are berries. Strawberries are not.",
+    "Honey, sealed properly, never spoils.",
+    "Sharks existed before trees did.",
+    "Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid.",
+    "Wombat droppings are cube-shaped.",
+    "Lightning strikes Earth around one hundred times every second.",
+    "A group of flamingos is called a flamboyance.",
+    "Some species of jellyfish are biologically immortal.",
+    "Humans share roughly 60 percent of their DNA with bananas.",
+    "Light from the Sun takes 8 minutes and 20 seconds to reach Earth.",
+    "Antarctica is the largest desert in the world.",
+    "A bolt of lightning is about five times hotter than the surface of the Sun.",
+    "Earth is the only planet not named after a god.",
+    "Slugs have four noses.",
+    "There is enough gold in Earth's core to coat the planet's surface knee-deep.",
+    "The shortest war in history lasted 38 minutes.",
+    "A single cloud can weigh more than a million pounds.",
+    "Snails can sleep for up to three years at a time.",
+    "Sound travels about four times faster in water than in air.",
+    "Bees can recognize human faces.",
+    "The dot over a lowercase 'i' is called a tittle."
+  ];
+
+  const c = document.getElementById('c');
+  const ctx = c.getContext('2d');
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  let W, H, particles;
+
+  function resize() {
+    W = c.width = innerWidth * dpr;
+    H = c.height = innerHeight * dpr;
+    c.style.width = innerWidth + 'px';
+    c.style.height = innerHeight + 'px';
+    ctx.fillStyle = '#0a0a0f';
+    ctx.fillRect(0, 0, W, H);
+  }
+  resize();
+  addEventListener('resize', resize);
+
+  function field(x, y, t) {
+    return Math.sin(x * 0.0035 + t) * Math.cos(y * 0.0035 - t * 0.7)
+         + Math.sin((x + y) * 0.0021 + t * 0.45) * 0.5;
+  }
+
+  const N = Math.min(260, Math.floor((innerWidth * innerHeight) / 6000));
+  particles = Array.from({length: N}, () => ({
+    x: Math.random() * W,
+    y: Math.random() * H,
+    age: Math.random() * 300
+  }));
+
+  let t0 = performance.now();
+  function frame(now) {
+    const t = (now - t0) * 0.00009;
+    ctx.fillStyle = 'rgba(10, 10, 15, 0.05)';
+    ctx.fillRect(0, 0, W, H);
+
+    ctx.lineWidth = 1 * dpr;
+    ctx.strokeStyle = 'rgba(108, 124, 224, 0.32)';
+    ctx.beginPath();
+    for (const p of particles) {
+      const a = field(p.x, p.y, t) * Math.PI;
+      const nx = p.x + Math.cos(a) * 1.4 * dpr;
+      const ny = p.y + Math.sin(a) * 1.4 * dpr;
+      ctx.moveTo(p.x, p.y);
+      ctx.lineTo(nx, ny);
+      p.x = nx; p.y = ny; p.age++;
+      if (p.age > 420 || p.x < -10 || p.y < -10 || p.x > W + 10 || p.y > H + 10) {
+        p.x = Math.random() * W;
+        p.y = Math.random() * H;
+        p.age = 0;
+      }
+    }
+    ctx.stroke();
+    requestAnimationFrame(frame);
+  }
+  requestAnimationFrame(frame);
+
+  const el = document.getElementById('fact');
+  let last = -1;
+  function pick() {
+    let i;
+    do { i = Math.floor(Math.random() * facts.length); } while (i === last && facts.length > 1);
+    last = i;
+    el.classList.remove('visible');
+    setTimeout(() => {
+      el.textContent = facts[i];
+      el.classList.add('visible');
+    }, 550);
+  }
+  setTimeout(pick, 250);
+  setInterval(pick, 9000);
+  addEventListener('click', pick);
+  addEventListener('keydown', e => { if (e.key === ' ' || e.key === 'Enter') pick(); });
+})();
+</script>
+</body>
+</html>
