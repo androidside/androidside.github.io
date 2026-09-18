@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Personal Gmail MCP</title>
+<meta name="description" content="A private, read-only Gmail reader that runs on one personal computer.">
+<link rel="icon" href="data:,">
+<style>
+  :root { --bg:#0a0a0f; --fg:#e7e7ec; --muted:#9a9aa6; --accent:108,124,224; --line:#22222c; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased; padding:3rem 1rem 5rem; }
+  main { max-width:44rem; margin:0 auto; }
+  h1 { font-size:1.75rem; line-height:1.25; margin-bottom:.4rem; letter-spacing:-.01em; }
+  h2 { font-size:1.05rem; margin:2.25rem 0 .6rem; color:rgb(var(--accent)); letter-spacing:.01em; }
+  p, li { color:var(--fg); margin-bottom:.9rem; }
+  ul { padding-left:1.15rem; }
+  li { margin-bottom:.45rem; }
+  a { color:rgb(var(--accent)); }
+  .sub { color:var(--muted); font-size:.95rem; margin-bottom:2rem; }
+  .meta { color:var(--muted); font-size:.85rem; margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); }
+  code { background:#16161d; padding:.12em .4em; border-radius:4px; font-size:.9em; }
+  @media (max-width:520px){ body{padding:2rem 1rem 4rem;} h1{font-size:1.45rem;} }
+</style>
+</head>
+<body>
+<main>
+  <h1>Personal Gmail MCP</h1>
+  <p class="sub">A private tool that lets an AI coding assistant read one person's Gmail. Read-only, running on that person's own computer.</p>
+
+  <h2>What it does</h2>
+  <p>It connects a local AI assistant to a single Gmail account so the assistant can search and read mail when asked to. It runs as a small program on one laptop. There is no website to sign up for and no service behind it.</p>
+
+  <h2>What it cannot do</h2>
+  <p>It holds one Google permission, <code>gmail.readonly</code>. It cannot send, reply, forward, delete, archive, label, or change anything at all. No code for writing to Gmail exists in it.</p>
+
+  <h2>Who can use it</h2>
+  <p>One person: its author. It is not published, not distributed, and not offered to anyone else. If you have arrived here from a Google consent screen and you are not that person, you should not grant it access.</p>
+
+  <h2>More</h2>
+  <ul>
+    <li><a href="privacy.html">Privacy policy</a></li>
+    <li><a href="terms.html">Terms of service</a></li>
+  </ul>
+
+  <p class="meta">Last updated 18 September 2026.</p>
+</main>
+</body>
+</html>

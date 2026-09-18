@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy policy | Personal Gmail MCP</title>
+<meta name="description" content="Privacy policy for Personal Gmail MCP.">
+<link rel="icon" href="data:,">
+<style>
+  :root { --bg:#0a0a0f; --fg:#e7e7ec; --muted:#9a9aa6; --accent:108,124,224; --line:#22222c; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",Helvetica,Arial,sans-serif;
+    line-height:1.65; -webkit-font-smoothing:antialiased; padding:3rem 1rem 5rem; }
+  main { max-width:44rem; margin:0 auto; }
+  h1 { font-size:1.75rem; line-height:1.25; margin-bottom:.4rem; letter-spacing:-.01em; }
+  h2 { font-size:1.05rem; margin:2.25rem 0 .6rem; color:rgb(var(--accent)); letter-spacing:.01em; }
+  p, li { color:var(--fg); margin-bottom:.9rem; }
+  ul { padding-left:1.15rem; }
+  li { margin-bottom:.45rem; }
+  a { color:rgb(var(--accent)); }
+  .sub { color:var(--muted); font-size:.95rem; margin-bottom:2rem; }
+  .meta { color:var(--muted); font-size:.85rem; margin-top:3rem; padding-top:1.25rem; border-top:1px solid var(--line); }
+  code { background:#16161d; padding:.12em .4em; border-radius:4px; font-size:.9em; }
+  @media (max-width:520px){ body{padding:2rem 1rem 4rem;} h1{font-size:1.45rem;} }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="sub">Personal Gmail MCP collects nothing, stores nothing remotely, and shares nothing with anyone.</p>
+
+  <h2>The short version</h2>
+  <p>This application has one user, its author, and runs entirely on that person's own computer. There is no server, no database, no hosting, no analytics, and no third party. Nobody else's data passes through it, because nobody else uses it.</p>
+
+  <h2>What it accesses</h2>
+  <p>It requests exactly one Google permission: <code>https://www.googleapis.com/auth/gmail.readonly</code>. That grants read access to the signed-in account's mail. It requests nothing else, and it refuses to start if Google grants any other permission.</p>
+
+  <h2>Where the data goes</h2>
+  <p>Mail content travels between Google's servers and the one computer running the application. It goes nowhere else. The application keeps no cache, no search index, and no log of messages, subjects, or senders. When it finishes answering a question, it retains nothing.</p>
+  <p>Content it retrieves does appear in the AI assistant session that asked for it, and that assistant handles it under its own provider's terms. An attachment is written to the local disk only when the user explicitly asks for that file.</p>
+
+  <h2>Credentials</h2>
+  <p>The Google refresh token and OAuth client details are stored in a private directory on the same computer, readable only by that user account. They are never transmitted anywhere except to Google, and never appear in logs or error messages.</p>
+
+  <h2>Google API Services User Data Policy</h2>
+  <p>This application's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, including the Limited Use requirements. Gmail data is used only to answer the user's own direct requests. It is never transferred to anyone, never used for advertising, never sold, and never used to train any model.</p>
+
+  <h2>Withdrawing access</h2>
+  <p>Access can be revoked at any time at <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. Revoking it stops the application working immediately. Deleting the local directory removes the stored credentials.</p>
+
+  <h2>Contact</h2>
+  <p>This application has a single user, who is also its author. There is no other user base to support, so no contact address is published here.</p>
+
+  <p class="meta">Last updated 18 September 2026. <a href="./">Back to Personal Gmail MCP</a>.</p>
+</main>
+</body>
+</html>
