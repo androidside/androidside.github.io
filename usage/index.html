@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="color-scheme" content="dark">
+<title>Usage</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="usage.css">
+<script type="module" src="usage.js"></script>
+</head>
+<body data-gist-id="a2518559e3048209c5d698d044908524" data-gist-file="usage.json">
+<main id="page" class="page" hidden>
+  <div id="banner" class="banner" role="alert" hidden></div>
+
+  <header id="header" class="top"></header>
+
+  <section id="rows" class="rows" aria-label="Accounts">
+    <div class="hd">
+      <div></div>
+      <div>Account</div>
+      <div>Week · all models</div>
+      <div class="h-fable"><span class="h-label">Week · Fable</span><small class="std">Fable budget is half the weekly allowance</small></div>
+      <div>Week resets</div>
+      <div id="tokens-head" class="ar h-tokens"><span class="h-label">Tokens this week</span><small id="tokens-note" class="std" hidden></small></div>
+    </div>
+    <div id="row-list"></div>
+  </section>
+
+  <section id="calendar" class="cal" aria-label="Reset calendar">
+    <h2>Reset calendar · next 7 days</h2>
+    <div id="cal-grid" class="grid"></div>
+    <div class="legend"><span>● weekly window resets to 0%</span><span>- - - time until then, not a quantity</span></div>
+  </section>
+
+  <footer id="foot" class="foot"><span>Data: Claude usage endpoint (same as /usage) · Codex app-server · local transcripts for tokens</span><span id="foot-note"></span></footer>
+</main>
+</body>
+</html>
