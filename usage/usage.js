@@ -4,7 +4,7 @@
 import {
   COLORS, STALE_BANNER_MINUTES,
   effectiveWeekly, effectiveWindow, rankClaude, calendarLanes, dayColumns, freshness,
-  fmtTime, fmtZone, fmtDaysLeft, fmtTokens, fableNote,
+  fmtTime, fmtZone, fmtDaysLeft, fmtTokens,
 } from './rank.js';
 
 const ERROR_TEXT = 'Could not load usage data.';
@@ -311,8 +311,6 @@ function claudeRow(row, isVerdict, ctx) {
   r.append(all);
   const fable = effectiveWindow(acc.weekly_fable, nowMs);
   const fableCell = measureCell(CAPTION.fable, fable.hasReading ? fable : null, 'fable');
-  const warn = fableNote(acc, nowMs);
-  if (warn) fableCell.append(el('small', 'warn', warn));
   r.append(fableCell);
   r.append(resetCell(eff, nowMs));
   if (ctx.hasTokens) r.append(tokensCell(acc, ctx.tokensSince, nowMs, split));

@@ -372,14 +372,3 @@ export function freshness(generatedAtIso, nowMs) {
   else text = `updated ${fmtAge(ageMinutes)} ago`;
   return { ageMinutes, stale, text };
 }
-
-// The ranking ignores Fable; the row warns when Fable is the tighter limit.
-// Once either weekly reset has passed, both readings are from an ended
-// window, so there is nothing to warn about.
-export function fableNote(acc, nowMs = Date.now()) {
-  const fable = effectiveWindow(acc && acc.weekly_fable, nowMs);
-  const weekly = effectiveWindow(acc && acc.weekly, nowMs);
-  if (!fable.hasReading || !weekly.hasReading) return null;
-  if (fable.resetPassedAtMs !== null || weekly.resetPassedAtMs !== null) return null;
-  return fable.usedPct > weekly.usedPct ? 'Fable runs out first here' : null;
-}
