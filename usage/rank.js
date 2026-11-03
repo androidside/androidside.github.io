@@ -127,6 +127,17 @@ export function fmtDaysLeft(ms, nowMs = Date.now()) {
   return `in ${Math.max(1, Math.floor(diff / MINUTE))} min`;
 }
 
+// When a running session began. From epoch values only, like fmtDaysLeft. A
+// clock ahead of this device reads as just now.
+export function fmtStartedAgo(ms, nowMs = Date.now()) {
+  if (!isNum(ms)) return '';
+  const diff = nowMs - ms;
+  if (diff < MINUTE) return 'started just now';
+  if (diff >= DAY) return `started ${(diff / DAY).toFixed(1)} days ago`;
+  if (diff >= HOUR) return `started ${Math.floor(diff / HOUR)} h ago`;
+  return `started ${Math.floor(diff / MINUTE)} min ago`;
+}
+
 // `950K`, `38.4M`, `148M`, `2.1B`: one decimal below 100 of a unit, none above.
 export function fmtTokens(n) {
   if (!isNum(n)) return '';
@@ -353,6 +364,19 @@ export function dayColumns(nowMs, days = 8, tz = undefined) {
     startMs = endMs;
   }
   return cols;
+}
+
+// ---------------------------------------------------------------------------
+// Running sessions
+
+// The closed line under an account: how many sessions run, how many of them
+// have Remote Control, and, while the stale banner shows, that the count is old.
+export function runningSummary(entries, isStale = false) {
+  const list = Array.isArray(entries) ? entries : [];
+  const remote = list.filter((entry) => entry && entry.remote === true).length;
+  let text = list.length === 1 ? '1 session' : `${list.length} sessions`;
+  if (remote > 0) text += ` · ${remote} with Remote Control`;
+  return isStale ? `${text} at last update` : text;
 }
 
 // ---------------------------------------------------------------------------

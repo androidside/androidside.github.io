@@ -34,7 +34,21 @@
     <div class="legend"><span>● weekly window resets to 0%</span><span>- - - time until then, not a quantity</span></div>
   </section>
 
-  <footer id="foot" class="foot"><span>Data: Claude usage endpoint (same as /usage) · Codex app-server · local transcripts for tokens</span><span id="foot-note"></span></footer>
+  <footer id="foot" class="foot"><span>Data: Claude usage endpoint (same as /usage) · Codex app-server · local transcripts for tokens · local session files for running sessions, this computer only</span><span id="foot-note"></span></footer>
+
+  <dialog id="unlock-dialog" class="unlock c-other" aria-labelledby="unlock-title">
+    <form id="unlock-form">
+      <h2 id="unlock-title">Unlock session names</h2>
+      <label class="unlock-label" for="unlock-input">Passphrase</label>
+      <input type="password" id="unlock-input" autocomplete="current-password">
+      <p id="unlock-error" class="unlock-error" role="alert" hidden></p>
+      <label class="unlock-check"><input type="checkbox" id="unlock-remember" checked>Remember on this device</label>
+      <div class="unlock-actions">
+        <button type="button" id="unlock-cancel">Cancel</button>
+        <button type="submit" id="unlock-submit" class="primary">Unlock</button>
+      </div>
+    </form>
+  </dialog>
 </main>
 </body>
 </html>

@@ -98,7 +98,13 @@ body {
   border-left-color: var(--c);
   box-shadow: 0 0 24px color-mix(in srgb, var(--c) 18%, transparent);
 }
-.r.dim { opacity: .5; }
+/* The same look as dimming the whole box, with the opened list left readable. */
+.r.dim {
+  border-color: color-mix(in srgb, var(--edge) 50%, #0a0a0f);
+  border-left-color: color-mix(in srgb, var(--c) 50%, #0a0a0f);
+  background: color-mix(in srgb, var(--panel) 50%, #0a0a0f);
+}
+.r.dim > :not(.sess) { opacity: .5; }
 .r .n { font-size: 22px; font-weight: 300; text-align: center; color: var(--faint); }
 .r.go .n { color: var(--c); font-weight: 500; }
 
@@ -136,6 +142,117 @@ body {
 .cell .split { display: block; margin-top: 3px; font-size: 11px; color: rgba(231, 231, 236, .5); }
 
 .sep { margin: 14px 0 6px 14px; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; color: rgba(231, 231, 236, .35); }
+
+/* Running sessions: a quiet line at the foot of the box, a list when opened. */
+.sess {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: -7px -14px -13px;
+  border-top: 1px solid var(--edge);
+}
+.sess summary {
+  display: block;
+  padding: 6px 14px 7px;
+  border-radius: 0 0 9px 9px;
+  font-size: 11px; line-height: 16px;
+  color: var(--muted);
+  cursor: pointer;
+  list-style: none;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.sess summary::-webkit-details-marker { display: none; }
+.sess summary::before {
+  content: ""; display: inline-block; width: 5px; height: 5px; margin: 0 8px 1px 2px;
+  border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor;
+  transform: rotate(-45deg);
+}
+.sess[open] summary::before { transform: rotate(45deg); }
+.sess summary:hover { color: var(--text); }
+.sess summary:focus-visible, .sess-btn:focus-visible {
+  outline: 2px solid var(--c); outline-offset: -2px;
+}
+.sess[open] summary { border-radius: 0; }
+
+.sess-list { margin: 0; padding: 0 14px; list-style: none; }
+.sess-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 112px 104px 124px 124px;
+  gap: 12px;
+  align-items: baseline;
+  padding: 7px 0;
+  border-top: 1px solid rgba(231, 231, 236, .06);
+  font-size: 13px;
+}
+.sess-name { grid-column: 1; min-width: 0; overflow-wrap: anywhere; }
+.sess-name.none { color: var(--muted); }
+.sess-host { grid-column: 2; min-width: 0; font-size: 12px; color: var(--muted); overflow-wrap: anywhere; }
+.sess-chip {
+  grid-column: 3; justify-self: start; padding: 0 6px;
+  border: 1px solid color-mix(in srgb, var(--c) 50%, #2a2a3a); border-radius: 4px;
+  font-size: 10px; line-height: 16px; color: var(--c); white-space: nowrap;
+}
+.sess-status { grid-column: 4; font-size: 12px; color: rgba(231, 231, 236, .7); white-space: nowrap; }
+.sess-status::before {
+  content: ""; display: inline-block; width: 6px; height: 6px; margin-right: 6px;
+  border-radius: 50%; background: var(--faint); vertical-align: 1px;
+}
+.sess-status.st-busy::before, .sess-status.st-shell::before { background: var(--c); }
+.sess-status.st-waiting { color: var(--note); }
+.sess-status.st-waiting::before { background: var(--note); }
+.sess-when { grid-column: 5; font-size: 11px; color: var(--muted); text-align: right; white-space: nowrap; }
+
+.sess-foot {
+  display: flex; justify-content: flex-end;
+  padding: 8px 14px 11px;
+  border-top: 1px solid rgba(231, 231, 236, .06);
+}
+.sess-btn {
+  min-height: 28px; padding: 0 10px;
+  border: 1px solid #2a2a3a; border-radius: 6px;
+  background: transparent; color: rgba(231, 231, 236, .75);
+  font: inherit; font-size: 11px;
+  cursor: pointer;
+}
+.sess-btn:hover { border-color: color-mix(in srgb, var(--c) 50%, #2a2a3a); color: var(--text); }
+
+/* Unlock dialog */
+.unlock {
+  width: min(360px, calc(100vw - 32px));
+  padding: 20px;
+  border: 1px solid color-mix(in srgb, var(--c) 35%, #2a2a3a); border-radius: 12px;
+  background: var(--panel); color: var(--text);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, .6);
+}
+.unlock::backdrop { background: rgba(5, 5, 10, .72); }
+.unlock h2 { margin: 0 0 16px; font-size: 16px; font-weight: 500; }
+.unlock-label { display: block; margin-bottom: 6px; font-size: 12px; color: var(--muted); }
+.unlock input[type="password"] {
+  display: block; width: 100%; height: 40px; padding: 0 10px;
+  border: 1px solid #2a2a3a; border-radius: 8px;
+  background: #0a0a0f; color: var(--text);
+  font: inherit; font-size: 16px;
+}
+.unlock input[type="password"]:focus { border-color: var(--c); outline: none; }
+.unlock-error { margin: 8px 0 0; font-size: 13px; color: #ff9aa2; }
+.unlock-check {
+  display: flex; align-items: center; gap: 8px;
+  min-height: 40px; margin-top: 6px;
+  font-size: 13px; color: rgba(231, 231, 236, .75);
+  cursor: pointer;
+}
+.unlock-check input { width: 16px; height: 16px; margin: 0; accent-color: var(--c); }
+.unlock-actions { display: flex; justify-content: flex-end; gap: 8px; margin-top: 8px; }
+.unlock-actions button {
+  min-width: 84px; height: 38px; padding: 0 14px;
+  border: 1px solid #2a2a3a; border-radius: 8px;
+  background: transparent; color: var(--text);
+  font: inherit; font-size: 13px;
+  cursor: pointer;
+}
+.unlock-actions button:focus-visible { outline: 2px solid var(--c); outline-offset: 2px; }
+.unlock-actions .primary { border-color: transparent; background: var(--c); color: #0a0a0f; font-weight: 600; }
+.unlock-actions button:disabled { opacity: .6; cursor: default; }
 
 /* Reset calendar */
 .cal { margin-top: 26px; padding: 16px; border: 1px solid #1f1f2e; border-radius: 12px; background: #0c0c13; }
@@ -212,6 +329,13 @@ body {
   }
   .tok { text-align: left; }
   .sep { margin-left: 2px; }
+
+  .sess { margin: -4px -14px -12px; }
+  .sess summary { min-height: 40px; padding: 12px 14px; font-size: 12px; }
+  .sess-row { display: flex; flex-wrap: wrap; align-items: center; gap: 3px 10px; padding: 9px 0; }
+  .sess-name { flex: 0 0 100%; font-size: 14px; }
+  .sess-when { flex: 1 0 auto; text-align: left; }
+  .sess-btn { min-height: 40px; padding: 0 14px; font-size: 13px; }
 
   .cal { padding: 14px 12px; }
   .cal .grid { grid-template-columns: 76px minmax(0, 1fr); }

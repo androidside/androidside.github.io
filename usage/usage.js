@@ -1,16 +1,23 @@
 // Loads usage.json and renders the usage page. What to show (ranking, stale
-// notes, the reset calendar, formatting) comes from rank.js; this file only
-// fetches and builds DOM. Every piece of text is set with textContent.
+// notes, the reset calendar, formatting) comes from rank.js and the crypto from
+// seal.js; this file fetches, builds DOM and holds the key for session names.
+// Every piece of text is set with textContent.
 import {
-  COLORS, STALE_BANNER_MINUTES,
+  COLORS, STALE_BANNER_MINUTES, runningSummary, fmtStartedAgo,
   effectiveWeekly, effectiveWindow, rankClaude, calendarLanes, dayColumns, freshness,
   fmtTime, fmtZone, fmtDaysLeft, fmtTokens,
 } from './rank.js';
+import { deriveKey, openNames } from './seal.js';
 
 const ERROR_TEXT = 'Could not load usage data.';
 const RENDER_EVERY_MS = 60 * 1000;
 const FETCH_EVERY_MS = 5 * 60 * 1000;
 const FETCH_TIMEOUT_MS = 20 * 1000;
+const WRONG_PASSPHRASE = 'That passphrase did not work.';
+const KEY_DB = 'usage-dashboard';
+const KEY_STORE = 'keys';
+const KEY_ID = 'running_names';
+const KEY_STORE_TIMEOUT_MS = 2000;
 const HOUR_MS = 60 * 60 * 1000;
 const DAY_MS = 24 * HOUR_MS;
 const CALENDAR_DAYS = 8;
@@ -35,6 +42,14 @@ const BREAKDOWN_LABELS = Object.freeze({
   chat: 'Chats',
   cowork: 'Cowork',
   other: 'Other',
+});
+
+// What a running session is doing; any other status shows nothing.
+const STATUS_TEXT = Object.freeze({
+  busy: 'working',
+  idle: 'idle',
+  waiting: 'waiting for you',
+  shell: 'running a command',
 });
 
 const isNum = (v) => typeof v === 'number' && Number.isFinite(v);
@@ -291,6 +306,105 @@ function noteLine(eff) {
   return eff.note && eff.note !== RESET_UNKNOWN ? el('small', 'note', eff.note) : null;
 }
 
+// ---------------------------------------------------------------------------
+// Running sessions
+
+// Accounts whose list the viewer has open, so a rebuild can restore it.
+const openSessions = new Set();
+// The latest build's list for each account.
+let sessionLists = new Map();
+let focusTargets = new Map();
+
+function noteOpen(id, details) {
+  if (details.open) openSessions.add(id);
+  else openSessions.delete(id);
+}
+
+// A tap sets `open` at once and its toggle event follows as its own task, so a
+// rebuild reads the lists on the page first, or it would undo a tap in that gap.
+function noteOpenLists() {
+  for (const [id, details] of sessionLists) noteOpen(id, details);
+}
+
+// The blob holding this document's names, or null when there is none to open.
+function sealedOf(doc) {
+  const sealed = doc && doc.running_names;
+  return sealed && typeof sealed === 'object' && !Array.isArray(sealed) ? sealed : null;
+}
+
+// `names[id][i]` labels `running[i]`; anything else leaves that row locked.
+function sessionLabel(names, id, index) {
+  const list = names && Object.hasOwn(names, id) ? names[id] : null;
+  const label = Array.isArray(list) ? list[index] : null;
+  return typeof label === 'string' && label ? label : null;
+}
+
+function sessionRow(entry, label, placeholder, nowMs) {
+  const e = entry && typeof entry === 'object' ? entry : {};
+  const row = el('li', 'sess-row');
+  row.append(label ? el('span', 'sess-name', label) : el('span', 'sess-name none', placeholder));
+  if (typeof e.host === 'string') row.append(el('span', 'sess-host', `@${e.host}`));
+  if (e.remote === true) row.append(el('span', 'sess-chip', 'Remote Control'));
+  if (typeof e.status === 'string' && Object.hasOwn(STATUS_TEXT, e.status)) {
+    row.append(el('span', `sess-status st-${e.status}`, STATUS_TEXT[e.status]));
+  }
+  const started = fmtStartedAgo(typeof e.started_at === 'string' ? Date.parse(e.started_at) : null, nowMs);
+  if (started) row.append(el('span', 'sess-when', started));
+  return row;
+}
+
+// The rows rebuild every minute, so remember which node a keyboard user is on
+// by a stable key. The latest build's nodes are in `focusTargets`.
+function focusable(node, key, ctx) {
+  node.dataset.focusKey = key;
+  ctx.focusTargets.set(key, node);
+  return node;
+}
+
+function moveFocus(key) {
+  const node = focusTargets.get(key);
+  if (node) node.focus({ preventScroll: true });
+}
+
+// A closed line at the foot of the box; opened, one row per session.
+function sessionsBlock(acc, ctx) {
+  if (!Array.isArray(acc.running) || acc.running.length === 0) return null;
+  const details = el('details', 'sess');
+  details.open = openSessions.has(acc.id);
+  details.addEventListener('toggle', () => noteOpen(acc.id, details));
+  ctx.sessionLists.set(acc.id, details);
+  details.append(focusable(el('summary', null, runningSummary(acc.running, ctx.stale)), `summary:${acc.id}`, ctx));
+  const list = el('ul', 'sess-list');
+  const placeholder = ctx.sealed ? 'Name locked' : 'Name not published';
+  list.append(...acc.running.map((entry, i) => sessionRow(entry, sessionLabel(ctx.names, acc.id, i), placeholder, ctx.nowMs)));
+  details.append(list);
+  const button = namesButton(acc.id, ctx);
+  if (button) {
+    const foot = el('div', 'sess-foot');
+    foot.append(button);
+    details.append(foot);
+  }
+  return details;
+}
+
+// Nothing to do when no names are published, or to unlock without the dialog
+// (an index.html cached from before it existed) or without WebCrypto (plain
+// http), where every attempt could only say the passphrase is wrong.
+function namesButton(id, ctx) {
+  if (!ctx.sealed || (!ctx.names && (!unlockUi.dialog || !globalThis.crypto?.subtle))) return null;
+  const button = el('button', 'sess-btn', ctx.names ? 'Lock names' : 'Unlock names');
+  button.type = 'button';
+  button.addEventListener('click', () => {
+    if (ctx.names) lockNames();
+    else openUnlock(id);
+  });
+  return focusable(button, namesButtonKey(id), ctx);
+}
+
+function namesButtonKey(id) {
+  return `names:${id}`;
+}
+
 function claudeRow(row, isVerdict, ctx) {
   const { acc, eff } = row;
   const { nowMs } = ctx;
@@ -314,6 +428,8 @@ function claudeRow(row, isVerdict, ctx) {
   r.append(fableCell);
   r.append(resetCell(eff, nowMs));
   if (ctx.hasTokens) r.append(tokensCell(acc, ctx.tokensSince, nowMs, split));
+  const sessions = sessionsBlock(acc, ctx);
+  if (sessions) r.append(sessions);
   return r;
 }
 
@@ -352,6 +468,8 @@ function codexRow(acc, ctx) {
   }
   r.append(resetCell(eff, nowMs));
   if (ctx.hasTokens) r.append(tokensCell(acc, ctx.tokensSince, nowMs));
+  const sessions = sessionsBlock(acc, ctx);
+  if (sessions) r.append(sessions);
   return r;
 }
 
@@ -469,6 +587,236 @@ function buildCalendar(accounts, nowMs) {
 }
 
 // ---------------------------------------------------------------------------
+// Session names
+
+// The dialog is static markup, so a re-render cannot touch a half-typed passphrase.
+const unlockUi = {
+  dialog: document.getElementById('unlock-dialog'),
+  form: document.getElementById('unlock-form'),
+  input: document.getElementById('unlock-input'),
+  remember: document.getElementById('unlock-remember'),
+  submit: document.getElementById('unlock-submit'),
+  cancel: document.getElementById('unlock-cancel'),
+  error: document.getElementById('unlock-error'),
+};
+
+// The key held for this page load, the salt and iter it came from, and the
+// names it opened with the blob they came from.
+const held = { key: null, salt: null, iter: null, names: null, blob: null };
+
+let checking = false;
+let attempt = 0;
+let unlockOpener = null;
+// Bumped when the viewer unlocks or the key is dropped, so async work that
+// began before that cannot apply its result.
+let keyEpoch = 0;
+let storeQueue = Promise.resolve();
+// The latest lookup of a remembered key: one a page load, and one more each time
+// a key held in memory fails.
+let storedLookup = null;
+
+// One request against the remembered-key store. The executor turns a missing
+// or throwing indexedDB into a rejection.
+function storeRequest(mode, work) {
+  return new Promise((resolve, reject) => {
+    const open = indexedDB.open(KEY_DB, 1);
+    open.onupgradeneeded = () => open.result.createObjectStore(KEY_STORE);
+    open.onerror = () => reject(open.error);
+    open.onsuccess = () => {
+      const db = open.result;
+      try {
+        const tx = db.transaction(KEY_STORE, mode);
+        const req = work(tx.objectStore(KEY_STORE));
+        tx.oncomplete = () => { db.close(); resolve(req.result); };
+        tx.onerror = () => { db.close(); reject(tx.error); };
+        tx.onabort = () => { db.close(); reject(tx.error); };
+      } catch (err) {
+        db.close();
+        reject(err);
+      }
+    };
+  });
+}
+
+// IndexedDB is optional: a failure or a hang resolves to undefined and only
+// means the key lasts for this page load. Requests run in order, so a Lock
+// right after an Unlock deletes what that Unlock wrote.
+function useStore(mode, work) {
+  const result = storeQueue.then(() => new Promise((resolve) => {
+    const timer = setTimeout(() => resolve(), KEY_STORE_TIMEOUT_MS);
+    const finish = (value) => {
+      clearTimeout(timer);
+      resolve(value);
+    };
+    storeRequest(mode, work).then(finish, () => finish());
+  }));
+  storeQueue = result;
+  return result;
+}
+
+// Names for this blob only: another blob's labels would sit on the wrong rows.
+function namesFor(sealed) {
+  const blob = held.blob;
+  return sealed && blob && blob.iv === sealed.iv && blob.ct === sealed.ct ? held.names : null;
+}
+
+function holdKey(key, sealed, names, remember) {
+  keyEpoch += 1;
+  storedLookup = Promise.resolve();
+  const { salt, iter } = sealed;
+  Object.assign(held, { key, salt, iter, names, blob: sealed });
+  useStore('readwrite', (store) => (remember ? store.put({ key, salt, iter }, KEY_ID) : store.delete(KEY_ID)));
+}
+
+function forgetHeld() {
+  Object.assign(held, { key: null, salt: null, iter: null, names: null, blob: null });
+}
+
+// Forgets the key in memory and on this device.
+function dropKey() {
+  keyEpoch += 1;
+  storedLookup = Promise.resolve();
+  forgetHeld();
+  useStore('readwrite', (store) => store.delete(KEY_ID));
+}
+
+function lockNames() {
+  dropKey();
+  show();
+}
+
+// The names a key opens from a blob, or null. After a passphrase change the salt
+// may stay, so only opening the blob can tell in that case.
+async function namesWith({ key, salt, iter }, sealed) {
+  if (salt !== sealed.salt || iter !== sealed.iter) return null;
+  try {
+    return await openNames(key, sealed);
+  } catch {
+    return null;
+  }
+}
+
+// Opens the current document's names with the held or remembered key. Render
+// never waits for this: rows draw locked, and this re-renders once names open.
+async function openCurrentNames() {
+  const sealed = sealedOf(current);
+  if (!sealed || namesFor(sealed)) return;
+  const epoch = keyEpoch;
+  const outdated = () => epoch !== keyEpoch || sealed !== sealedOf(current);
+
+  if (held.key) {
+    const names = await namesWith(held, sealed);
+    if (outdated()) return;
+    if (names) {
+      Object.assign(held, { names, blob: sealed });
+      show();
+      return;
+    }
+    // Only this tab's copy failed. Another tab may have remembered a newer key
+    // since, so the store gets its own try, and only its failure deletes.
+    forgetHeld();
+    storedLookup = null;
+  }
+
+  if (!storedLookup) storedLookup = useStore('readonly', (store) => store.get(KEY_ID));
+  const stored = await storedLookup;
+  if (outdated() || stored === undefined || stored === null) return;
+  const names = await namesWith(stored, sealed);
+  if (outdated()) return;
+  if (names) Object.assign(held, { key: stored.key, salt: stored.salt, iter: stored.iter, names, blob: sealed });
+  else dropKey();
+  show();
+}
+
+function setChecking(on) {
+  checking = on;
+  unlockUi.submit.disabled = on;
+  unlockUi.submit.textContent = on ? 'Checking…' : 'Unlock';
+}
+
+function setUnlockError(text) {
+  unlockUi.error.textContent = text;
+  unlockUi.error.hidden = !text;
+}
+
+function refuseAttempt() {
+  unlockUi.input.value = '';
+  setUnlockError(WRONG_PASSPHRASE);
+  unlockUi.input.focus();
+}
+
+function openUnlock(id) {
+  const { dialog, input } = unlockUi;
+  if (dialog.open) return;
+  unlockOpener = namesButtonKey(id);
+  dialog.className = `unlock ${colorClass(id)}`;
+  setUnlockError('');
+  dialog.showModal();
+  input.focus();
+}
+
+async function submitUnlock(event) {
+  event.preventDefault();
+  if (checking) return;
+  const { dialog, input } = unlockUi;
+  const sealed = sealedOf(current);
+  // The collector strips the passphrase file the same way, a leading BOM included.
+  const passphrase = input.value.trim();
+  const remember = unlockUi.remember.checked;
+  input.value = '';
+  setUnlockError('');
+  if (!sealed) {
+    dialog.close();
+    return;
+  }
+  if (!passphrase) {
+    refuseAttempt();
+    return;
+  }
+
+  attempt += 1;
+  const mine = attempt;
+  // Closing the dialog drops the result of a check still running.
+  const dropped = () => mine !== attempt || !dialog.open;
+  setChecking(true);
+  let key;
+  let names;
+  try {
+    key = await deriveKey(passphrase, sealed);
+    names = await openNames(key, sealed);
+  } catch {
+    if (dropped()) return;
+    setChecking(false);
+    refuseAttempt();
+    return;
+  }
+  if (dropped()) return;
+  setChecking(false);
+  holdKey(key, sealed, names, remember);
+  dialog.close();
+  show();
+  // A refetch may have brought a newer blob during the check.
+  openCurrentNames();
+}
+
+function onUnlockClosed() {
+  attempt += 1;
+  setChecking(false);
+  setUnlockError('');
+  unlockUi.input.value = '';
+  // The browser returns focus to the button that opened the dialog, but a
+  // re-render may have replaced that button by now.
+  moveFocus(unlockOpener);
+}
+
+function wireUnlock() {
+  if (!unlockUi.dialog) return;
+  unlockUi.form.addEventListener('submit', submitUnlock);
+  unlockUi.cancel.addEventListener('click', () => unlockUi.dialog.close());
+  unlockUi.dialog.addEventListener('close', onUnlockClosed);
+}
+
+// ---------------------------------------------------------------------------
 // Page
 
 // Builds every section first, then swaps them in, so a failure leaves no
@@ -478,8 +826,15 @@ function render(doc, nowMs) {
   const fresh = freshness(doc.generated_at, nowMs);
   const ranking = rankClaude(accounts, nowMs);
   const hasTokens = accounts.some((acc) => acc && acc.tokens_week && typeof acc.tokens_week === 'object');
-  const ctx = { nowMs, hasTokens, tokensSince: doc.tokens_since };
+  const sealed = sealedOf(doc);
+  const ctx = {
+    nowMs, hasTokens, tokensSince: doc.tokens_since,
+    stale: fresh.stale, sealed, names: namesFor(sealed), focusTargets: new Map(), sessionLists: new Map(),
+  };
+  const active = document.activeElement;
+  const focused = active && active.dataset ? active.dataset.focusKey : undefined;
 
+  noteOpenLists();
   const header = buildHeader(ranking, fresh, nowMs);
   const rows = buildRows(ranking, accounts, ctx);
   const calendar = buildCalendar(accounts, nowMs);
@@ -493,17 +848,24 @@ function render(doc, nowMs) {
   view.tokensNote.textContent = unattributed;
   view.tokensNote.hidden = !unattributed;
   view.rowList.replaceChildren(...rows);
+  sessionLists = ctx.sessionLists;
+  focusTargets = ctx.focusTargets;
+  if (focused) moveFocus(focused);
   view.calGrid.replaceChildren(...calendar);
   view.footNote.textContent = `stale banner appears if the collector misses ${STALE_BANNER_MINUTES} min`;
   view.page.hidden = false;
-  // Reattach only after the error line; a re-render keeps the page (and scroll) in place.
-  if (view.page.parentNode !== document.body || document.body.children.length !== 1) {
+  // Reattach only after the error line; a re-render keeps the page (and scroll) in
+  // place. Moving <main> would also take an open dialog out of the top layer, so a
+  // node something else added to the body stays.
+  if (view.page.parentNode !== document.body) {
     document.body.replaceChildren(view.page);
   }
   document.body.dataset.state = 'ready';
 }
 
 function showError() {
+  // Detached while open, it would come back stranded: not modal and unfocused.
+  if (unlockUi.dialog && unlockUi.dialog.open) unlockUi.dialog.close();
   document.body.replaceChildren(el('p', 'error', ERROR_TEXT));
   document.body.dataset.state = 'error';
 }
@@ -535,10 +897,15 @@ async function refresh() {
     loading = false;
   }
   if (next) current = next;
-  if (current) show();
-  else showError();
+  if (current) {
+    show();
+    openCurrentNames();
+  } else {
+    showError();
+  }
 }
 
+wireUnlock();
 refresh();
 setInterval(show, RENDER_EVERY_MS);
 setInterval(refresh, FETCH_EVERY_MS);
