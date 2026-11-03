@@ -169,8 +169,9 @@ function nameCell(acc, lines) {
   return cell;
 }
 
-// One weekly measure: bar, "<left>% left" bold, "<used>% used" small; dashes
-// without a reading. `win` has usedPct and leftPct (from rank.js).
+// One weekly measure: bar filled to the percent left, "<left>% left" bold,
+// "<used>% used" small; dashes without a reading. `win` has usedPct and
+// leftPct (from rank.js).
 function measureCell(caption, win, extraClass = '', barClass = 'bar') {
   const cell = el('div', `cell ${extraClass}`.trim());
   cell.append(el('span', 'cap', caption));
@@ -182,7 +183,7 @@ function measureCell(caption, win, extraClass = '', barClass = 'bar') {
   }
   const bar = el('div', barClass);
   const fill = el('i', 'fill');
-  fill.style.width = `${clampPct(win.usedPct)}%`;
+  fill.style.width = `${clampPct(win.leftPct)}%`;
   bar.append(fill);
   pct.append(el('b', null, `${Math.round(win.leftPct)}% left`), el('small', null, `${Math.round(win.usedPct)}% used`));
   cell.append(bar, pct);
