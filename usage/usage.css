@@ -122,7 +122,9 @@ body {
 .bar .fill { display: block; height: 100%; border-radius: 4px; background: var(--c); opacity: .9; }
 .cell { min-width: 0; }
 .cell .pct { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0 8px; margin-top: 6px; font-size: 14px; }
-.cell .pct b { font-weight: 600; white-space: nowrap; }
+.cell .pct b, .cell .pct small { white-space: nowrap; }
+.cell .pct b { font-weight: 600; }
+.cell .pct small { font-size: 11px; color: rgba(231, 231, 236, .5); }
 .cell .warn { display: block; margin-top: 4px; font-size: 11px; color: var(--warn); }
 .cell .win { display: block; margin-top: 3px; font-size: 11px; color: rgba(231, 231, 236, .5); }
 .cell .none { font-size: 13px; color: rgba(231, 231, 236, .45); }
