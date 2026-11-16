@@ -1,2 +1,3 @@
-function fit(){document.getElementById('slide').style.transform=`scale(${Math.min(innerWidth/1280,innerHeight/720)})`;}
-addEventListener('resize',fit);fit();addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)&&parent!==window){e.preventDefault();parent.postMessage({type:'recetas-slide-key',key:e.key},location.origin);}});
+let lastHeight=0;
+function fit(){const slide=document.getElementById('slide');if(innerWidth<=700){slide.style.transform='none';const height=Math.ceil(slide.getBoundingClientRect().height);if(parent!==window&&height!==lastHeight){lastHeight=height;parent.postMessage({type:'recetas-slide-size',height},location.origin);}}else{slide.style.transform=`scale(${Math.min(innerWidth/1280,innerHeight/720)})`;lastHeight=0;}}
+addEventListener('resize',fit);addEventListener('load',fit);new ResizeObserver(fit).observe(document.getElementById('slide'));fit();addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(e.key)&&parent!==window){e.preventDefault();parent.postMessage({type:'recetas-slide-key',key:e.key},location.origin);}});
