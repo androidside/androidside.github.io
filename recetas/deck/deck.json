@@ -1,0 +1,49 @@
+{
+  "title": "Recetas \u00b7 Recipes to groceries",
+  "slides": [
+    {
+      "file": "01.html",
+      "title": "Recetas"
+    },
+    {
+      "file": "02.html",
+      "title": "The original recipe stays with us"
+    },
+    {
+      "file": "03.html",
+      "title": "OCR reads the scan. We check the ingredients."
+    },
+    {
+      "file": "04.html",
+      "title": "Dinner and dessert in one plan"
+    },
+    {
+      "file": "05.html",
+      "title": "Check the pantry before buying"
+    },
+    {
+      "file": "06.html",
+      "title": "How the local app works"
+    },
+    {
+      "file": "07.html",
+      "title": "Saved products make the next shop easier"
+    },
+    {
+      "file": "08.html",
+      "title": "Recipe ingredients plus the weekly extras"
+    },
+    {
+      "file": "09.html",
+      "title": "Review delivery, benefits and the total"
+    },
+    {
+      "file": "10.html",
+      "title": "A real family order, confirmed"
+    },
+    {
+      "file": "11.html",
+      "title": "Try the demo"
+    }
+  ]
+}
