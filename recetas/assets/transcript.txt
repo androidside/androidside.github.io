@@ -1,0 +1,25 @@
+Recetas demo: English narration
+
+Start with a scan
+This is Recetas, our family recipe collection. It starts with a scanned recipe, or even a photo. We keep the whole page, including handwritten notes, then group the pages that belong together and leave out the blank ones.
+
+Extract and review ingredients
+The import tools use OCR to read the scan. That gives us a starting point for the ingredient list, with amounts and units. We check it against the original, especially fractions and handwriting. These pomegranate bites span two pages, so we keep both.
+
+Choose recipes
+Now we can pick what we want to cook. For this shop, we're making chicken tacos and pomegranate chocolate bites. Each recipe has its original pages and an editable ingredient list. We add both recipes to the plan, and choose how many batches to make.
+
+Check the kitchen
+Next, we check what we already have. Honey, cinnamon, olive oil and salt are in the kitchen, so we don't need to buy them again. Recetas brings the recipe lists together and combines matching amounts. We check the remaining pantry items and decide how much to buy.
+
+Add missing ingredients
+Now the agent builds the cart. The preferred integration is an Instacart API or MCP server, which can generate a shopping list directly. For this demo, we built a Chrome extension to make the automation visible. You're watching the agent drive Instacart: searching Sprouts, reusing saved products, checking the family cart, and adding missing quantities. These searches and additions are automated. The shopper doesn't have to enter each ingredient. New product choices can still need review.
+
+Add household extras
+The agent also adds the groceries we requested beyond the recipes: bananas, strawberries and blueberries, plus gluten-free pie crusts, organic half-and-half and unsweetened Ripple milk. Everything joins the same Sprouts family cart. The browser activity makes the agent's work visible. With a supported direct integration, these screen-by-screen steps aren't needed.
+
+Review and place the order
+At checkout, the agent reviews the delivery time, fees, tip and total. Jordi's United Club card includes Instacart Plus and two ten-dollar monthly credits, used on separate orders. Here, one credit takes ten dollars off, and delivery is free. The service fee and tip still apply. The estimated total is ninety-eight dollars and thirty cents. Jordi approves the purchase, then the agent submits the order.
+
+Order and email confirmation
+The order is confirmed, and the agent opens the email to verify it. That's the full loop, from recipes and pantry checks to groceries and confirmation. The same engine could be driven by WhatsApp, Telegram, ChatGPT, Claude, or another agent. With the right connections, it could use the recipe book, pantry and past orders to prepare familiar products and regular extras, on request or on a schedule. Those messaging and order-history connections are the next step. Today, this demo uses saved product choices and agent-driven browser automation.

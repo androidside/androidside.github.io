@@ -75,99 +75,135 @@ amounts.
 We check the remaining pantry items and decide
 how much to buy.
 
-00:01:06.833 --> 00:01:10.548
-Add to Family Cart uses our signed-in Chrome
-browser.
+00:01:06.833 --> 00:01:08.969
+Now the agent builds the cart.
 
-00:01:11.187 --> 00:01:13.985
-The helper searches Sprouts and checks the
-family cart.
+00:01:09.712 --> 00:01:15.285
+The preferred integration is an Instacart API or
+MCP server, which
 
-00:01:14.728 --> 00:01:16.887
-It handles saved products automatically.
+00:01:15.320 --> 00:01:17.096
+can generate a shopping list directly.
 
-00:01:17.630 --> 00:01:21.810
-For a new ingredient, we choose a product once,
-and it remembers
+00:01:17.839 --> 00:01:21.369
+For this demo, we built a Chrome extension to
+make the automation
 
-00:01:21.857 --> 00:01:22.716
-that choice.
+00:01:21.427 --> 00:01:21.903
+visible.
 
-00:01:23.354 --> 00:01:26.721
-Weighed items, like this chicken, need a
-quantity adjustment in
+00:01:22.542 --> 00:01:26.942
+You're watching the agent drive Instacart:
+searching Sprouts, reusing
 
-00:01:26.803 --> 00:01:27.557
-Instacart.
+00:01:27.046 --> 00:01:31.528
+saved products, checking the family cart, and
+adding missing quantities.
 
-00:01:28.416 --> 00:01:31.214
-Then we continue with the rest of the list.
+00:01:32.538 --> 00:01:34.767
+These searches and additions are automated.
 
-00:01:32.067 --> 00:01:34.459
-Of course, the recipes aren't the whole shop.
+00:01:35.510 --> 00:01:37.727
+The shopper doesn't have to enter each
+ingredient.
 
-00:01:35.097 --> 00:01:39.532
-We also need bananas, strawberries and
-blueberries, plus gluten-free
+00:01:38.470 --> 00:01:41.245
+New product choices can still need review.
 
-00:01:39.590 --> 00:01:43.932
-pie crusts, organic half-and-half and
-unsweetened Ripple milk.
+00:01:42.100 --> 00:01:45.583
+The agent also adds the groceries we requested
+beyond the recipes:
 
-00:01:44.478 --> 00:01:47.102
-These extras go into the same Sprouts family
-cart.
+00:01:45.931 --> 00:01:50.030
+bananas, strawberries and blueberries, plus
+gluten-free pie crusts,
 
-00:01:47.566 --> 00:01:50.225
-And because the helper checks what's already
-there, it doesn't
+00:01:50.215 --> 00:01:53.153
+organic half-and-half and unsweetened Ripple
+milk.
 
-00:01:50.260 --> 00:01:52.779
-add the same recipe products twice.
+00:01:54.337 --> 00:01:56.926
+Everything joins the same Sprouts family cart.
 
-00:01:53.633 --> 00:01:58.579
-At checkout, we review the delivery time, fees,
-tip and total.
+00:01:57.669 --> 00:02:00.351
+The browser activity makes the agent's work
+visible.
 
-00:01:59.322 --> 00:02:03.954
+00:02:00.816 --> 00:02:04.438
+With a supported direct integration, these
+screen-by-screen steps
+
+00:02:04.658 --> 00:02:06.342
+aren't needed.
+
+00:02:07.200 --> 00:02:11.229
+At checkout, the agent reviews the delivery
+time, fees, tip and
+
+00:02:11.287 --> 00:02:11.751
+total.
+
+00:02:12.297 --> 00:02:16.349
 Jordi's United Club card includes Instacart Plus
 and two ten-dollar
 
-00:02:04.012 --> 00:02:06.625
+00:02:16.407 --> 00:02:18.764
 monthly credits, used on separate orders.
 
-00:02:07.635 --> 00:02:12.023
+00:02:19.310 --> 00:02:23.385
 Here, one credit takes ten dollars off, and
 delivery is free.
 
-00:02:12.661 --> 00:02:15.320
+00:02:23.849 --> 00:02:26.252
 The service fee and tip still apply.
 
-00:02:15.959 --> 00:02:19.407
+00:02:26.995 --> 00:02:31.442
 The estimated total is ninety-eight dollars and
 thirty cents.
 
-00:02:20.150 --> 00:02:22.472
-We check everything, then place the order.
+00:02:32.081 --> 00:02:37.201
+Jordi approves the purchase, then the agent
+submits the order.
 
-00:02:23.300 --> 00:02:26.620
-And there's the confirmation: a real family
-order.
+00:02:38.067 --> 00:02:40.946
+The order is confirmed, and the agent opens the
+email to verify
 
-00:02:27.363 --> 00:02:29.778
-The email arrives with the delivery window, too.
+00:02:40.981 --> 00:02:41.225
+it.
 
-00:02:30.417 --> 00:02:34.829
-We've gone from scanned recipes to a checked
-ingredient list, skipped
+00:02:41.573 --> 00:02:45.068
+That's the full loop, from recipes and pantry
+checks to groceries
 
-00:02:34.852 --> 00:02:38.799
-what's in the pantry, added a few household
-extras, and placed
+00:02:45.103 --> 00:02:45.997
+and confirmation.
 
-00:02:38.834 --> 00:02:39.414
-the order.
+00:02:46.461 --> 00:02:50.014
+The same engine could be driven by WhatsApp,
+Telegram, ChatGPT,
 
-00:02:40.157 --> 00:02:44.290
-Next time, the recipes and saved product choices
-are ready to go.
+00:02:50.269 --> 00:02:51.802
+Claude, or another agent.
+
+00:02:52.440 --> 00:02:55.958
+With the right connections, it could use the
+recipe book, pantry
+
+00:02:55.993 --> 00:02:59.882
+and past orders to prepare familiar products and
+regular extras,
+
+00:03:00.289 --> 00:03:02.309
+on request or on a schedule.
+
+00:03:03.052 --> 00:03:06.720
+Those messaging and order-history connections
+are the next step.
+
+00:03:07.359 --> 00:03:11.689
+Today, this demo uses saved product choices and
+agent-driven browser
+
+00:03:11.747 --> 00:03:12.664
+automation.

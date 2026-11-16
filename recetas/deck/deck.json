@@ -7,7 +7,7 @@
     },
     {
       "file": "02.html",
-      "title": "Automate the repeatable shopping steps"
+      "title": "The agent handles the shopping work"
     },
     {
       "file": "03.html",
@@ -27,30 +27,38 @@
     },
     {
       "file": "07.html",
-      "title": "Reuse familiar products automatically"
+      "title": "API or MCP is the preferred connection"
     },
     {
       "file": "08.html",
-      "title": "Include the rest of the weekly shop"
+      "title": "The agent is driving the Instacart website"
     },
     {
       "file": "09.html",
-      "title": "Use the benefits the household already has"
+      "title": "The agent also adds the weekly extras"
     },
     {
       "file": "10.html",
-      "title": "A real order, with email confirmation"
+      "title": "Use the benefits the household already has"
     },
     {
       "file": "11.html",
-      "title": "Next: learn preferences from past orders"
+      "title": "Order placed and email checked"
     },
     {
       "file": "12.html",
-      "title": "What this could change about grocery shopping"
+      "title": "Next: learn preferences from past orders"
     },
     {
       "file": "13.html",
+      "title": "From a conversation or a schedule"
+    },
+    {
+      "file": "14.html",
+      "title": "What this could change about grocery shopping"
+    },
+    {
+      "file": "15.html",
       "title": "Try the flow and watch the real order"
     }
   ]
