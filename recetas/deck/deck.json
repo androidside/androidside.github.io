@@ -7,43 +7,51 @@
     },
     {
       "file": "02.html",
-      "title": "The original recipe stays with us"
+      "title": "Automate the repeatable shopping steps"
     },
     {
       "file": "03.html",
-      "title": "OCR reads the scan. We check the ingredients."
+      "title": "Start with the recipes a family already uses"
     },
     {
       "file": "04.html",
-      "title": "Dinner and dessert in one plan"
+      "title": "Extract ingredients once, then reuse them"
     },
     {
       "file": "05.html",
-      "title": "Check the pantry before buying"
+      "title": "Choose meals instead of searching item by item"
     },
     {
       "file": "06.html",
-      "title": "How the local app works"
+      "title": "Buy what is missing from the kitchen"
     },
     {
       "file": "07.html",
-      "title": "Saved products make the next shop easier"
+      "title": "Reuse familiar products automatically"
     },
     {
       "file": "08.html",
-      "title": "Recipe ingredients plus the weekly extras"
+      "title": "Include the rest of the weekly shop"
     },
     {
       "file": "09.html",
-      "title": "Review delivery, benefits and the total"
+      "title": "Use the benefits the household already has"
     },
     {
       "file": "10.html",
-      "title": "A real family order, confirmed"
+      "title": "A real order, with email confirmation"
     },
     {
       "file": "11.html",
-      "title": "Try the demo"
+      "title": "Next: learn preferences from past orders"
+    },
+    {
+      "file": "12.html",
+      "title": "What this could change about grocery shopping"
+    },
+    {
+      "file": "13.html",
+      "title": "Try the flow and watch the real order"
     }
   ]
 }
