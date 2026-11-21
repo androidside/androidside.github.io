@@ -23,9 +23,8 @@ const WEEKDAYS = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
 const NOTE_NO_READING = 'no reading yet · open this account once';
 const NOTE_RESET_UNKNOWN = 'reset time known after next use';
 
-// The cause a stale Claude note names when the user did nothing to cause it.
-// token_expired is the normal state between sessions and needs_login has its
-// own note; any other reason shows the time alone.
+// Causes shown alongside the last successful reading. token_expired has a
+// refresh hint and needs_login has its own note; other reasons show the time.
 const STALE_CAUSE = Object.freeze({
   auth_failed: 'usage call refused',
   http_error: 'could not reach Anthropic',
@@ -189,13 +188,15 @@ export function effectiveWindow(win, nowMs) {
 function staleNote(acc, nowMs, tz) {
   const fetchedMs = toMs(acc.fetched_at);
   const when = fetchedMs === null ? null : fmtTime(fetchedMs, nowMs, tz);
+  // A saved reading cannot tell us whether usage changed in a browser or on
+  // another computer, and fetched_at is not the time of the last session.
+  const lastReading = when ? `last reading ${when}` : 'showing saved usage';
   const reason = acc.stale_reason;
   if (acc.kind !== 'codex' && reason === 'token_expired') {
-    return when ? `unchanged since your last session · ${when}` : 'unchanged since your last session';
+    return `${lastReading} · open ${acc.id} to refresh`;
   }
-  const unchanged = when ? `unchanged since ${when}` : 'unchanged since the last reading';
   const cause = typeof reason === 'string' && Object.hasOwn(STALE_CAUSE, reason) ? STALE_CAUSE[reason] : null;
-  return cause ? `${cause} · ${unchanged}` : unchanged;
+  return cause ? `${cause} · ${lastReading}` : lastReading;
 }
 
 // The note for an account without a reading.

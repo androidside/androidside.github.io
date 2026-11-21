@@ -52,6 +52,12 @@ const STATUS_TEXT = Object.freeze({
   shell: 'running a command',
 });
 
+// Short account reminders live in the page, separate from collected usage.
+const ACCOUNT_HINTS = Object.freeze({
+  claude2: { browser: 'Microsoft Edge', icon: 'edge.svg', label: '@gmail' },
+  claude3: { browser: 'Firefox', icon: 'firefox.svg', label: 'info' },
+});
+
 const isNum = (v) => typeof v === 'number' && Number.isFinite(v);
 const clampPct = (v) => Math.min(100, Math.max(0, v));
 const pctText = (v) => `${v.toFixed(3)}%`;
@@ -182,6 +188,26 @@ function nameCell(acc, lines) {
   cell.append(el('span', 'dot'), el('span', 'nm', acc.id));
   cell.append(...lines.filter(Boolean));
   return cell;
+}
+
+function accountMeta(acc, isVerdict) {
+  const meta = el('small', 'account-meta');
+  if (isVerdict) meta.append(el('span', 'tag-go', 'start here'));
+  else if (acc.plan) meta.append(el('span', 'plan', acc.plan));
+
+  const hint = Object.hasOwn(ACCOUNT_HINTS, acc.id) ? ACCOUNT_HINTS[acc.id] : null;
+  if (hint) {
+    const browser = el('span', 'account-browser');
+    browser.title = hint.browser;
+    const icon = el('img', 'browser-icon');
+    icon.setAttribute('src', `assets/${hint.icon}`);
+    icon.setAttribute('alt', hint.browser);
+    icon.setAttribute('width', '12');
+    icon.setAttribute('height', '12');
+    browser.append(icon, el('span', null, hint.label));
+    meta.append(browser);
+  }
+  return meta.children.length ? meta : null;
 }
 
 // One weekly measure: bar filled to the percent left, "<left>% left" bold,
@@ -411,7 +437,7 @@ function claudeRow(row, isVerdict, ctx) {
   const r = el('div', ['r', colorClass(acc.id), isVerdict ? 'go' : '', row.excluded ? 'dim' : ''].filter(Boolean).join(' '));
   r.append(el('div', 'n', row.rank === null ? '·' : String(row.rank)));
   r.append(nameCell(acc, [
-    isVerdict ? el('small', 'tag-go', 'start here') : (acc.plan ? el('small', 'plan', acc.plan) : null),
+    accountMeta(acc, isVerdict),
     acc.session ? sessionLine(acc, nowMs) : null,
     noteLine(eff),
     acc.extra_usage_enabled === true ? el('small', 'tag', 'extra usage on') : null,

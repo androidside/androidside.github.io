@@ -112,6 +112,9 @@ body {
 .name small { display: block; margin-top: 3px; font-size: 11px; color: var(--muted); }
 .name .plan, .name .tag-go { font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: rgba(231, 231, 236, .45); }
 .name .tag-go { color: var(--c); }
+.name .account-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 3px 8px; }
+.account-browser { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+.browser-icon { width: 12px; height: 12px; flex-shrink: 0; }
 .name .s5 { color: rgba(231, 231, 236, .6); }
 .name .note { color: var(--note); }
 .name .tag {
