@@ -77,13 +77,26 @@ function renderDock(){
   $('planDock').innerHTML=`<div><strong>${planned().length} ${planned().length===1?'recipe':'recipes'} in your plan</strong><small>${g.buy.length} to buy · ${g.home.length} at home${state.extras.length?' · '+state.extras.length+' extras':''}</small></div>${action}`;
 }
 function render(){save();renderDock();if(view==='recipes')renderRecipe();if(view==='shopping')renderShopping();if(view==='pantry')renderPantry();if(view==='cart')renderCart();}
-function renderList(){const q=$('search').value.toLowerCase();$('recipeList').innerHTML=DATA.recipes.map((r,i)=>({r,i})).filter(({r})=>r.title.toLowerCase().includes(q)).map(({r,i})=>`<button class="recipe-choice ${current===i?'selected':''}" data-recipe="${i}"><span class="emoji">${icon(r.title)}</span><span><strong>${esc(r.title)}</strong><small>${esc(r.collection)}${state.plan[r.id]?' · In your plan':''}</small></span></button>`).join('')||'<p>No recipes found.</p>';}
+const normalize=s=>String(s).normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase();
+function matchingRecipes(){
+  const q=normalize($('search').value),collection=$('collectionFilter').value;
+  return DATA.recipes.map((r,i)=>({r,i})).filter(({r})=>(!collection||r.collection===collection)&&normalize(r.title).includes(q));
+}
+function renderList(){
+  const items=matchingRecipes();
+  $('libraryCount').textContent=items.length+' of '+DATA.recipes.length+' recipes';
+  $('recipeList').innerHTML=items.map(({r,i})=>`<button class="recipe-choice ${current===i?'selected':''}" data-recipe="${i}"><span class="emoji">${icon(r.title)}</span><span><strong>${esc(r.title)}</strong><small>${esc(r.collection)}${state.plan[r.id]?' · In your plan':''}</small></span></button>`).join('')||'<p>No recipes found.</p>';
+}
+function filterRecipes(){const matches=matchingRecipes();if(matches.length&&!matches.some(x=>x.i===current)){current=matches[0].i;page=0;}renderRecipe();}
+function navigateRecipe(step){const matches=matchingRecipes();if(!matches.length)return;const index=matches.findIndex(x=>x.i===current);current=matches[(index+step+matches.length)%matches.length].i;page=0;renderRecipe();}
+
 function renderRecipe(){
   const r=DATA.recipes[current],batch=state.plan[r.id]||1;renderList();
   $('detail').className='recipe-detail';
   $('detail').innerHTML=`<div class="recipe-top"><div><p class="eyebrow">${esc(r.collection)}</p><h1>${esc(r.title)}</h1></div><div class="arrows"><button data-prev aria-label="Previous recipe">←</button><button data-next aria-label="Next recipe">→</button></div></div><div class="recipe-tools"><span class="pill">${r.pages.length} full source ${r.pages.length===1?'page':'pages'}</span><div><label>Batches <input id="batches" type="number" min="0.5" max="10" step="0.5" value="${batch}"></label> <button id="addPlan" class="primary">${state.plan[r.id]?'✓ Update plan':'＋ Add to plan'}</button></div></div>
   ${state.plan[r.id]?`<div class="plan-next"><div><strong>✓ In your plan</strong><span>Check what you have, add extras, then build your cart.</span></div><button data-view="shopping" class="primary">Check kitchen →</button></div>`:''}
-  <div class="recipe-grid"><div><div class="scan-frame"><button class="scan-button" id="zoom" aria-label="Enlarge original page"><img src="${r.pages[page]}" alt="Original scan for ${esc(r.title)}, page ${page+1}"></button></div><div class="page-controls"><button id="prevPage" ${page===0?'disabled':''} aria-label="Previous source page">←</button><span>Page ${page+1} of ${r.pages.length}</span><button id="nextPage" ${page===r.pages.length-1?'disabled':''} aria-label="Next source page">→</button></div><details><summary>OCR text</summary><p class="muted">Machine-read text needs checking against the scan.</p><pre>${esc(r.ocr)}</pre></details></div><section><h2>🥗 Ingredients</h2><p class="muted">For one batch. Mark anything you have enough of. Check extracted amounts against the original scan.</p>${r.ingredients.map(i=>`<div class="ingredient-row"><span class="emoji">${icon(i.name)}</span><span class="text">${esc(i.raw)}${i.optional?'<small> · Optional</small>':''}</span><button aria-label="${isHome(i.id)?'Need to buy':'Have enough'} ${esc(i.name)}" class="${isHome(i.id)?'stocked':''}" data-home="${esc(i.id)}">${isHome(i.id)?'✓ At home':'Have it?'}</button></div>`).join('')}<h3 class="section-title">Your notes</h3><textarea id="notes" class="notes" placeholder="Less spice, a favorite brand, make double…">${esc(state.notes[r.id]||'')}</textarea><p class="muted">Saved in this browser.</p></section></div>`;
+  ${r.issues?.length?`<details class="scan-notes" open><summary>About this scan</summary>${r.issues.map(issue=>`<p>${esc(issue)}</p>`).join('')}</details>`:''}
+  <div class="recipe-grid"><div><div class="scan-frame"><button class="scan-button" id="zoom" aria-label="Enlarge original page"><img decoding="async" src="${r.pages[page]}" alt="Original scan for ${esc(r.title)}, page ${page+1}"></button></div><div class="page-controls"><button id="prevPage" ${page===0?'disabled':''} aria-label="Previous source page">←</button><span>Page ${page+1} of ${r.pages.length}</span><button id="nextPage" ${page===r.pages.length-1?'disabled':''} aria-label="Next source page">→</button></div><details><summary>OCR text</summary><p class="muted">Machine-read text needs checking against the scan.</p><pre>${esc(r.ocr)}</pre></details></div><section><h2>🥗 Ingredients</h2><p class="muted">For one batch. Mark anything you have enough of. Check extracted amounts against the original scan.</p>${r.ingredients.map(i=>`<div class="ingredient-row"><span class="emoji">${icon(i.name)}</span><span class="text">${esc(i.raw)}${i.optional?'<small> · Optional</small>':''}</span><button aria-label="${isHome(i.id)?'Need to buy':'Have enough'} ${esc(i.name)}" class="${isHome(i.id)?'stocked':''}" data-home="${esc(i.id)}">${isHome(i.id)?'✓ At home':'Have it?'}</button></div>`).join('')}<h3 class="section-title">Your notes</h3><textarea id="notes" class="notes" placeholder="Less spice, a favorite brand, make double…">${esc(state.notes[r.id]||'')}</textarea><p class="muted">Saved in this browser.</p></section></div>`;
   $('addPlan').onclick=()=>{const n=Number($('batches').value);if(!Number.isFinite(n)||n<.5||n>10)return notify('Choose ½ to 10 batches.');state.plan[r.id]=n;changed();notify('Plan saved. Check your kitchen next.');};
   $('notes').onchange=()=>{state.notes[r.id]=$('notes').value;save();};
   $('zoom').onclick=()=>{$('fullScan').src=r.pages[page];$('scanDialog').showModal();};
@@ -136,8 +149,8 @@ document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b)return;
   if(b.dataset.view)go(b.dataset.view);
   if(b.dataset.recipe!=null){current=Number(b.dataset.recipe);page=0;go('recipes');}
-  if('prev'in b.dataset){current=(current+DATA.recipes.length-1)%DATA.recipes.length;page=0;renderRecipe();}
-  if('next'in b.dataset){current=(current+1)%DATA.recipes.length;page=0;renderRecipe();}
+  if('prev'in b.dataset)navigateRecipe(-1);
+  if('next'in b.dataset)navigateRecipe(1);
   if(b.dataset.home)toggleHome(b.dataset.home);
   if(b.dataset.remove){delete state.plan[b.dataset.remove];changed();}
   if(b.dataset.skip){const id=b.dataset.skip;state.skipped=state.skipped.includes(id)?state.skipped.filter(x=>x!==id):[...state.skipped,id];changed();}
@@ -160,7 +173,8 @@ document.addEventListener('change',e=>{
   if(el.dataset.optional){state.optional[el.dataset.optional]=el.checked;changed();}
   if(el.dataset.choice&&el.value){const x=state.cart[el.dataset.choice];state.choices[el.dataset.choice]=(el.value==='original'?'':el.value==='organic'?'Organic option: ':'Store-brand option: ')+x.baseName;changed();}
 });
-$('search').oninput=renderList;$('pantrySearch').oninput=renderPantry;$('onlyStocked').onchange=renderPantry;
+$('collectionFilter').innerHTML='<option value="">All collections</option>'+[...new Set(DATA.recipes.map(r=>r.collection))].map(c=>`<option value="${esc(c)}">${esc(c)}</option>`).join('');
+$('collectionFilter').onchange=filterRecipes;$('search').oninput=filterRecipes;$('pantrySearch').oninput=renderPantry;$('onlyStocked').onchange=renderPantry;
 $('import').onclick=()=>$('importDialog').showModal();$('watch').onclick=()=>$('videoDialog').showModal();
 $('cartVideo').onclick=()=>{$('checkoutDialog').close();$('videoDialog').showModal();};
 $('videoDialog').onclose=()=>$('videoDialog').querySelector('video').pause();
